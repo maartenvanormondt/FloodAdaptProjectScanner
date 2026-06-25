@@ -1,0 +1,49 @@
+{
+  "domains": {
+    "fema.gov": {
+      "count": 2,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "nfwf.org": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "epa.gov": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "new.nsf.gov": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "ukri.org": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "research-and-innovation.ec.europa.eu": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "rea.ec.europa.eu": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "climate-kic.org": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "grants.gov": {
+      "count": 102,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    }
+  }
+}

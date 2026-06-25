@@ -1,0 +1,1576 @@
+{
+  "opportunities": [
+    {
+      "title": "FEMA — Building Resilient Infrastructure and Communities (BRIC) FY 2024–2025",
+      "funder": "FEMA",
+      "one_liner": "A $1 billion federal competitive grant program funding shovel-ready infrastructure projects that reduce flood and hazard risk in communities.",
+      "summary_paragraph": "FEMA has published the FY 2024 and 2025 BRIC funding opportunity, making $1 billion in federal funding available to states, local governments, territories, and Tribal Nations to take proactive steps to protect communities from disasters including floods. BRIC provides funding for public infrastructure projects and mitigation efforts that bolster a community's flood resilience before a disaster strikes, with a special emphasis on shovel-ready construction projects or adoption of hazard-resistant building codes. Federal funding covers up to 75 percent of eligible activity cost, and small, impoverished communities may be eligible for up to a 90 percent federal cost share. Applicants and subapplicants must have a FEMA-approved hazard mitigation plan by the application deadline.",
+      "due_date": "2026-07-23",
+      "eligibility": "States, local governments, territories, Tribal Nations (via FEMA GO portal)",
+      "budget": "$1 billion total; max $20M federal share per project (National Competition)",
+      "topics": [
+        "flood resilience & adaptation",
+        "coastal flooding",
+        "inland/riverine flooding"
+      ],
+      "source_url": "https://www.fema.gov/grants/mitigation/learn/building-resilient-infrastructure-communities",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "FEMA — Flood Mitigation Assistance (FMA) FY 2024",
+      "funder": "FEMA",
+      "one_liner": "A $600 million competitive grant specifically targeting flood risk reduction for NFIP-insured properties through acquisition, elevation, and flood-proofing projects.",
+      "summary_paragraph": "For fiscal year 2024, up to $600 million is available to states, local communities, Tribal Nations, and territories to reduce or eliminate the risk of repetitive flood damage to buildings insured under the National Flood Insurance Program. FEMA published an amendment to the funding opportunity on April 30, 2026, incorporating recent federal guidance; funding comes from the National Flood Insurance Fund and the Infrastructure Investment and Jobs Act. The goal of the FMA grant program is to employ cost-effective measures to reduce or eliminate the long-term risk of flood damage to buildings, manufactured homes, and other structures insured under the NFIP. Applicants have until 3 p.m. ET on August 6, 2026, to submit or revise and re-submit their application to FEMA.",
+      "due_date": "2026-08-06",
+      "eligibility": "States, territories, local governments, federally recognized Tribal Nations",
+      "budget": "Up to $600 million (FY 2024)",
+      "topics": [
+        "inland/riverine flooding",
+        "flood resilience & adaptation"
+      ],
+      "source_url": "https://www.fema.gov/grants/mitigation/learn/flood-mitigation-assistance",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "NFWF — National Coastal Resilience Fund (NCRF) 2026",
+      "funder": "National Fish & Wildlife Foundation (NFWF) / NOAA",
+      "one_liner": "A NOAA-backed foundation grant funding nature-based solutions to protect coastal communities from storms, flooding, and erosion, with awards up to $7 million.",
+      "summary_paragraph": "The National Coastal Resilience Fund (NCRF), established in 2018, invests in nature-based solutions that protect coastal communities while enhancing habitats for fish and wildlife, including coastal marshes, wetlands, dune and beach systems, oyster and coral reefs, rivers, and floodplains. NFWF has closed pre-proposals for its 2026 NCRF and is moving selected applicants into the full proposal phase; full proposals are due June 24, 2026, with awards announced November–December 2026. Implementation awards typically range from $1 million to $7 million, while planning and design awards range from $100,000 to $1.5 million. Eligible applicants include 501(c) nonprofits, state and local governments, tribal governments and organizations, educational institutions, and commercial entities in US coastal and Great Lakes states and territories.",
+      "due_date": "2026-06-24",
+      "eligibility": "Nonprofits, state/local/tribal governments, universities, commercial entities; US coastal/Great Lakes states and territories; invite-only after pre-proposal stage",
+      "budget": "$100K–$1.5M (planning/design); $1M–$7M (implementation)",
+      "topics": [
+        "coastal flooding",
+        "nature-based solutions",
+        "flood resilience"
+      ],
+      "source_url": "https://www.nfwf.org/programs/national-coastal-resilience-fund/national-coastal-resilience-fund-2026-request-proposals",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "EPA — Sewer Overflow and Stormwater Reuse Municipal Grants (OSG)",
+      "funder": "US EPA (administered by states)",
+      "one_liner": "Rolling federal grants to states for green and gray stormwater infrastructure projects that reduce flooding and improve water quality in communities.",
+      "summary_paragraph": "The EPA's Sewer Overflow and Stormwater Reuse Municipal Grants Program helps communities and states reduce water pollution caused by stormwater and sewer runoff, funding green and gray infrastructure projects that strengthen stormwater collection systems, improve flood resilience, and address water quality issues. EPA announced $52 million in grants to help communities improve essential stormwater infrastructure, implementing new requirements under the Bipartisan Infrastructure Law to help states support projects in small and financially distressed communities. The OSG program is administered by states and deadlines may differ; applicants should approach their state Clean Water State Revolving Fund Program or EPA Regional Office for specific deadlines.",
+      "due_date": "rolling",
+      "eligibility": "Municipalities and local governments (via state programs)",
+      "budget": "~$52M nationally (annual appropriation); varies by state",
+      "topics": [
+        "inland/pluvial/stormwater flooding",
+        "flood resilience"
+      ],
+      "source_url": "https://www.epa.gov/grants",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "NSF — Confronting Hazards, Impacts and Risks for a Resilient Planet (CHIRRP)",
+      "funder": "National Science Foundation (NSF)",
+      "one_liner": "An NSF standing research program funding transformative Earth system science on hazard knowledge and risk mitigation, including flood and coastal hazards, in partnership with communities.",
+      "summary_paragraph": "The CHIRRP program invites projects focusing on innovative and transformative research that advances Earth system hazard knowledge and risk mitigation in partnership with affected communities, addressing hazards compounded by changing climates, rising populations, and aging infrastructure. Resilience to natural hazards remains a high priority for NSF, which strongly encourages researchers to submit proposals for fundamental research that could yield insights useful to advance natural disaster resilience. NSF supports research into natural hazards such as hurricanes, floods, wildfires, coastal erosion, and severe thunderstorms, and methods to reduce their harmful impacts. This is a standing program accepting proposals on an ongoing basis through NSF's standard proposal submission process.",
+      "due_date": "rolling",
+      "eligibility": "US universities, research institutions, community organizations",
+      "budget": "Varies per proposal (standard NSF research grants)",
+      "topics": [
+        "flood risk mapping & modelling",
+        "coastal flooding",
+        "flood resilience",
+        "inland flooding"
+      ],
+      "source_url": "https://new.nsf.gov/funding/opportunities/chirrp-confronting-hazards-impacts-risks-resilient-planet",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "UKRI / EPSRC — NetworkPlus in Property Flood Resilience",
+      "funder": "UKRI / Engineering and Physical Sciences Research Council (EPSRC)",
+      "one_liner": "A UK Research and Innovation award of up to £2.5 million to establish a research network advancing science and practice for property-level flood resilience.",
+      "summary_paragraph": "EPSRC will fund 80% of the full economic cost of up to £2.5 million for a duration of up to three years to establish a NetworkPlus focused on property-level flood resilience. The funding opportunity is invite-only; potential applicants were expected to attend a consortium building workshop on March 23, 2026, in Swindon to be invited to apply. The program is specifically focused on building a UK research community around property-level flood resilience measures, bridging gaps between research, policy, and practice. The funding opportunity was set to open in spring 2026, with more information available on the UKRI page.",
+      "due_date": "unknown",
+      "eligibility": "UK research organisations (consortium required; invite-only after workshop attendance)",
+      "budget": "Up to £2.5 million (80% funded by EPSRC)",
+      "topics": [
+        "flood resilience & adaptation",
+        "flood risk mapping & modelling"
+      ],
+      "source_url": "https://www.ukri.org/opportunity/networkplus-in-property-flood-resilience/",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Horizon Europe — HORIZON-MISS-2026-01-CLIMA-06: Improving Climate Resilience of Navigable Inland Waterways and Related Water Infrastructure",
+      "funder": "European Commission / Horizon Europe (EU Mission: Adaptation to Climate Change)",
+      "one_liner": "A €6 million Horizon Europe Mission grant to improve the flood and climate resilience of inland waterways through systemic nature-based and engineering solutions.",
+      "summary_paragraph": "This Horizon Europe funding call focuses on improving climate resilience of navigable inland waterways and related water infrastructure, where climate and environmental risks such as flooding and ecological degradation are addressed in a systemic way. Cost-efficient and environmentally friendly measures—especially nature-based solutions—are identified with stakeholder involvement to improve climate resilience while supporting integrated co-benefits. Applications are open to consortia with at least 3 participants from different countries based in EU Member States, Associated Countries, and low- and middle-income countries. This Research and Innovation Action provides up to €6 million for up to 5 years, with applications closing on September 23, 2026.",
+      "due_date": "2026-09-23",
+      "eligibility": "Consortia of ≥3 organisations from EU Member States/Associated Countries plus low- and middle-income countries",
+      "budget": "Up to €6 million per project",
+      "topics": [
+        "inland/riverine flooding",
+        "flood resilience",
+        "nature-based solutions",
+        "flood risk modelling"
+      ],
+      "source_url": "https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/eu-missions-horizon-europe/adaptation-climate-change_en",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Horizon Europe — Disaster Resilient Society for Europe (Cluster 3) 2026",
+      "funder": "European Commission / Horizon Europe Cluster 3",
+      "one_liner": "A Horizon Europe Cluster 3 call targeting innovation for disaster-resilient European societies, including tools for flood risk awareness and disaster response, with proposals due November 2026.",
+      "summary_paragraph": "The Horizon Europe 2026 Disaster Resilient Society for Europe call has proposals due by November 5, 2026, covering five topics including innovative tools for search and rescue in hazardous conditions and driving innovation uptake of disaster risk solutions. One topic, HORIZON-CL3-2026-01-DRS-05, focuses on climate security and civil preparedness—developing new ways to create pre- and post-crisis climate-change-related scenarios for a more resilient Europe. This cluster funds applied research and innovation actions linking technology developers, civil protection agencies, and local authorities to develop and deploy flood and disaster resilience solutions at scale across Europe. Funding per project typically ranges from €4–10 million.",
+      "due_date": "2026-11-05",
+      "eligibility": "Consortia from EU Member States and Associated Countries",
+      "budget": "Typically €4–10M per project",
+      "topics": [
+        "flood resilience & adaptation",
+        "flood risk mapping & modelling",
+        "coastal flooding",
+        "inland flooding"
+      ],
+      "source_url": "https://rea.ec.europa.eu/funding-and-grants/horizon-europe-cluster-3-civil-security-society/disaster-resilient-society-europe_en",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Horizon Europe PCP WISE — Water Intelligence Products and Services Powered by Earth Observation",
+      "funder": "European Commission / Horizon Europe (PCP WISE consortium of 12 public buyers)",
+      "one_liner": "A pre-commercial procurement call co-funded by Horizon Europe to develop next-generation EO-powered flood monitoring and stormwater management tools.",
+      "summary_paragraph": "Launched on September 5, 2025, the PCP WISE group of 12 buyers issued a Call for Tenders to co-develop next-generation water intelligence products and services powered by Earth Observation, funded under Horizon Europe's Pre-Commercial Procurement mechanism. This three-phase PCP funds R&D services—from solution design to prototype development and field validation—targeting TRL 8 solutions that monitor the Soil-Water-Vegetation system and help predict, prevent, and manage water-related crises such as floods, fires, and droughts. One focus area is Urban Water Excess (East-North Europe), specifically targeting flood and stormwater management with real-time tools. Eligible participants include technology companies and research organisations from EU and associated countries.",
+      "due_date": "unknown",
+      "eligibility": "Technology companies and research organisations from EU and associated countries",
+      "budget": "Multi-phase R&D contract funding (exact envelope per phase to be confirmed)",
+      "topics": [
+        "flood risk mapping & modelling",
+        "inland/pluvial flooding",
+        "coastal flooding"
+      ],
+      "source_url": "https://www.climate-kic.org/open-call/call-for-tenders-to-co-develop-next-generation-water-intelligence-products-and-services-powered-by-earth-observation/",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Fiscal Year 2024 Flood Mitigation Assistance",
+      "funder": "DHS-DHS",
+      "one_liner": "Grants.gov opportunity from DHS-DHS.",
+      "summary_paragraph": "Posted on Grants.gov by DHS-DHS (opportunity DHS-24-MT-029-000-98). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/06/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/358015",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Fiscal Year 2024 Flood Mitigation Assistance Swift Current",
+      "funder": "DHS-DHS",
+      "one_liner": "Grants.gov opportunity from DHS-DHS.",
+      "summary_paragraph": "Posted on Grants.gov by DHS-DHS (opportunity DHS-24-MT-144-000-99). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "12/30/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/354620",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "WaterSMART: Applied Science Grants",
+      "funder": "DOI-BOR",
+      "one_liner": "Grants.gov opportunity from DOI-BOR.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-BOR (opportunity R25AS00280). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/08/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361417",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Cooperative Agreement for affiliated Partner with the Gulf Coast Cooperative Ecosystem Studies Unit",
+      "funder": "DOI-USGS1",
+      "one_liner": "Grants.gov opportunity from DOI-USGS1.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-USGS1 (opportunity G26AS00120). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "06/29/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362608",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "EDA FY25 Disaster Supplemental",
+      "funder": "DOC-EDA",
+      "one_liner": "Grants.gov opportunity from DOC-EDA.",
+      "summary_paragraph": "Posted on Grants.gov by DOC-EDA (opportunity EDA-DISASTER-2025). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/359225",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Engineering for Civil Infrastructure",
+      "funder": "NSF",
+      "one_liner": "Grants.gov opportunity from NSF.",
+      "summary_paragraph": "Posted on Grants.gov by NSF (opportunity PD-19-073Y). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/306169",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "RESTORE Act Direct Component - Non-Construction Activities",
+      "funder": "USDOT-GCR",
+      "one_liner": "Grants.gov opportunity from USDOT-GCR.",
+      "summary_paragraph": "Posted on Grants.gov by USDOT-GCR (opportunity GR-RDC-25-002). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "10/31/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/356561",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "RESTORE Act Direct Component &ndash; Construction and Real Property Acquisition Activities",
+      "funder": "USDOT-GCR",
+      "one_liner": "Grants.gov opportunity from USDOT-GCR.",
+      "summary_paragraph": "Posted on Grants.gov by USDOT-GCR (opportunity GR-RDC-25-001). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "10/31/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/356562",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Butte Creek/Sutter Bypass Weir 1 Improvement Design and Permitting Project",
+      "funder": "DOI-FWS",
+      "one_liner": "Grants.gov opportunity from DOI-FWS.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-FWS (opportunity F26AS00022). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/19/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362499",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Fiscal Year 2026 Pre-Disaster Mitigation Grant Program",
+      "funder": "DHS-DHS",
+      "one_liner": "Grants.gov opportunity from DHS-DHS.",
+      "summary_paragraph": "Posted on Grants.gov by DHS-DHS (opportunity DHS-26-MT-143-00-01). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/22/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362877",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Application Instructions for the Indian Community Development Block Grant (ICDBG) Imminent Threat (IT) Program",
+      "funder": "HUD",
+      "one_liner": "Grants.gov opportunity from HUD.",
+      "summary_paragraph": "Posted on Grants.gov by HUD (opportunity FR-6900-N-74). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "09/30/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/358716",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Distance Learning and Telemedicine Grants",
+      "funder": "USDA-RUS",
+      "one_liner": "Grants.gov opportunity from USDA-RUS.",
+      "summary_paragraph": "Posted on Grants.gov by USDA-RUS (opportunity RUS-26-01-DLT). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "06/30/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361474",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Project Rental Assistance Program of Section 811 Supportive Housing for Persons with Disabilities FY 2026",
+      "funder": "HUD",
+      "one_liner": "Grants.gov opportunity from HUD.",
+      "summary_paragraph": "Posted on Grants.gov by HUD (opportunity HSG-2600-DC-0053). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/13/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362350",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "State Veterans Home Construction Grant Program",
+      "funder": "VA-CSHF",
+      "one_liner": "Grants.gov opportunity from VA-CSHF.",
+      "summary_paragraph": "Posted on Grants.gov by VA-CSHF (opportunity VA-GRANTS-112508-002). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/58617",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Lead-Safe and Healthy Homes Financing Demonstration",
+      "funder": "HUD",
+      "one_liner": "Grants.gov opportunity from HUD.",
+      "summary_paragraph": "Posted on Grants.gov by HUD (opportunity LHC-2600-DC-0032). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/03/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362370",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
+      "funder": "DOE-ID",
+      "one_liner": "Grants.gov opportunity from DOE-ID.",
+      "summary_paragraph": "Posted on Grants.gov by DOE-ID (opportunity DE-FOA-0003339). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "09/30/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/358100",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Fiscal Year 2024 &amp; 2025 Building Resilient Infrastructure and Communities (BRIC)",
+      "funder": "DHS-DHS",
+      "one_liner": "Grants.gov opportunity from DHS-DHS.",
+      "summary_paragraph": "Posted on Grants.gov by DHS-DHS (opportunity DHS-25-MT-047-00-98). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/23/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361620",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "The National September 11 Memorial and Museum and 9/11 Pentagon Memorial Visitor Education Center",
+      "funder": "DOD-WHS",
+      "one_liner": "Grants.gov opportunity from DOD-WHS.",
+      "summary_paragraph": "Posted on Grants.gov by DOD-WHS (opportunity HQ003426NFOECAD01). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/10/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362003",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Defense Security Cooperation University - Research Grants",
+      "funder": "DOD-WHS",
+      "one_liner": "Grants.gov opportunity from DOD-WHS.",
+      "summary_paragraph": "Posted on Grants.gov by DOD-WHS (opportunity HQ003423NFOEASD17). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/07/2028",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/349804",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "DoW&rsquo;s Energy, Installations, and Environment Innovation Partners Programs",
+      "funder": "DOD-WHS",
+      "one_liner": "Grants.gov opportunity from DOD-WHS.",
+      "summary_paragraph": "Posted on Grants.gov by DOD-WHS (opportunity HQ003423NFOEASD07). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "01/08/2028",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/348830",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Department of War Cyber Service Academy (DoW CSA)",
+      "funder": "DOD-WHS",
+      "one_liner": "Grants.gov opportunity from DOD-WHS.",
+      "summary_paragraph": "Posted on Grants.gov by DOD-WHS (opportunity HQ003425NFOEASD03). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "01/22/2030",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/358380",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "FY 2023 Disaster Supplemental",
+      "funder": "DOC-EDA",
+      "one_liner": "Grants.gov opportunity from DOC-EDA.",
+      "summary_paragraph": "Posted on Grants.gov by DOC-EDA (opportunity EDA-DISASTER-2023). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/347414",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "NOAA Great Lakes Fish Habitat Restoration Partnership Grants",
+      "funder": "DOC-DOCNOAAERA",
+      "one_liner": "Grants.gov opportunity from DOC-DOCNOAAERA.",
+      "summary_paragraph": "Posted on Grants.gov by DOC-DOCNOAAERA (opportunity NOAA-NMFS-HCPO-2024-28122). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/356231",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Mass Market Solutions for Leveraging Robotics and AI Technologies for Home Construction Demonstration",
+      "funder": "HUD",
+      "one_liner": "Grants.gov opportunity from HUD.",
+      "summary_paragraph": "Posted on Grants.gov by HUD (opportunity PDR-2600-DC-029Q). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/13/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362360",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Outdoor Recreation Legacy Partnership Program (ORLP) Recurring Notice 5 Year",
+      "funder": "DOI-NPS",
+      "one_liner": "Grants.gov opportunity from DOI-NPS.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-NPS (opportunity P26AS00125). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "11/01/2030",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362715",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Great Lakes Restoration Initiative &ndash;Joint Venture Habitat Restoration and Protection",
+      "funder": "DOI-FWS",
+      "one_liner": "Grants.gov opportunity from DOI-FWS.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-FWS (opportunity F26AS00094). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/06/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362269",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Fiscal Year 2026 Emergency Operations Center Grant Program",
+      "funder": "DHS-DHS",
+      "one_liner": "Grants.gov opportunity from DHS-DHS.",
+      "summary_paragraph": "Posted on Grants.gov by DHS-DHS (opportunity DHS-26-GPD-052-01-99). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/15/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362793",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "F25AS00332 Highlands Conservation Act &ndash; Competitive Funding Round",
+      "funder": "DOI-FWS",
+      "one_liner": "Grants.gov opportunity from DOI-FWS.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-FWS (opportunity F25AS00332). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "10/31/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362484",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Office of Special Education and Rehabilitative Services (OSERS): Office of Special Education Programs (OSEP): Accessible Education Video Projects; Assistance Listing Number (ALN) 84.327C",
+      "funder": "ED",
+      "one_liner": "Grants.gov opportunity from ED.",
+      "summary_paragraph": "Posted on Grants.gov by ED (opportunity ED-GRANTS-042726-001). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "06/26/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362074",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "WaterSMART: Desalination Construction Projects",
+      "funder": "DOI-BOR",
+      "one_liner": "Grants.gov opportunity from DOI-BOR.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-BOR (opportunity R26AS00034). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/26/2027",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362395",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Title XVI Water Reclamation and Reuse Projects",
+      "funder": "DOI-BOR",
+      "one_liner": "Grants.gov opportunity from DOI-BOR.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-BOR (opportunity R26AS00079). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/26/2027",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362396",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Cooperative Agreement for affiliated Partner with the North Atlantic Coast Cooperative Ecosystem Studies Unit",
+      "funder": "DOI-USGS1",
+      "one_liner": "Grants.gov opportunity from DOI-USGS1.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-USGS1 (opportunity G26AS00131). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/05/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362699",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Cooperative Agreement for affiliated Partner with the Great Lakes-Northern Forest Cooperative Ecosystem Studies Unit",
+      "funder": "DOI-USGS1",
+      "one_liner": "Grants.gov opportunity from DOI-USGS1.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-USGS1 (opportunity G26AS00132). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/09/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362703",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Office of Special Education and Rehabilitative Services (OSERS): Office of Special Education Programs (OSEP): National Center for Accessible Education Videos; Assistance Listing Number: 84.327N",
+      "funder": "ED",
+      "one_liner": "Grants.gov opportunity from ED.",
+      "summary_paragraph": "Posted on Grants.gov by ED (opportunity ED-GRANTS-042726-002). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "06/26/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362075",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Cooperative Agreement for affiliated Partner with the Chesapeake Watershed Cooperative Ecosystem Studies Unit",
+      "funder": "DOI-USGS1",
+      "one_liner": "Grants.gov opportunity from DOI-USGS1.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-USGS1 (opportunity G26AS00149). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/24/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362941",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Fiscal Year (FY) 2023 through FY 2026 Bridge Investment Program, Planning and Bridge Project Grants",
+      "funder": "DOT-FHWA",
+      "one_liner": "Grants.gov opportunity from DOT-FHWA.",
+      "summary_paragraph": "Posted on Grants.gov by DOT-FHWA (opportunity 693JJ324NF00006). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "06/29/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/351567",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "FY 2024 &ndash; 2026 - Broad Agency Announcement (BAA) for the Office of Education",
+      "funder": "DOC-DOCNOAAERA",
+      "one_liner": "Grants.gov opportunity from DOC-DOCNOAAERA.",
+      "summary_paragraph": "Posted on Grants.gov by DOC-DOCNOAAERA (opportunity NOAA-SEC-OED-2024-28060). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "09/30/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/356002",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Regional Conservation Partnership Program (RCPP) Classic for federal fiscal year (FY) 2026",
+      "funder": "USDA-NRCS",
+      "one_liner": "Grants.gov opportunity from USDA-NRCS.",
+      "summary_paragraph": "Posted on Grants.gov by USDA-NRCS (opportunity USDA-NRCS-NHQ-RCPP-CLASSIC-26-NOFO000145). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/24/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362909",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Regional Conservation Partnership Program (RCPP) Alternative Funding Arrangements (AFA) for Federal fiscal year (FY) 2026",
+      "funder": "USDA-NRCS",
+      "one_liner": "Grants.gov opportunity from USDA-NRCS.",
+      "summary_paragraph": "Posted on Grants.gov by USDA-NRCS (opportunity USDA-NRCS-NHQ-RCPP-AFA-26-NOFO0001451). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/24/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362910",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "FY 2024 &ndash; 2026 Broad Agency Announcement (BAA), Office of Oceanic and Atmospheric Research (OAR)",
+      "funder": "DOC-DOCNOAAERA",
+      "one_liner": "Grants.gov opportunity from DOC-DOCNOAAERA.",
+      "summary_paragraph": "Posted on Grants.gov by DOC-DOCNOAAERA (opportunity NOAA-OAR-CPO-2024-28363). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "09/30/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/356669",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Technical Assistance and Training for Rural, Small and Tribal Municipalities and Wastewater Treatment Systems",
+      "funder": "EPA",
+      "one_liner": "Grants.gov opportunity from EPA.",
+      "summary_paragraph": "Posted on Grants.gov by EPA (opportunity EPA-OW-OWM-26-01). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/14/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362798",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "FY 2025 EDA Public Works and Economic Adjustment Assistance Programs",
+      "funder": "DOC-EDA",
+      "one_liner": "Grants.gov opportunity from DOC-EDA.",
+      "summary_paragraph": "Posted on Grants.gov by DOC-EDA (opportunity PWEAA2023). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/346815",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Readiness and Recreation Initiative (RARI) &ndash; Recurring 5 Year Notice",
+      "funder": "DOI-NPS",
+      "one_liner": "Grants.gov opportunity from DOI-NPS.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-NPS (opportunity P26AS00146). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "11/30/2030",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362717",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Defense Production Act Title III Expansion of Domestic Production Capability and Capacity",
+      "funder": "DOD-AFRL",
+      "one_liner": "Grants.gov opportunity from DOD-AFRL.",
+      "summary_paragraph": "Posted on Grants.gov by DOD-AFRL (opportunity FA8650-19-S-5010). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/12/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/318351",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Research and Development (RAD) Directed Energy (RD) University Assistance Instruments",
+      "funder": "DOD-AFRL",
+      "one_liner": "Grants.gov opportunity from DOD-AFRL.",
+      "summary_paragraph": "Posted on Grants.gov by DOD-AFRL (opportunity RDK-RAD-FOA-2024). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/18/2029",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/355499",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Fiscal Year 2026 Tribal Homeland Security Grant Program",
+      "funder": "DHS-DHS",
+      "one_liner": "Grants.gov opportunity from DHS-DHS.",
+      "summary_paragraph": "Posted on Grants.gov by DHS-DHS (opportunity DHS-26-GPD-150-00-99). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/24/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362927",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "WaterSMART Cooperative Watershed Management Program",
+      "funder": "DOI-BOR",
+      "one_liner": "Grants.gov opportunity from DOI-BOR.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-BOR (opportunity R26AS00349). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "02/15/2028",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362755",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Fiscal Year 2026 Intercity Passenger Rail Program",
+      "funder": "DHS-DHS",
+      "one_liner": "Grants.gov opportunity from DHS-DHS.",
+      "summary_paragraph": "Posted on Grants.gov by DHS-DHS (opportunity DHS-26-GPD-157-00-98). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/24/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362931",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Pioneering Aerospace Capabilities, Engineering and Research (PACER)",
+      "funder": "DOD-AFRL",
+      "one_liner": "Grants.gov opportunity from DOD-AFRL.",
+      "summary_paragraph": "Posted on Grants.gov by DOD-AFRL (opportunity FA2391-23-S-2403). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "05/10/2043",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/349554",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "WaterSMART Enhancing Water Resources Projects",
+      "funder": "DOI-BOR",
+      "one_liner": "Grants.gov opportunity from DOI-BOR.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-BOR (opportunity R26AS00017). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "09/08/2027",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362394",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Interdisciplinary Research Networks to Advance Biomedical Research on Resilience and Health Optimization",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity RFA-AT-26-001). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/360645",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Interdisciplinary Research to Understand the Complex Biology of Resilience to Alzheimer&rsquo;s and Related Dementias Disease Risk",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity PAR-26-067). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/360453",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "The 2027 YSEALI Regional Workshop: Securing Supply Chains",
+      "funder": "DOS-IDN",
+      "one_liner": "Grants.gov opportunity from DOS-IDN.",
+      "summary_paragraph": "Posted on Grants.gov by DOS-IDN (opportunity FY26-PAS-SURABAYA-01). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/31/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362900",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Exposomic Contributions to ADRD Pathology and Resilience",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity RFA-NS-26-031). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361451",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "CyberNext: Advance Cybersecurity and AI Readiness",
+      "funder": "DOS-ALB",
+      "one_liner": "Grants.gov opportunity from DOS-ALB.",
+      "summary_paragraph": "Posted on Grants.gov by DOS-ALB (opportunity AMERICANSPACESCYBERNEXT-2026). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362663",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Climate Program Office for FY 2012",
+      "funder": "DOC",
+      "one_liner": "Grants.gov opportunity from DOC.",
+      "summary_paragraph": "Posted on Grants.gov by DOC (opportunity NOAA-OAR-CPO-2012-2003041). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/103313",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Risk and Protective Factors of Family Health and Family Level Interventions (R01 Clinical Trial Optional)",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity PAR-25-317). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "05/08/2027",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/357713",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Alumni Engagement Innovation Fund 2024",
+      "funder": "DOS-LVA",
+      "one_liner": "Grants.gov opportunity from DOS-LVA.",
+      "summary_paragraph": "Posted on Grants.gov by DOS-LVA (opportunity 2024-01). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/350831",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "U.S. Embassy Praia Ambassador&rsquo;s Special Self-Help (SSH) Program",
+      "funder": "DOS-CPV",
+      "one_liner": "Grants.gov opportunity from DOS-CPV.",
+      "summary_paragraph": "Posted on Grants.gov by DOS-CPV (opportunity AFPRA-20-04). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/325599",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Security, Privacy, and Trust in Cyberspace",
+      "funder": "NSF",
+      "one_liner": "Grants.gov opportunity from NSF.",
+      "summary_paragraph": "Posted on Grants.gov by NSF (opportunity 25-515). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "09/28/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/357554",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Economic Advancement Grants for Local Empowerment (EAGLE)",
+      "funder": "HHS-ACF-ANA",
+      "one_liner": "Grants.gov opportunity from HHS-ACF-ANA.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-ACF-ANA (opportunity HHS-2026-ACF-ANA-NEG-0120). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361908",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Cybersecurity Innovation for Cyberinfrastructure",
+      "funder": "NSF",
+      "one_liner": "Grants.gov opportunity from NSF.",
+      "summary_paragraph": "Posted on Grants.gov by NSF (opportunity 25-531). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "01/20/2027",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/358004",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Disability and Rehabilitation Research Projects (DRRP) Program: Research on Resilience and Positive Mental Health Outcomes Among People with Spinal Cord Injury",
+      "funder": "HHS-ACL",
+      "one_liner": "Grants.gov opportunity from HHS-ACL.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-ACL (opportunity HHS-2026-ACL-NIDILRR-DPHF-0225). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362021",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "WaterSMART Drought Response Program",
+      "funder": "DOI-BOR",
+      "one_liner": "Grants.gov opportunity from DOI-BOR.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-BOR (opportunity R26AS00016). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361415",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "U.S. Embassy Cotonou PDS Request for Statements of Interest",
+      "funder": "DOS-BEN",
+      "one_liner": "Grants.gov opportunity from DOS-BEN.",
+      "summary_paragraph": "Posted on Grants.gov by DOS-BEN (opportunity PDS-RCS-FY25). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/358808",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Decentralized Artificial Intelligence through Controlled Emergence (DICE)",
+      "funder": "DOD-DARPA-IPTO",
+      "one_liner": "Grants.gov opportunity from DOD-DARPA-IPTO.",
+      "summary_paragraph": "Posted on Grants.gov by DOD-DARPA-IPTO (opportunity HR001126S0010). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/25/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362743",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Animal and Veterinary Innovation Centers (U18)",
+      "funder": "HHS-FDA",
+      "one_liner": "Grants.gov opportunity from HHS-FDA.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-FDA (opportunity PAR-24-251). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "05/12/2028",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/355044",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "FY 2026 Arctic Exchange Program",
+      "funder": "DOS-ECA",
+      "one_liner": "Grants.gov opportunity from DOS-ECA.",
+      "summary_paragraph": "Posted on Grants.gov by DOS-ECA (opportunity DFOP0018610). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/09/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362750",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Escape The Hack: Countering Cyber Scams with an Immersive Experience for Everyday Indonesians",
+      "funder": "DOS-IDN",
+      "one_liner": "Grants.gov opportunity from DOS-IDN.",
+      "summary_paragraph": "Posted on Grants.gov by DOS-IDN (opportunity PAS-JAKARTA-FY26-04). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/07/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362863",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Tech Innovation Lab",
+      "funder": "DOS-MAR",
+      "one_liner": "Grants.gov opportunity from DOS-MAR.",
+      "summary_paragraph": "Posted on Grants.gov by DOS-MAR (opportunity PAS-MOROCCO-FY26-03). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/13/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362392",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Tactical Behaviors for Autonomous Maneuver",
+      "funder": "DOD-AMC",
+      "one_liner": "Grants.gov opportunity from DOD-AMC.",
+      "summary_paragraph": "Posted on Grants.gov by DOD-AMC (opportunity W911NF-22-S-0011). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/339728",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "SEEDING CRITICAL ADVANCES FOR LEADING ENERGY TECHNOLOGIES WITH UNTAPPED POTENTIAL (SCALEUP) READY",
+      "funder": "DOE-ARPAE",
+      "one_liner": "Grants.gov opportunity from DOE-ARPAE.",
+      "summary_paragraph": "Posted on Grants.gov by DOE-ARPAE (opportunity DE-FOA-0003467). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "09/29/2029",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/356623",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Forecast to Publish a Notice of Funding Opportunity Announcement for Addressing Determinants of Health Disparities Among Rural Populations (R01 - Clinical Trial Optional)",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity FOR-MD-25-003). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/359138",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Intervention Research to Improve Native American Health (R34 Clinical Trial Optional)",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity PAR-25-378). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "01/07/2027",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/358373",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "NIEHS Worker Training Program&rsquo;s HAZMAT Training at DOE Nuclear Weapons Complex (UH4 Clinical Trial Not Allowed)",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity TEMP-31334). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/359970",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Geospace Cluster",
+      "funder": "NSF",
+      "one_liner": "Grants.gov opportunity from NSF.",
+      "summary_paragraph": "Posted on Grants.gov by NSF (opportunity PD-24-7789). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/356536",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Infrastructure Systems and People",
+      "funder": "NSF",
+      "one_liner": "Grants.gov opportunity from NSF.",
+      "summary_paragraph": "Posted on Grants.gov by NSF (opportunity PD-25-342Y). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/358397",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Accelerating the Pace of Substance Use Research Using Existing Data (R01 Clinical Trial Not Allowed)",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity RFA-DA-26-055). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "12/03/2027",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/357544",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Accelerating the Pace of Substance Use Research Using Existing Data (R21 Clinical Trial Not Allowed)",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity RFA-DA-26-056). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "12/03/2027",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/357545",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Centers without Walls for mechanisms of neurodegeneration in Alzheimer&rsquo;s disease-related dementias (ADRD)",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity RFA-NS-26-032). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361452",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Intervention Research to Improve Native American Health",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity PAR-28-016). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362315",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Child Abuse Prevention in Migrant and Tribal Communities",
+      "funder": "HHS-ACF-CB",
+      "one_liner": "Grants.gov opportunity from HHS-ACF-CB.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-ACF-CB (opportunity HHS-2026-ACF-ACYF-CA-0018). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361924",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Strategic Prevention Framework - Partnerships for Success for Communities/Tribes",
+      "funder": "HHS-SAMHS-SAMHSA",
+      "one_liner": "Grants.gov opportunity from HHS-SAMHS-SAMHSA.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-SAMHS-SAMHSA (opportunity SP-26-002). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/15/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361591",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "U.S.-ROK Strategic Partnership Initiatives",
+      "funder": "DOS-KOR",
+      "one_liner": "Grants.gov opportunity from DOS-KOR.",
+      "summary_paragraph": "Posted on Grants.gov by DOS-KOR (opportunity PD-SEOUL-FY26-02). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "06/30/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362407",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "CyberAICorps Scholarship for Service",
+      "funder": "NSF",
+      "one_liner": "Grants.gov opportunity from NSF.",
+      "summary_paragraph": "Posted on Grants.gov by NSF (opportunity 26-503). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/21/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361238",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Centers of Excellence in Healthcare Quality and Safety",
+      "funder": "HHS-CDC-NCEZID",
+      "one_liner": "Grants.gov opportunity from HHS-CDC-NCEZID.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-CDC-NCEZID (opportunity CDC-RFA-CK-27-0007). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361997",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Strategic Prevention Framework - Partnerships for Success for States",
+      "funder": "HHS-SAMHS-SAMHSA",
+      "one_liner": "Grants.gov opportunity from HHS-SAMHS-SAMHSA.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-SAMHS-SAMHSA (opportunity SP-26-003). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/15/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'flood resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361592",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "F26AS00069 Coastal Program FY26",
+      "funder": "DOI-FWS",
+      "one_liner": "Grants.gov opportunity from DOI-FWS.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-FWS (opportunity F26AS00069). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "09/30/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362470",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "F27AS00007 FY 2027 National Coastal Wetlands Conservation Grant Program Notice of Funding Opportunity",
+      "funder": "DOI-FWS",
+      "one_liner": "Grants.gov opportunity from DOI-FWS.",
+      "summary_paragraph": "Posted on Grants.gov by DOI-FWS (opportunity F27AS00007). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/09/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361851",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "FY 2026 Ocean Technology Transition Program",
+      "funder": "DOC-DOCNOAAERA",
+      "one_liner": "Grants.gov opportunity from DOC-DOCNOAAERA.",
+      "summary_paragraph": "Posted on Grants.gov by DOC-DOCNOAAERA (opportunity NOAA-NOS-IOOS-2026-32698). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/15/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361483",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Pacific Coastal Salmon Recovery Fund (Annual Appropriations and IIJA Funds)",
+      "funder": "DOC-DOCNOAAERA",
+      "one_liner": "Grants.gov opportunity from DOC-DOCNOAAERA.",
+      "summary_paragraph": "Posted on Grants.gov by DOC-DOCNOAAERA (opportunity NOAA-NMFS-WCRO-2026-33121). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "06/29/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362148",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "RESTORE Act Centers of Excellence Research Grants Program",
+      "funder": "USDOT-GCR",
+      "one_liner": "Grants.gov opportunity from USDOT-GCR.",
+      "summary_paragraph": "Posted on Grants.gov by USDOT-GCR (opportunity GR-RCE-25-001). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "10/31/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/356559",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Prevention, Control, and Mitigation of Harmful Algal Blooms Program",
+      "funder": "DOC-DOCNOAAERA",
+      "one_liner": "Grants.gov opportunity from DOC-DOCNOAAERA.",
+      "summary_paragraph": "Posted on Grants.gov by DOC-DOCNOAAERA (opportunity NOAA-NOS-NCCOS-2026-33016). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/09/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361503",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Harmful Algal Bloom Innovation Challenge: Toxin Detection in Seafood",
+      "funder": "DOC-DOCNOAAERA",
+      "one_liner": "Grants.gov opportunity from DOC-DOCNOAAERA.",
+      "summary_paragraph": "Posted on Grants.gov by DOC-DOCNOAAERA (opportunity NOAA-NOS-NCCOS-2026-32955). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/16/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361499",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "ERDC Broad Agency Announcement",
+      "funder": "DOD-COE-ERDC",
+      "one_liner": "Grants.gov opportunity from DOD-COE-ERDC.",
+      "summary_paragraph": "Posted on Grants.gov by DOD-COE-ERDC (opportunity W912HZ26S0001). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "01/01/2027",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/361080",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "NRL Long Range Broad Agency Announcement (BAA) for Basic and Applied Research",
+      "funder": "DOD-ONR-NRL",
+      "one_liner": "Grants.gov opportunity from DOD-ONR-NRL.",
+      "summary_paragraph": "Posted on Grants.gov by DOD-ONR-NRL (opportunity N00173-24-S-BA01). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "09/30/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/352741",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Fiscal Year 2027 National Sea Grant College Program Dean John A. Knauss Marine Policy Fellowship",
+      "funder": "DOC-DOCNOAAERA",
+      "one_liner": "Grants.gov opportunity from DOC-DOCNOAAERA.",
+      "summary_paragraph": "Posted on Grants.gov by DOC-DOCNOAAERA (opportunity NOAA-OAR-SG-2027-32433). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/26/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362719",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Marine Geology and Geophysics",
+      "funder": "NSF",
+      "one_liner": "Grants.gov opportunity from NSF.",
+      "summary_paragraph": "Posted on Grants.gov by NSF (opportunity PD-17-1620). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "unknown",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/295449",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Oceanographic Facilities and Equipment Support",
+      "funder": "NSF",
+      "one_liner": "Grants.gov opportunity from NSF.",
+      "summary_paragraph": "Posted on Grants.gov by NSF (opportunity 23-525). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "01/11/2027",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/344715",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Biological Oceanography",
+      "funder": "NSF",
+      "one_liner": "Grants.gov opportunity from NSF.",
+      "summary_paragraph": "Posted on Grants.gov by NSF (opportunity PD-23-1650). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "08/17/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'coastal resilience'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/344858",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Development of Collaborative Research Facilities or Research-Resource Facilities (C06 Clinical Trial Not Allowed)",
+      "funder": "HHS-NIH11",
+      "one_liner": "Grants.gov opportunity from HHS-NIH11.",
+      "summary_paragraph": "Posted on Grants.gov by HHS-NIH11 (opportunity PAR-26-106). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "01/25/2028",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'stormwater'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/359701",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "INFRA Grants",
+      "funder": "DOT-DOT X-50",
+      "one_liner": "Grants.gov opportunity from DOT-DOT X-50.",
+      "summary_paragraph": "Posted on Grants.gov by DOT-DOT X-50 (opportunity NSMFHP-26-INFRA). See the source page for full scope, eligibility, funding, and application details.",
+      "due_date": "07/15/2026",
+      "eligibility": "See source (US federal grant)",
+      "budget": "unknown",
+      "topics": [
+        "matched 'stormwater'"
+      ],
+      "source_url": "https://www.grants.gov/search-results-detail/362633",
+      "first_seen": "2026-06-25"
+    }
+  ]
+}
