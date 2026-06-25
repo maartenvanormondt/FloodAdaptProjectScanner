@@ -17,6 +17,7 @@ Typical flow:
 """
 
 import argparse
+import hashlib
 import json
 import os
 import sys
@@ -35,6 +36,13 @@ VERDICTS_API = os.environ.get("VERDICTS_API", "")
 
 def _norm(url: str) -> str:
     return (url or "").strip().rstrip("/").lower()
+
+
+def opp_id(o: dict) -> str:
+    """Stable per-opportunity id (title+funder) — the verdict key, so a generic
+    source_url shared by several leads doesn't make them share a verdict."""
+    base = (o.get("title", "") + "|" + o.get("funder", "")).strip().lower()
+    return hashlib.sha1(base.encode("utf-8")).hexdigest()[:12]
 
 
 def classify_region(o: dict) -> str:
@@ -118,7 +126,7 @@ def write_site(db: dict) -> None:
     opps = sorted(
         db["opportunities"], key=lambda o: o.get("first_seen", ""), reverse=True
     )
-    enriched = [{**o, "region": classify_region(o)} for o in opps]
+    enriched = [{**o, "region": classify_region(o), "id": opp_id(o)} for o in opps]
     # Embedded as a JS global so the page works from file:// without a server.
     with open(SITE_DATA, "w", encoding="utf-8") as f:
         f.write("window.OPPORTUNITIES = ")
@@ -137,8 +145,8 @@ def main() -> None:
         save_db(db)
         # Write only the new-this-run leads (minus any already rejected) for the
         # email digest to send.
-        rejected = {_norm(u) for u, v in fetch_verdicts().items() if v == "dislike"}
-        emailable = [o for o in new_records if _norm(o.get("source_url")) not in rejected]
+        rejected = {k for k, v in fetch_verdicts().items() if v == "dislike"}
+        emailable = [o for o in new_records if opp_id(o) not in rejected]
         os.makedirs(os.path.dirname(NEW_PATH), exist_ok=True)
         with open(NEW_PATH, "w", encoding="utf-8") as f:
             json.dump({"opportunities": emailable}, f, indent=2, ensure_ascii=False)

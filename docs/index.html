@@ -111,15 +111,15 @@
     } catch (e) { /* offline: keep the local copy */ }
   }
 
-  function setVerdict(url, v) {
-    if (verdicts[url] === v) delete verdicts[url];   // click again to clear
-    else verdicts[url] = v;
+  function setVerdict(key, v) {
+    if (verdicts[key] === v) delete verdicts[key];   // click again to clear
+    else verdicts[key] = v;
     cacheVerdicts();
     render();
     if (VERDICTS_API) {
       fetch(VERDICTS_API, {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ url, verdict: verdicts[url] || null }),
+        body: JSON.stringify({ url: key, verdict: verdicts[key] || null }),
       }).catch(() => {});
     }
   }
@@ -130,7 +130,8 @@
     eligibility: o.eligibility || "", budget: o.budget || "",
     topics: Array.isArray(o.topics) ? o.topics : [],
     source_url: o.source_url || "", first_seen: o.first_seen || "",
-    region: o.region || "",
+    region: o.region || "", id: o.id || "",
+    key: o.id || o.source_url || "",   // verdict key: per-opportunity id (URL fallback)
   }));
 
   const qEl = document.getElementById("q");
@@ -157,7 +158,7 @@
     const topic = topicEl.value, funder = funderEl.value, sort = sortEl.value;
 
     let rows = DATA.filter(o => {
-      const v = verdicts[o.source_url];
+      const v = verdicts[o.key];
       if (status === "active" && v === "dislike") return false;   // default: hide rejected
       if (status === "like" && v !== "like") return false;
       if (status === "dislike" && v !== "dislike") return false;
@@ -182,7 +183,7 @@
 
     countEl.textContent = `${rows.length} of ${DATA.length}`;
     resultsEl.innerHTML = rows.length ? rows.map(o => {
-      const v = verdicts[o.source_url];
+      const v = verdicts[o.key];
       const cls = v === "like" ? " liked" : v === "dislike" ? " disliked" : "";
       const u = esc(o.source_url);
       return `
@@ -201,8 +202,8 @@
           ${o.topics.map(t => `<span class="chip">${esc(t)}</span>`).join("")}
         </div>
         <div class="verdict">
-          <button class="vbtn${v === "like" ? " on-like" : ""}" data-url="${u}" data-v="like">👍 Promising</button>
-          <button class="vbtn${v === "dislike" ? " on-dislike" : ""}" data-url="${u}" data-v="dislike">👎 Reject</button>
+          <button class="vbtn${v === "like" ? " on-like" : ""}" data-key="${esc(o.key)}" data-v="like">👍 Promising</button>
+          <button class="vbtn${v === "dislike" ? " on-dislike" : ""}" data-key="${esc(o.key)}" data-v="dislike">👎 Reject</button>
         </div>
       </div>`;
     }).join("")
@@ -212,7 +213,7 @@
   resultsEl.addEventListener("click", e => {
     const btn = e.target.closest("button[data-v]");
     if (!btn) return;
-    setVerdict(btn.dataset.url, btn.dataset.v);
+    setVerdict(btn.dataset.key, btn.dataset.v);
   });
 
   [qEl, statusEl, regionEl, topicEl, funderEl, sortEl].forEach(el => el.addEventListener("input", render));

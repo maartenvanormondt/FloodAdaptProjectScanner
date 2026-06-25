@@ -17,6 +17,7 @@ Run:
 """
 
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -137,6 +138,12 @@ def _domain(url: str) -> str:
     return netloc[4:] if netloc.startswith("www.") else netloc
 
 
+def opp_id(o: dict) -> str:
+    """Stable per-opportunity id (title+funder) — must match build_site.opp_id."""
+    base = (o.get("title", "") + "|" + o.get("funder", "")).strip().lower()
+    return hashlib.sha1(base.encode("utf-8")).hexdigest()[:12]
+
+
 def learn_sources(opportunities: list, learned: dict) -> None:
     """Record the domains of found opportunities so future runs check them first."""
     domains = learned.setdefault("domains", {})
@@ -176,11 +183,11 @@ def load_db_opps() -> list:
 
 
 def build_preferences(verdicts: dict, db_opps: list, limit: int = 15):
-    """Turn shared verdicts into (liked, rejected) example label lists."""
-    by_url = {_norm(o.get("source_url")): o for o in db_opps}
+    """Turn shared verdicts (keyed by opp_id) into (liked, rejected) label lists."""
+    by_id = {opp_id(o): o for o in db_opps}
     liked, rejected = [], []
-    for url, v in verdicts.items():
-        o = by_url.get(_norm(url))
+    for key, v in verdicts.items():
+        o = by_id.get(key)
         if not o:
             continue
         label = f"{o.get('title', '?')} — {o.get('funder', '?')}"
@@ -193,10 +200,10 @@ def build_preferences(verdicts: dict, db_opps: list, limit: int = 15):
 
 def rejected_domains(verdicts: dict, db_opps: list) -> set:
     """Domains that mostly produce rejected leads, to stop promoting as 'fruitful'."""
-    by_url = {_norm(o.get("source_url")): o for o in db_opps}
+    by_id = {opp_id(o): o for o in db_opps}
     likes, dislikes = {}, {}
-    for url, v in verdicts.items():
-        o = by_url.get(_norm(url))
+    for key, v in verdicts.items():
+        o = by_id.get(key)
         if not o:
             continue
         d = _domain(o.get("source_url", ""))
@@ -278,6 +285,8 @@ def build_prompt(known_sources: list, liked=None, rejected=None, demote=None) ->
         "every field. Rules:\n"
         "  - Only include opportunities you actually found and can cite with a "
         "real source_url. Do NOT invent opportunities.\n"
+        "  - source_url must link to the SPECIFIC opportunity / call page, not a "
+        "generic homepage or grants-listing page.\n"
         "  - If a field (budget, due_date, eligibility) is not stated, use "
         '"unknown" rather than guessing.\n'
         "  - one_liner: one short sentence. summary_paragraph: 3-5 sentences.\n"
