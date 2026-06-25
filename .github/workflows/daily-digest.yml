@@ -42,6 +42,8 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          # Recipients kept out of the public repo (one per line: "email | greeting").
+          RECIPIENTS: ${{ secrets.RECIPIENTS }}
         # The script auto-picks Resend if RESEND_API_KEY is set, otherwise SMTP.
         run: python email_digest.py --opps data/opportunities.json
 

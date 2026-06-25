@@ -1,0 +1,6 @@
+# Copy this to "recipients.yaml" (git-ignored) for LOCAL runs.
+# For GitHub Actions, don't use this file — set a RECIPIENTS secret instead
+# (see README). Addresses then never appear in the public repo.
+recipients:
+  - email: you@example.com
+    greeting: "Dear You,"

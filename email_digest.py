@@ -53,6 +53,28 @@ INTRO = (
 
 
 def load_recipients(path: str) -> list:
+    # Prefer the RECIPIENTS env var (e.g. a GitHub Actions secret) so addresses
+    # never live in the (public) repo. One recipient per line: "email | greeting".
+    env = os.environ.get("RECIPIENTS")
+    if env and env.strip():
+        recipients = []
+        for line in env.splitlines():
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            email, _, greeting = line.partition("|")
+            recipients.append(
+                {"email": email.strip(), "greeting": greeting.strip() or "Hello,"}
+            )
+        if recipients:
+            return recipients
+
+    # Fallback: a local recipients.yaml (git-ignored, so it isn't published).
+    if not os.path.exists(path):
+        raise SystemExit(
+            f"No recipients. Set the RECIPIENTS env var, or create {path} "
+            "(copy recipients.yaml.example)."
+        )
     with open(path, encoding="utf-8") as f:
         data = yaml.safe_load(f) or {}
     recipients = data.get("recipients", [])
@@ -111,8 +133,19 @@ def build_digest_body(opps_path: str | None) -> str:
     return "\n".join(lines)
 
 
+# Public web viewer link shown in every email. Override with the SITE_URL env
+# var (e.g. if you host the site somewhere other than GitHub Pages).
+SITE_URL = os.environ.get(
+    "SITE_URL", "https://maartenvanormondt.github.io/FloodAdaptProjectScanner/"
+)
+
+
 def compose(greeting: str, joke: str, body: str) -> str:
-    return "\n".join([greeting, "", joke, "", INTRO, "", body, "", "— Grant Seeker"])
+    parts = [greeting, "", joke, "", INTRO, "", body]
+    if SITE_URL:
+        parts += ["", f"You can view the full list of announcements here: {SITE_URL}"]
+    parts += ["", "— Grant Seeker"]
+    return "\n".join(parts)
 
 
 def _send_via_resend(to_addr: str, subject: str, body: str, api_key: str, sender: str) -> None:

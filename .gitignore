@@ -2,6 +2,8 @@
 .env
 *.key
 secret.bat
+# local recipient list; use the RECIPIENTS secret in CI
+recipients.yaml
 
 # local output from the POC
 out.json

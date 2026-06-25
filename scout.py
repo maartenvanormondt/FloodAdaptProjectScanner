@@ -22,10 +22,15 @@ import sys
 
 import anthropic
 
-# Models tried in order. If the first is overloaded (HTTP 529) or erroring,
-# the script falls back to the next — Sonnet usually has spare capacity when
-# Opus is saturated, and is plenty capable for find-and-summarize.
-MODELS = ["claude-opus-4-8", "claude-sonnet-4-6"]
+# Models tried in order. Sonnet first: it's much faster and cheaper than Opus
+# and plenty capable for find-and-summarize, so the daily run finishes quickly.
+# Opus is only the fallback if Sonnet is overloaded (HTTP 529).
+MODELS = ["claude-sonnet-4-6", "claude-opus-4-8"]
+
+# Max web searches per run. Each search is a sequential round-trip, so this is
+# the main lever on how long "find opportunities" takes. Raise for more
+# coverage, lower for speed.
+MAX_SEARCHES = 6
 
 # What we're hunting for. Edit freely — this is the whole topic definition.
 TOPICS = [
@@ -126,7 +131,7 @@ def _search(client: anthropic.Anthropic, model: str) -> str:
     empty result — so we let it search and write notes, then structure them in
     phase 2.
     """
-    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 10}]
+    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": MAX_SEARCHES}]
     messages = [{"role": "user", "content": PROMPT}]
 
     # Server-side web search loops on Anthropic's side; stop_reason="pause_turn"
