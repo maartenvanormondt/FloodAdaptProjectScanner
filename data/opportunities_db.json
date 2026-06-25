@@ -739,6 +739,72 @@
       ],
       "source_url": "https://housing-infrastructure.canada.ca/prog/index-eng.html",
       "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Florida DEP — Resilient Florida Program 2026 Application Cycle",
+      "funder": "Florida Department of Environmental Protection (DEP)",
+      "one_liner": "Florida's primary state grant program funds local vulnerability assessments, resilience planning, and capital infrastructure projects addressing flooding and sea level rise.",
+      "summary_paragraph": "The Resilient Florida Program includes grants available to counties, municipalities, special districts, and regional resilience entities, with eligible applicants able to receive funding to analyze and plan for vulnerabilities as well as implement projects for adaptation and mitigation. The Program is hosting virtual office hours from April through June 2026 to assist prospective applicants for the 2026 application cycle, with the Planning and Policy Team available for eligibility checks, draft application review, and GIS assistance on Thursdays 9:00–11:00 a.m. EDT through June 25, 2026. The prior cycle's portal was open for submittals from July 7, 2025 to September 1, 2025 for Planning Grants and Implementation Grants to be included in the Fiscal Year 2026–27 Statewide Flooding and Sea Level Rise Resilience Plan. The 2026 cycle is expected to follow a similar July–September window.",
+      "due_date": "unknown",
+      "eligibility": "Florida counties, municipalities, special districts, regional resilience entities",
+      "budget": "unknown",
+      "topics": [
+        "Coastal flooding",
+        "Flood resilience & adaptation",
+        "Nature-based solutions",
+        "Flood risk mapping"
+      ],
+      "source_url": "https://floridadep.gov/rcp/resilient-florida-program/content/resilient-florida-program-applicants",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Horizon Europe — Restore Our Ocean and Waters Mission (2027 Call Opening 2026)",
+      "funder": "European Commission (Horizon Europe)",
+      "one_liner": "Upcoming Horizon Europe calls target increasing riparian and coastal-area resilience to climate change, including waterfront cities and islands.",
+      "summary_paragraph": "Upcoming calls include HORIZON-MISS-2027-03-OCEAN-01 on 'Increasing riparian and coastal areas resilience to climate change, including in waterfront cities and islands' and HORIZON-MISS-2027-03-OCEAN-05 on large-scale demonstration of protection, restoration, and management of blue forest ecosystems across European sea basins. A total of 30 consortia have already signed grant agreements under the latest Horizon Europe Missions calls, contributing to climate adaptation and the restoration of oceans and waters missions. The Mission engages a wide range of stakeholders, including public and private organisations, national, regional, and local actors, coastal and riparian communities, businesses, and citizens. Partner-brokerage events to build consortia are currently active.",
+      "due_date": "unknown",
+      "eligibility": "Consortia of research institutions, local/coastal authorities, businesses, NGOs in EU member states and associated countries",
+      "budget": "unknown",
+      "topics": [
+        "Coastal flooding",
+        "Nature-based solutions for flood mitigation",
+        "Flood resilience & adaptation"
+      ],
+      "source_url": "https://projects.research-and-innovation.ec.europa.eu/en/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/eu-missions-horizon-europe/restore-our-ocean-and-waters/calls-proposals",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "EU LIFE Programme — Calls for Proposals 2026",
+      "funder": "European Climate, Infrastructure and Environment Executive Agency (CINEA)",
+      "one_liner": "The EU LIFE Programme's 2026 calls include dedicated funding tracks for nature-based solutions, climate adaptation, and ecosystem restoration that can address flood mitigation.",
+      "summary_paragraph": "The LIFE Programme is the EU's dedicated funding instrument for environment, nature, and climate action. The LIFE 2026 Calls for Proposals are now published in the EU Funding & Tenders Portal, with submission deadlines listed for all calls. LIFE supports projects that implement, demonstrate, and promote innovative techniques and approaches across nature & biodiversity, circular economy, climate change mitigation, and climate change adaptation sub-programmes. Flood-relevant topics typically fall under the Climate Change Adaptation and Nature & Biodiversity sub-programmes, covering nature-based solutions, wetland restoration, and urban stormwater management.",
+      "due_date": "unknown",
+      "eligibility": "Public authorities, NGOs, private companies, research bodies in EU member states and some non-EU countries",
+      "budget": "unknown",
+      "topics": [
+        "Nature-based solutions",
+        "Coastal flooding",
+        "Flood resilience & adaptation",
+        "Inland/riverine flooding"
+      ],
+      "source_url": "https://cinea.ec.europa.eu/life-calls-proposals-2026_en",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Horizon Europe — Land, Oceans & Water for Climate Action (Cluster 6, 2026 Call)",
+      "funder": "European Research Executive Agency (REA)",
+      "one_liner": "Horizon Europe Cluster 6 funds research on strengthening water resilience to climate and socio-economic impacts, including flood risk in river systems.",
+      "summary_paragraph": "The Horizon Europe 2025 two-stage call features one topic on 'Strengthening water resilience to climate and socio-economic impacts,' with the second stage open for submission as of February 18, 2026. The Horizon Europe 2026 call for proposals opened February 12, 2026, with topics including effective climate change adaptation in agriculture and forestry, and five topics covering safeguarding global ocean health and strengthening resilience of water systems. All funding information and application procedures are accessible on the EU Funding and Tenders Portal.",
+      "due_date": "unknown",
+      "eligibility": "Research consortia, public bodies, technology providers in EU member states and associated countries",
+      "budget": "unknown",
+      "topics": [
+        "Inland/riverine flooding",
+        "Flood risk mapping & modelling",
+        "Flood resilience & adaptation"
+      ],
+      "source_url": "https://rea.ec.europa.eu/funding-and-grants/horizon-europe-cluster-6-food-bioeconomy-natural-resources-agriculture-and-environment/land-oceans-and-water-climate-action_en",
+      "first_seen": "2026-06-25"
     }
   ]
 }
