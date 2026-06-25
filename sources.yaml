@@ -1,0 +1,32 @@
+# Known, often-fruitful places to look for flood-related funding.
+# These are fed into the search prompt as "check these first, then hunt for new
+# ones." The agent also LEARNS new fruitful sources over time and stores them in
+# data/sources_db.json — so this list is a seed, not the whole picture.
+# Add/remove freely.
+sources:
+  - name: Grants.gov (US federal grants)
+    url: https://www.grants.gov
+  - name: SAM.gov (US federal contracts / RFPs / RFIs)
+    url: https://sam.gov
+  - name: FEMA grants (BRIC, Flood Mitigation Assistance)
+    url: https://www.fema.gov/grants
+  - name: NOAA grants
+    url: https://www.noaa.gov/grants
+  - name: US EPA grants
+    url: https://www.epa.gov/grants
+  - name: National Science Foundation (NSF)
+    url: https://www.nsf.gov/funding
+  - name: EU Funding & Tenders Portal (Horizon Europe, LIFE)
+    url: https://ec.europa.eu/info/funding-tenders/opportunities/portal
+  - name: Interreg (European territorial cooperation)
+    url: https://www.interregeurope.eu
+  - name: UK Research and Innovation (UKRI)
+    url: https://www.ukri.org/opportunity
+  - name: Netherlands Enterprise Agency (RVO)
+    url: https://www.rvo.nl/subsidies-financiering
+  - name: World Bank / GFDRR (disaster risk)
+    url: https://www.gfdrr.org
+  - name: Green Climate Fund
+    url: https://www.greenclimate.fund
+  - name: Adaptation Fund
+    url: https://www.adaptation-fund.org

@@ -51,6 +51,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/opportunities.json data/opportunities_db.json docs/opportunities.js
+          git add data/opportunities.json data/opportunities_db.json data/sources_db.json docs/opportunities.js
           git commit -m "Update opportunities $(date -u +%Y-%m-%d)" || echo "no changes to commit"
           git push || echo "nothing to push"
