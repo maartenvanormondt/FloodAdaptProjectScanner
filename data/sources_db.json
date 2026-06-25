@@ -1,12 +1,12 @@
 {
   "domains": {
     "fema.gov": {
-      "count": 4,
+      "count": 6,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
     "nfwf.org": {
-      "count": 2,
+      "count": 3,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
@@ -26,7 +26,7 @@
       "last_seen": "2026-06-25"
     },
     "research-and-innovation.ec.europa.eu": {
-      "count": 2,
+      "count": 3,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
@@ -41,7 +41,7 @@
       "last_seen": "2026-06-25"
     },
     "grants.gov": {
-      "count": 204,
+      "count": 231,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
@@ -56,6 +56,46 @@
       "last_seen": "2026-06-25"
     },
     "www2.fundsforngos.org": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "floridadep.gov": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "dec.ny.gov": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "nfuonline.com": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "projects.research-and-innovation.ec.europa.eu": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "ec.europa.eu": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "adb.org": {
+      "count": 2,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "greenclimate.fund": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "housing-infrastructure.canada.ca": {
       "count": 1,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"

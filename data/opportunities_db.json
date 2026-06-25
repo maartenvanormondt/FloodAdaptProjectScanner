@@ -585,6 +585,160 @@
       ],
       "source_url": "https://www2.fundsforngos.org/environment-2/open-call-climate-change-adaptation-under-eu-life-programme-2026/",
       "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Florida DEP — Resilient Florida Program (2026 Application Cycle)",
+      "funder": "Florida Department of Environmental Protection (DEP)",
+      "one_liner": "Florida's flagship coastal and flood resilience grant program opens for its 2026 cycle in July, funding both planning and implementation projects addressing flooding and sea level rise.",
+      "summary_paragraph": "The Resilient Florida Program application portal will be open for formal submittal from July 1 to September 1, 2026, for planning grants and the Fiscal Year 2027–28 Statewide Flooding and Sea Level Rise Resilience Plan. Eligible applicants include counties, municipalities, special districts with specific responsibilities, and regional resilience entities, who may receive funding to analyze vulnerabilities as well as implement adaptation and mitigation projects. The program is hosting virtual office hours from April through June 2026 to assist prospective applicants with eligibility checks, draft application review, and GIS assistance. The 2026 portal opened for drafting on April 1, 2026, giving applicants lead time to prepare full submissions before the formal window opens.",
+      "due_date": "2026-09-01",
+      "eligibility": "Florida counties, municipalities, special districts with specific responsibilities, and regional resilience entities",
+      "budget": "unknown",
+      "topics": [
+        "Coastal flooding",
+        "flood resilience & adaptation",
+        "nature-based solutions",
+        "flood risk mapping"
+      ],
+      "source_url": "https://floridadep.gov/rcp/resilient-florida-program/content/resilient-florida-program-resources",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "New York State DEC — Resilient NY Watershed Grant (RWG)",
+      "funder": "New York State Department of Environmental Conservation (NYSDEC)",
+      "one_liner": "New York's Resilient NY Watershed Grant offers a share of $100 million to communities for climate resiliency and flood-risk reduction projects, with a June 26 deadline.",
+      "summary_paragraph": "Unprecedented storms are becoming more common each year, resulting in significant flooding in communities across New York State; in response, the NY Department of Environmental Conservation established the Resilient NY program in November 2018. A combined $100 million for climate resiliency projects is available through RWG and NYS Department of State programs. The CFA application deadline is Friday, June 26, 2026, at 4:00 p.m.; a webinar was held in April 2026 covering funding opportunities through RWG and NYSDOS' Community Resilience and Flood Risk Reduction Grants. Watersheds with significant flooding and related hazards to public safety can be enrolled in the Resilient NY program to receive a Flood Mitigation & Resilience Report.",
+      "due_date": "2026-06-26",
+      "eligibility": "Local governments, municipalities, and watershed organizations in New York State",
+      "budget": "$100 million combined across RWG and NYS DOS programs",
+      "topics": [
+        "Inland/riverine flooding",
+        "pluvial/stormwater flooding",
+        "flood resilience & adaptation",
+        "flood risk mapping & modelling"
+      ],
+      "source_url": "https://dec.ny.gov/environmental-protection/water/water-quantity/resilient-ny",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "UK Environment Agency — Flood & Coastal Erosion Risk Management (FCERM) Grant-in-Aid Investment Programme",
+      "funder": "UK Environment Agency (EA) / Defra",
+      "one_liner": "England's new 10-year FCERM investment programme just opened, with at least £300 million earmarked for natural flood management and project submissions accepted from July 2026.",
+      "summary_paragraph": "The next FCERM investment programme opened on April 1, 2026, with the Environment Agency hosting webinars starting in early May to explain the process and expecting project submissions from July 2026 onward. There is a strong focus on natural flood management (NFM) as a way of reducing flood risk while delivering multiple benefits; a minimum of 3% of FCERM investment will go towards NFM over the first three years and a minimum of 4% over 10 years, amounting to at least £300 million in NFM funding. The guidance now also includes non-Risk Management Authorities, meaning NGOs, landowners, and other non-traditional bodies can apply for the first time. Standalone NFM projects may include river and floodplain management, woodland management, run-off management, and coast and estuary management.",
+      "due_date": "rolling",
+      "eligibility": "Risk Management Authorities (local authorities, water companies, internal drainage boards) and, for NFM projects, non-RMAs including NGOs and landowners in England",
+      "budget": "Minimum £300 million ring-fenced for natural flood management over 10 years; programme is multi-billion overall",
+      "topics": [
+        "Coastal flooding",
+        "inland/riverine flooding",
+        "nature-based solutions",
+        "flood resilience & adaptation"
+      ],
+      "source_url": "https://www.nfuonline.com/news/flood-and-coastal-erosion-risk-management/",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "EU LIFE Programme — Climate Change Adaptation (LIFE-2025-SAP-CLIMA-CCA)",
+      "funder": "European Commission (LIFE Programme)",
+      "one_liner": "The EU LIFE programme's climate adaptation strand funds nature-based solutions for flood mitigation in rural, urban, and coastal settings across Europe.",
+      "summary_paragraph": "Projects supported under this call should foster the use of nature-based solutions to improve climate resilience, particularly in coastal zones, wetlands, estuaries, and riparian areas; actions may include restoring degraded habitats, using natural infrastructure to manage climate risks like flooding or sea-level rise, and promoting biodiversity-based adaptation. The call also covers water management projects that protect and restore wetlands, ensure a stable freshwater supply, and implement measures to reduce water use while maintaining water quality. The LIFE programme has a long track record of funding practical, on-the-ground adaptation projects across EU member states, and this strand is specifically designed to move nature-based flood solutions from pilot to scale. Typical LIFE grants range from approximately €1 million to €10 million per project.",
+      "due_date": "unknown",
+      "eligibility": "Public bodies, NGOs, and private companies; typically 2 or more partners including at least one EU entity",
+      "budget": "unknown (typically €1M–€10M range for LIFE grants)",
+      "topics": [
+        "Coastal flooding",
+        "nature-based solutions",
+        "flood resilience & adaptation",
+        "inland/riverine flooding"
+      ],
+      "source_url": "https://projects.research-and-innovation.ec.europa.eu/en/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/eu-missions-horizon-europe/restore-our-ocean-and-waters/life-2025-sap-clima-cca-climate-change-adaptation",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Horizon Europe — Innovative Solutions for the European Water Resilience Strategy (HORIZON-CL6-2027-02-CLIMATE-01)",
+      "funder": "European Commission / Horizon Europe",
+      "one_liner": "A forward-looking Horizon Europe two-stage call seeking innovations in flood protection, water cycle restoration, and drought/flood adaptation for implementation at real-world scale.",
+      "summary_paragraph": "This EU funding call covers innovative solutions to implement the European Water Resilience Strategy, including development, testing, and validation of technologies and approaches for the restoration of the water cycle, water efficiency, drought adaptation, flood protection, and ensuring clean and affordable water supply. Successful applications require the involvement of at least three independent partners from different countries, the application of the multi-actor approach, and compliance with Horizon Europe financial and operational eligibility criteria. The call supports consortia implementing novel or disruptive approaches such as source-to-sea methods, digital monitoring systems, circular water use, and participatory water management, engaging municipal administrations, water authorities, farmers, and NGOs. Deadlines are Stage 1 on April 8, 2027, and Stage 2 on September 14, 2027, providing ample lead time for consortium formation.",
+      "due_date": "2027-04-08",
+      "eligibility": "Consortia of at least 3 independent partners from different countries; eligible entities include universities, industry, municipal authorities, water utilities, and NGOs",
+      "budget": "Approximately €5.5 million per project",
+      "topics": [
+        "Flood risk mapping & modelling",
+        "inland/riverine flooding",
+        "coastal flooding",
+        "nature-based solutions",
+        "flood resilience & adaptation"
+      ],
+      "source_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL6-2027-02-CLIMATE-01-two-stage",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "ADB — Climate Change Fund (CCF): Adaptation Window",
+      "funder": "Asian Development Bank (ADB)",
+      "one_liner": "ADB's Climate Change Fund provides rolling grant financing for climate adaptation projects — including flood resilience — across all developing member countries in Asia and the Pacific.",
+      "summary_paragraph": "The Climate Change Fund (CCF) was established in May 2008 to facilitate greater investments in developing member countries to address the causes and consequences of climate change, playing a key role in mainstreaming climate actions in ADB operations. The fund provides financing through grant components of investments, technical assistance (stand-alone and linked to loans), and direct charge; it has three components: adaptation, clean energy development, and REDD+ and land use. Applications are reviewed in six batches per year, due on January 31, March 31, May 31, July 31, September 30, and November 30, with direct charge applications reviewed on an ongoing basis. ADB promotes disaster risk reduction and climate change adaptation by investing in flood control, water supply, transport, and energy infrastructure that withstands disasters and climate change.",
+      "due_date": "rolling",
+      "eligibility": "ADB Developing Member Countries (DMCs); proposals must be submitted through ADB project teams",
+      "budget": "Total fund approximately $98 million (ADB net income); individual grant amounts vary",
+      "topics": [
+        "Coastal flooding",
+        "inland/riverine flooding",
+        "flood resilience & adaptation",
+        "nature-based solutions"
+      ],
+      "source_url": "https://www.adb.org/what-we-do/funds/climate-change-fund",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Green Climate Fund (GCF) — Adaptation Portfolio (Rolling / Readiness Programme)",
+      "funder": "Green Climate Fund (GCF)",
+      "one_liner": "The GCF's adaptation portfolio funds flood and coastal resilience projects in developing nations on a rolling basis, with a streamlined pathway for projects under $10 million.",
+      "summary_paragraph": "The GCF's Readiness Programme and Project Preparation Facility are available on a rolling basis to support development of adaptation project concept notes, feasibility studies, and full project proposals. The Simplified Approval Process (SAP) provides a route for smaller adaptation project proposals up to USD 10 million to be approved more quickly. Adaptation needs are coming into sharp focus as increasing numbers of people worldwide are affected by higher frequency and severity of water-related disasters, such as droughts, floods, tropical cyclones, and storm surges. The Fund aims for a 50:50 balance between mitigation and adaptation investments over time, with a floor of 50% of the adaptation allocation for particularly vulnerable countries including Least Developed Countries, Small Island Developing States, and African States.",
+      "due_date": "rolling",
+      "eligibility": "National Designated Authorities (NDAs) and Accredited Entities in GCF-eligible developing countries",
+      "budget": "Up to $10 million via Simplified Approval Process; larger projects have no stated cap",
+      "topics": [
+        "Coastal flooding",
+        "inland/riverine flooding",
+        "flood resilience & adaptation",
+        "nature-based solutions"
+      ],
+      "source_url": "https://www.greenclimate.fund/theme/adaptation",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "ADB — Integrated Flood Resilience and Adaptation Project (Philippines, Phase 1)",
+      "funder": "Asian Development Bank (ADB)",
+      "one_liner": "ADB's active flood resilience project in the Philippines offers procurement and technical assistance opportunities for firms and agencies working on riverine flood infrastructure and community-based flood risk management.",
+      "summary_paragraph": "The Integrated Flood Resilience and Adaptation Project Phase 1 will reduce climate risks and enable adaptation in three major river basins in the Philippines — Abra, Ranao/Agus, and Tagum-Libuganon — by improving strategic flood risk management planning, constructing flood protection infrastructure, and strengthening community-based flood risk management. The Philippine Development Plan 2023–2028 calls for upgrading and expanding flood control infrastructure combined with nature-based solutions, enhancing institutional capacities and decision support systems, and prioritizing support to highly vulnerable local government units. The project river basins are subject to high climate hazards including rising sea levels, increasing precipitation intensity, and more severe onshore storms, which combined will further increase flood risks. Firms and researchers can engage through ADB's Business Opportunities portal for procurement notices linked to this project.",
+      "due_date": "rolling",
+      "eligibility": "Philippine national government agencies, local governments, and contractors/consultants responding to ADB procurement notices",
+      "budget": "unknown",
+      "topics": [
+        "Inland/riverine flooding",
+        "flood risk mapping & modelling",
+        "flood resilience & adaptation",
+        "nature-based solutions"
+      ],
+      "source_url": "https://www.adb.org/projects/51294-001/main",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "Canada — Build Communities Strong Fund (Infrastructure Canada) — Climate Adaptation Stream",
+      "funder": "Housing, Infrastructure and Communities Canada",
+      "one_liner": "Canada's new Build Communities Strong Fund — the successor to DMAF and ICIP — launches in 2026–27 with $51 billion over 10 years for infrastructure including climate adaptation and flood resilience projects.",
+      "summary_paragraph": "The Build Communities Strong Fund will invest in a wide range of infrastructure projects supporting economic prosperity, housing, education, health, transit, and climate adaptation, providing $51 billion over 10 years starting in 2026–27, and $3 billion per year ongoing to support new and renewed public infrastructure. Canada's predecessor program, the Disaster Mitigation and Adaptation Fund (DMAF), is now fully allocated and closed, making this new fund the large-scale successor for flood-related infrastructure investment. Canadian municipalities and provinces working on flood infrastructure should monitor Infrastructure Canada's website closely for the new program's intake guidelines and deadlines. Program details, including specific application windows and eligibility criteria for the climate adaptation stream, are forthcoming.",
+      "due_date": "unknown",
+      "eligibility": "Provinces, territories, municipalities, and Indigenous communities in Canada",
+      "budget": "$51 billion over 10 years; $3 billion per year ongoing",
+      "topics": [
+        "Flood resilience & adaptation",
+        "coastal flooding",
+        "inland/riverine flooding",
+        "nature-based solutions"
+      ],
+      "source_url": "https://housing-infrastructure.canada.ca/prog/index-eng.html",
+      "first_seen": "2026-06-25"
     }
   ]
 }
