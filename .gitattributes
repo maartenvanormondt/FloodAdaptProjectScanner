@@ -1,0 +1,12 @@
+# The daily GitHub Action regenerates and commits these files. They change on
+# both ends (CI + local), so on a merge they would conflict constantly.
+# Mark them to always take the INCOMING (CI / remote) version instead of
+# producing conflict markers.
+#
+# This needs the "theirs" merge driver registered once per clone (see README /
+# the message below):
+#   git config merge.theirs.name "take incoming version"
+#   git config merge.theirs.driver "cp -f %B %A"
+data/opportunities_db.json merge=theirs
+data/sources_db.json        merge=theirs
+docs/opportunities.js       merge=theirs

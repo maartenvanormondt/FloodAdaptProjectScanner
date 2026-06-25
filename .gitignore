@@ -9,6 +9,8 @@ recipients.yaml
 out.json
 results.json
 data/new.json
+# transient per-run scout output (merged into the DB; not worth tracking)
+data/opportunities.json
 
 # python
 __pycache__/
