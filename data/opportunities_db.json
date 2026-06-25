@@ -1571,6 +1571,70 @@
       ],
       "source_url": "https://www.grants.gov/search-results-detail/362633",
       "first_seen": "2026-06-25"
+    },
+    {
+      "title": "EPA Sewer Overflow and Stormwater Reuse Municipal Grants (OSG Program)",
+      "funder": "U.S. Environmental Protection Agency (EPA), administered through states",
+      "one_liner": "EPA program funding green and gray infrastructure to reduce stormwater runoff, sewer overflows, and urban flooding.",
+      "summary_paragraph": "The EPA's Sewer Overflow and Stormwater Reuse Municipal Grants Program helps communities and states reduce water pollution caused by stormwater and sewer runoff, funding green and gray infrastructure projects that strengthen stormwater collection systems, improve flood resilience, and address water quality issues. The OSG program is administered by states and deadlines may differ; applicants should approach their state Clean Water State Revolving Fund program or EPA Regional Office for more information on specific deadlines. This program is particularly relevant for urban and pluvial flood risk reduction.",
+      "due_date": "rolling",
+      "eligibility": "Municipalities and states",
+      "budget": "unknown",
+      "topics": [
+        "Inland/pluvial (stormwater) flooding",
+        "Flood resilience & adaptation"
+      ],
+      "source_url": "https://floodcoalition.org/fff-resource/osg/",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "EPA Water Infrastructure Finance and Innovation Act (WIFIA) Program",
+      "funder": "U.S. Environmental Protection Agency (EPA)",
+      "one_liner": "EPA's flexible, low-cost federal loan program for significant water and stormwater infrastructure projects that enhance community flood resilience.",
+      "summary_paragraph": "The Water Infrastructure Finance and Innovation Act (WIFIA) accelerates investment in water infrastructure by offering flexible financing for significant drinking water and wastewater infrastructure projects, providing long-term loans to help communities implement critical water infrastructure at lower cost. EPA's WIFIA program has announced $6.5 billion in WIFIA funding available for water systems, with an additional $550 million available to states through the State WIFIA (SWIFIA) program. Letters of Interest are accepted on a continuous, rolling basis. Projects eligible include stormwater runoff mitigation and flood-resilient water infrastructure.",
+      "due_date": "rolling",
+      "eligibility": "Water utilities, municipalities, states, and other eligible water infrastructure project sponsors",
+      "budget": "$6.5 billion in WIFIA funding; additional $550 million via State WIFIA (SWIFIA)",
+      "topics": [
+        "Inland/pluvial (stormwater) flooding",
+        "Flood resilience & adaptation"
+      ],
+      "source_url": "https://www.epa.gov/waterutilityresponse/funding-water-sector-resilience",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "FEMA FY2026 Pre-Disaster Mitigation (PDM) Grant Program",
+      "funder": "FEMA (U.S. Federal Emergency Management Agency)",
+      "one_liner": "FY2026 congressionally directed pre-disaster mitigation grants primarily focused on infrastructure improvements to reduce flooding risk.",
+      "summary_paragraph": "The FEMA Pre-Disaster Mitigation Grant Program funds Congressionally Directed Spending projects for state, local, tribal, and territorial governments, designed to implement cost-effective measures that reduce natural hazard risk to people and property and decrease reliance on federal funding for future disasters. In FY2026, the PDM Grant Program will award $189,713,659 to projects identified in the 2026 Department of Homeland Security Appropriations Act's Joint Explanatory Statement. The FY2026 PDM projects come from 40 states and one tribe, with most projects focused on improving infrastructure to reduce flooding risk.",
+      "due_date": "unknown",
+      "eligibility": "State, local, tribal, and territorial (SLTT) governments identified in the FY2026 DHS Appropriations Act",
+      "budget": "$189,713,659 total across 125 Congressionally directed projects",
+      "topics": [
+        "Inland/riverine flooding",
+        "Coastal flooding",
+        "Flood resilience & adaptation",
+        "Flood risk mapping"
+      ],
+      "source_url": "https://simpler.grants.gov/opportunity/a3959efc-e3bd-491d-ab7a-dc7d4ddb3f4b",
+      "first_seen": "2026-06-25"
+    },
+    {
+      "title": "EU LIFE Programme Climate Change Adaptation Strand (2026 Call)",
+      "funder": "European Commission — LIFE Programme",
+      "one_liner": "EU LIFE programme funding implementation-focused climate adaptation projects including nature-based flood risk solutions.",
+      "summary_paragraph": "The LIFE Climate Change Adaptation strand funds projects that strengthen resilience, reduce climate vulnerability, and support implementation of EU adaptation policies, with an indicative €28 million budget for 2026 that prioritises risk assessment tools, nature-based solutions, climate-proof infrastructure, and systemic policy integration. The strand supports practical, scalable solutions that improve resilience across sectors, ecosystems, and governance levels while contributing to a climate-resilient Europe by 2050. Projects must demonstrate measurable impact, avoid maladaptation, and align with the European Climate Law and EU Adaptation Strategy.",
+      "due_date": "unknown",
+      "eligibility": "Public and private organisations from EU member states and associated countries",
+      "budget": "~€28 million indicative budget for 2026 adaptation strand",
+      "topics": [
+        "Flood resilience & adaptation",
+        "Nature-based solutions for flood mitigation",
+        "Coastal flooding",
+        "Inland flooding"
+      ],
+      "source_url": "https://www2.fundsforngos.org/environment-2/open-call-climate-change-adaptation-under-eu-life-programme-2026/",
+      "first_seen": "2026-06-25"
     }
   ]
 }
