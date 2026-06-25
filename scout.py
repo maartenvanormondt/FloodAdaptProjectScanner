@@ -47,6 +47,11 @@ TOPICS = [
 
 SOURCES_FILE = "sources.yaml"                      # seed list of known places
 SOURCES_DB = os.path.join("data", "sources_db.json")  # learned-sources memory
+DB_PATH = os.path.join("data", "opportunities_db.json")  # accumulated leads (for verdict lookup)
+
+# Shared verdicts store (Cloudflare Worker URL). When set, the agent learns from
+# what the team marked promising / rejected and steers future searches.
+VERDICTS_API = os.environ.get("VERDICTS_API", "")
 
 # Keywords for the structured Grants.gov query.
 GRANTS_GOV_KEYWORDS = ["flood", "flood resilience", "coastal resilience", "stormwater"]
@@ -93,8 +98,12 @@ OPPORTUNITY_SCHEMA = {
 
 # --------------------------------------------------------------- source memory
 
-def load_known_sources():
-    """Return (display list for the prompt, learned-sources db dict)."""
+def load_known_sources(demote: set | None = None):
+    """Return (display list for the prompt, learned-sources db dict).
+
+    Domains in `demote` (mostly-rejected) are not promoted as fruitful.
+    """
+    demote = demote or set()
     seeds = []
     if os.path.exists(SOURCES_FILE):
         with open(SOURCES_FILE, encoding="utf-8") as f:
@@ -108,7 +117,7 @@ def load_known_sources():
         with open(SOURCES_DB, encoding="utf-8") as f:
             learned = json.load(f)
 
-    # Add the most-fruitful learned domains that aren't already seeded.
+    # Add the most-fruitful learned domains that aren't already seeded or demoted.
     seed_text = " ".join(seeds).lower()
     ranked = sorted(
         learned.get("domains", {}).items(),
@@ -118,9 +127,14 @@ def load_known_sources():
     learned_display = [
         f"{domain} (found {info.get('count', 0)}x before)"
         for domain, info in ranked[:15]
-        if domain not in seed_text
+        if domain not in seed_text and domain not in demote
     ]
     return seeds + learned_display, learned
+
+
+def _domain(url: str) -> str:
+    netloc = urlparse(url or "").netloc.lower()
+    return netloc[4:] if netloc.startswith("www.") else netloc
 
 
 def learn_sources(opportunities: list, learned: dict) -> None:
@@ -128,9 +142,7 @@ def learn_sources(opportunities: list, learned: dict) -> None:
     domains = learned.setdefault("domains", {})
     today = date.today().isoformat()
     for o in opportunities:
-        netloc = urlparse(o.get("source_url", "")).netloc.lower()
-        if netloc.startswith("www."):
-            netloc = netloc[4:]
+        netloc = _domain(o.get("source_url", ""))
         if not netloc:
             continue
         entry = domains.setdefault(netloc, {"count": 0, "first_seen": today})
@@ -139,6 +151,62 @@ def learn_sources(opportunities: list, learned: dict) -> None:
     os.makedirs(os.path.dirname(SOURCES_DB), exist_ok=True)
     with open(SOURCES_DB, "w", encoding="utf-8") as f:
         json.dump(learned, f, indent=2, ensure_ascii=False)
+
+
+# ---------------------------------------------------- learning from verdicts
+
+def fetch_verdicts() -> dict:
+    """Fetch the shared {url: like/dislike} map from the Worker, if configured."""
+    if not VERDICTS_API:
+        return {}
+    try:
+        req = urllib.request.Request(VERDICTS_API, headers={"User-Agent": "GrantSeeker/1.0"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return json.load(r)
+    except Exception as e:  # noqa: BLE001 - degrade gracefully
+        print(f"  verdicts fetch failed: {e}", file=sys.stderr)
+        return {}
+
+
+def load_db_opps() -> list:
+    if not os.path.exists(DB_PATH):
+        return []
+    with open(DB_PATH, encoding="utf-8") as f:
+        return json.load(f).get("opportunities", [])
+
+
+def build_preferences(verdicts: dict, db_opps: list, limit: int = 15):
+    """Turn shared verdicts into (liked, rejected) example label lists."""
+    by_url = {_norm(o.get("source_url")): o for o in db_opps}
+    liked, rejected = [], []
+    for url, v in verdicts.items():
+        o = by_url.get(_norm(url))
+        if not o:
+            continue
+        label = f"{o.get('title', '?')} — {o.get('funder', '?')}"
+        if v == "like":
+            liked.append(label)
+        elif v == "dislike":
+            rejected.append(label)
+    return liked[:limit], rejected[:limit]
+
+
+def rejected_domains(verdicts: dict, db_opps: list) -> set:
+    """Domains that mostly produce rejected leads, to stop promoting as 'fruitful'."""
+    by_url = {_norm(o.get("source_url")): o for o in db_opps}
+    likes, dislikes = {}, {}
+    for url, v in verdicts.items():
+        o = by_url.get(_norm(url))
+        if not o:
+            continue
+        d = _domain(o.get("source_url", ""))
+        if not d:
+            continue
+        if v == "like":
+            likes[d] = likes.get(d, 0) + 1
+        elif v == "dislike":
+            dislikes[d] = dislikes.get(d, 0) + 1
+    return {d for d, n in dislikes.items() if n >= 2 and n > likes.get(d, 0)}
 
 
 # --------------------------------------------------------------- prompt
@@ -157,9 +225,31 @@ GEOGRAPHIES = [
 ]
 
 
-def build_prompt(known_sources: list) -> str:
+def build_prompt(known_sources: list, liked=None, rejected=None, demote=None) -> str:
     topics = "\n".join(f"  - {t}" for t in TOPICS)
     geo = "\n".join(f"  - {g}" for g in GEOGRAPHIES)
+
+    # Preference feedback learned from the team's likes/dislikes.
+    pref = ""
+    if liked:
+        pref += (
+            "The team marked these PROMISING — prioritise opportunities similar in "
+            "topic, funder, or geography:\n"
+            + "\n".join(f"  + {x}" for x in liked) + "\n\n"
+        )
+    if rejected:
+        pref += (
+            "The team REJECTED these — avoid surfacing near-duplicates or very "
+            "similar ones (a clearly different opportunity from the same funder is "
+            "still fine):\n"
+            + "\n".join(f"  - {x}" for x in rejected) + "\n\n"
+        )
+    if demote:
+        pref += (
+            "Be more selective with these sources — their results are often "
+            f"rejected: {', '.join(sorted(demote))}.\n\n"
+        )
+
     sources_block = ""
     if known_sources:
         src = "\n".join(f"  - {s}" for s in known_sources)
@@ -176,6 +266,7 @@ def build_prompt(known_sources: list) -> str:
         "(US federal opportunities are already covered by a separate source, so "
         "spend your searches on everything else). Actively look for:\n"
         f"{geo}\n\n"
+        f"{pref}"
         f"{sources_block}"
         "Use the web_search tool to find currently-open opportunities across "
         "national, state/provincial, and local government programs, international "
@@ -354,8 +445,17 @@ def main() -> None:
     if not os.environ.get("ANTHROPIC_API_KEY"):
         raise SystemExit("Set ANTHROPIC_API_KEY first (see the header of this file).")
 
-    known_sources, learned = load_known_sources()
-    prompt = build_prompt(known_sources)
+    # Learn from the team's shared verdicts: steer toward promising, away from
+    # rejected, and stop promoting sources that mostly get rejected.
+    verdicts = fetch_verdicts()
+    db_opps = load_db_opps()
+    liked, rejected = build_preferences(verdicts, db_opps)
+    demote = rejected_domains(verdicts, db_opps)
+    if liked or rejected:
+        print(f"(learning from {len(liked)} liked / {len(rejected)} rejected)", file=sys.stderr)
+
+    known_sources, learned = load_known_sources(demote=demote)
+    prompt = build_prompt(known_sources, liked=liked, rejected=rejected, demote=demote)
 
     client = anthropic.Anthropic(max_retries=6)
     web_data, model_used, notes = fetch_opportunities(client, prompt)

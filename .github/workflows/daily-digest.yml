@@ -24,6 +24,7 @@ jobs:
       - name: Find opportunities
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          VERDICTS_API: ${{ secrets.VERDICTS_API }}
         run: |
           mkdir -p data
           python scout.py --json data/opportunities.json
