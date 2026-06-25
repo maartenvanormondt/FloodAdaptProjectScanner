@@ -1,22 +1,22 @@
 {
   "domains": {
     "fema.gov": {
-      "count": 2,
+      "count": 4,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
     "nfwf.org": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
     "epa.gov": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
     "new.nsf.gov": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
@@ -26,12 +26,12 @@
       "last_seen": "2026-06-25"
     },
     "research-and-innovation.ec.europa.eu": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
     "rea.ec.europa.eu": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
@@ -41,7 +41,22 @@
       "last_seen": "2026-06-25"
     },
     "grants.gov": {
-      "count": 102,
+      "count": 204,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "floodcoalition.org": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "simpler.grants.gov": {
+      "count": 1,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "www2.fundsforngos.org": {
+      "count": 1,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     }
