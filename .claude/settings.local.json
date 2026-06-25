@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "Bash([ -f \"$f\" ])",
+      "Bash(printf '%s\\\\n' '- [Grant Seeker project]\\(grant-seeker-project.md\\) — goals + architecture decisions for the flood-funding scout agent')",
+      "PowerShell($keys = @\\('HKCU:\\\\Software\\\\Microsoft\\\\Command Processor','HKLM:\\\\Software\\\\Microsoft\\\\Command Processor'\\); foreach \\($k in $keys\\) { try { $v = \\(Get-ItemProperty -Path $k -Name AutoRun -ErrorAction Stop\\).AutoRun; \"[$k] AutoRun = $v\" } catch { \"[$k] no AutoRun\" } })"
+    ]
+  }
+}

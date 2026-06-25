@@ -1,0 +1,15 @@
+# Who receives the daily digest.
+# Each entry has:
+#   email    - the recipient's address
+#   greeting - the opening line of their email (e.g. "Dear Maarten,")
+#
+# Every email then continues with a (hopefully) hilarious joke about flood
+# modelling, followed by the digest of funding opportunities.
+recipients:
+  - email: maarten.vanormondt@deltares.nl
+    greeting: "Dear Maarten,"
+  # Other recipients (incl. your Hotmail) work only after you verify a domain
+  # at resend.com/domains and set EMAIL_FROM to it. Resend 403s them in testing
+  # mode, so keep them commented out until then.
+  # - email: mvanormondt@hotmail.com
+  #   greeting: "Dear Maarten,"

@@ -1,0 +1,54 @@
+name: Daily flood-funding digest
+
+on:
+  schedule:
+    - cron: "0 7 * * *"     # 07:00 UTC every day (adjust as you like)
+  workflow_dispatch: {}       # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write             # needed to commit the updated database back
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Find opportunities
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          mkdir -p data
+          python scout.py --json data/opportunities.json
+
+      - name: Update database + website
+        run: python build_site.py --merge data/opportunities.json
+
+      - name: Send digest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Email path A: Resend (set RESEND_API_KEY + EMAIL_FROM as secrets).
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          # Email path B: SMTP, e.g. Gmail (set SMTP_* + EMAIL_FROM as secrets).
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        # The script auto-picks Resend if RESEND_API_KEY is set, otherwise SMTP.
+        run: python email_digest.py --opps data/opportunities.json
+
+      - name: Commit updated database
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/opportunities.json data/opportunities_db.json docs/opportunities.js
+          git commit -m "Update opportunities $(date -u +%Y-%m-%d)" || echo "no changes to commit"
+          git push || echo "nothing to push"
