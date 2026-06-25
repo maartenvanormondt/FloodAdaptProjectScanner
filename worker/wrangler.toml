@@ -1,0 +1,9 @@
+name = "grant-seeker-verdicts"
+main = "verdicts-worker.js"
+compatibility_date = "2024-09-01"
+
+# Paste the KV namespace id you get from:
+#   wrangler kv namespace create VERDICTS
+[[kv_namespaces]]
+binding = "VERDICTS"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"

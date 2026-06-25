@@ -30,3 +30,33 @@ sources:
     url: https://www.greenclimate.fund
   - name: Adaptation Fund
     url: https://www.adaptation-fund.org
+
+  # --- US state & local (esp. coastal) ---
+  - name: Resilient Florida Program (Florida DEP)
+    url: https://floridadep.gov/ResilientFlorida
+  - name: Florida Resilient Coastlines Program
+    url: https://floridadep.gov/rcp
+  - name: Louisiana Watershed Initiative
+    url: https://www.lawatershed.org
+  - name: Texas General Land Office — Community Development & Revitalization
+    url: https://recovery.texas.gov
+  - name: California Coastal Conservancy grants
+    url: https://scc.ca.gov/grants
+  - name: New York State (GOSR / climate resilience)
+    url: https://stormrecovery.ny.gov
+
+  # --- Canada ---
+  - name: Infrastructure Canada — Disaster Mitigation and Adaptation Fund (DMAF)
+    url: https://www.infrastructure.gc.ca/dmaf-faac/index-eng.html
+  - name: FCM Green Municipal Fund (Canada)
+    url: https://greenmunicipalfund.ca
+
+  # --- International development banks & city programs ---
+  - name: Asian Development Bank (ADB)
+    url: https://www.adb.org/what-we-do/funds
+  - name: ADB Urban Climate Change Resilience Trust Fund (UCCRTF)
+    url: https://www.adb.org/what-we-do/funds/urban-climate-change-resilience-trust-fund
+  - name: World Bank Projects & Operations
+    url: https://projects.worldbank.org
+  - name: C40 Cities Finance Facility
+    url: https://www.c40cff.org

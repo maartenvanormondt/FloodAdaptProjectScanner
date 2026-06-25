@@ -1,0 +1,44 @@
+name: Deploy verdicts Worker (one-time / on demand)
+
+# Run this manually from the Actions tab. It creates the KV namespace (if it
+# doesn't exist yet), wires it into wrangler.toml, and deploys the Worker —
+# so you don't need Node/wrangler installed locally.
+#
+# Requires two repo secrets (Settings → Secrets and variables → Actions):
+#   CLOUDFLARE_API_TOKEN   — a token with "Edit Cloudflare Workers" permissions
+#   CLOUDFLARE_ACCOUNT_ID  — your Cloudflare account id
+on:
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: worker
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install wrangler
+        run: npm install -g wrangler
+
+      - name: Create KV namespace (if needed) and deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          # Create the namespace (ignore error if it already exists)
+          wrangler kv namespace create VERDICTS || echo "namespace may already exist"
+          # Find its id and inject into wrangler.toml
+          id=$(wrangler kv namespace list | jq -r '.[] | select(.title | test("VERDICTS")) | .id' | head -n1)
+          if [ -z "$id" ]; then echo "Could not determine KV namespace id"; exit 1; fi
+          echo "Using KV namespace id: $id"
+          sed -i "s/REPLACE_WITH_YOUR_KV_NAMESPACE_ID/$id/" wrangler.toml
+          # Deploy and print the URL
+          wrangler deploy
+          echo "----"
+          echo "Worker deployed. Its URL is shown above (…workers.dev)."
+          echo "Put that URL in docs/index.html (VERDICTS_API) and the VERDICTS_API repo secret."

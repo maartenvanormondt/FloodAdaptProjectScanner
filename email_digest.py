@@ -125,7 +125,7 @@ def load_opps(path: str | None) -> list:
 
 def _digest_html(opps: list) -> str:
     if not opps:
-        return "<p>No funding opportunities to report today.</p>"
+        return "<p>No new opportunities since the last run. The full list is on the website.</p>"
     items = []
     for o in opps:
         url = o.get("source_url", "")
@@ -145,7 +145,7 @@ def _digest_html(opps: list) -> str:
 
 def _digest_text(opps: list) -> str:
     if not opps:
-        return "No funding opportunities to report today."
+        return "No new opportunities since the last run. The full list is on the website."
     lines = []
     for i, o in enumerate(opps, 1):
         lines.append(f"{i}. {o.get('title', '?')} — {o.get('funder', '?')}")
@@ -172,7 +172,7 @@ def compose_html(greeting: str, joke: str, opps: list) -> str:
         f"{intro_paras}"
         f"{site_p}"
         "<hr>"
-        "<p><b>Latest flood-related funding opportunities:</b></p>"
+        "<p><b>Newly found flood-related funding opportunities:</b></p>"
         f"{_digest_html(opps)}"
         "<p>— Maarten's Grant Seeker</p>"
         "</div>"
@@ -183,7 +183,7 @@ def compose_text(greeting: str, joke: str, opps: list) -> str:
     parts = [greeting, "", joke, "", INTRO, ""]
     if SITE_URL:
         parts += [f"View (and like/dislike) the full list here: {SITE_URL}", ""]
-    parts += ["Latest flood-related funding opportunities:", "", _digest_text(opps), "— Maarten's Grant Seeker"]
+    parts += ["Newly found flood-related funding opportunities:", "", _digest_text(opps), "— Maarten's Grant Seeker"]
     return "\n".join(parts)
 
 

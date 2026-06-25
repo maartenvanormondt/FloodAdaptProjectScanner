@@ -17,6 +17,7 @@ Run:
 """
 
 import argparse
+import html
 import json
 import os
 import sys
@@ -49,6 +50,14 @@ SOURCES_DB = os.path.join("data", "sources_db.json")  # learned-sources memory
 
 # Keywords for the structured Grants.gov query.
 GRANTS_GOV_KEYWORDS = ["flood", "flood resilience", "coastal resilience", "stormwater"]
+
+# Only keep Grants.gov hits whose TITLE actually looks flood/water-related — the
+# keyword API returns many loosely-matched, unrelated federal grants otherwise.
+GRANTS_GOV_TITLE_TERMS = (
+    "flood", "coast", "storm", "water", "resilien", "watershed", "mitigation",
+    "hazard", "shorel", "levee", "drain", "wetland", "sea level", "erosion",
+    "river", "restor", "nature-based",
+)
 
 # JSON Schema for structured outputs — guarantees every record has our fields.
 OPPORTUNITY_SCHEMA = {
@@ -134,8 +143,23 @@ def learn_sources(opportunities: list, learned: dict) -> None:
 
 # --------------------------------------------------------------- prompt
 
+# Geographic spread to actively pursue, so results aren't dominated by US
+# federal grants. Edit freely.
+GEOGRAPHIES = [
+    "US STATE, regional, and city/local programs — especially Florida (e.g. the "
+    "Resilient Florida Program), and other coastal states (Louisiana, Texas, the "
+    "Carolinas, California, New York) and their cities",
+    "Canadian federal, provincial, and municipal programs (e.g. Infrastructure "
+    "Canada's Disaster Mitigation and Adaptation Fund, the FCM Green Municipal Fund)",
+    "International development funders and city-resilience programs: World Bank / "
+    "GFDRR, the Asian Development Bank (ADB), Green Climate Fund, Adaptation Fund, "
+    "and climate-resilience funding for Asian cities",
+]
+
+
 def build_prompt(known_sources: list) -> str:
     topics = "\n".join(f"  - {t}" for t in TOPICS)
+    geo = "\n".join(f"  - {g}" for g in GEOGRAPHIES)
     sources_block = ""
     if known_sources:
         src = "\n".join(f"  - {s}" for s in known_sources)
@@ -148,13 +172,19 @@ def build_prompt(known_sources: list) -> str:
         "You are a research assistant that finds OPEN funding opportunities "
         "(grants, RFPs, RFIs, calls for proposals) in these areas:\n\n"
         f"{topics}\n\n"
+        "Cast a WIDE geographic net — do NOT focus mainly on US federal grants "
+        "(US federal opportunities are already covered by a separate source, so "
+        "spend your searches on everything else). Actively look for:\n"
+        f"{geo}\n\n"
         f"{sources_block}"
         "Use the web_search tool to find currently-open opportunities across "
-        "government programs, foundations, NGOs, and research funders. Prefer "
+        "national, state/provincial, and local government programs, international "
+        "development banks, foundations, NGOs, and research funders. Prefer "
         "opportunities whose deadline is in the future or that accept rolling "
         "submissions.\n\n"
-        "Return 8-15 distinct, REAL opportunities. For each, fill in every "
-        "field. Rules:\n"
+        "Return 10-20 distinct, REAL opportunities with a good MIX of geographies "
+        "(not all from one country or level of government). For each, fill in "
+        "every field. Rules:\n"
         "  - Only include opportunities you actually found and can cite with a "
         "real source_url. Do NOT invent opportunities.\n"
         "  - If a field (budget, due_date, eligibility) is not stated, use "
@@ -260,10 +290,15 @@ def fetch_grants_gov() -> list:
             oid = str(hit.get("id", ""))
             if not oid or oid in seen:
                 continue
+            title = html.unescape(hit.get("title", ""))
+            if not any(term in title.lower() for term in GRANTS_GOV_TITLE_TERMS):
+                continue  # skip federal grants whose title isn't flood/water-related
             seen.add(oid)
-            agency = hit.get("agencyName") or hit.get("agencyCode") or "U.S. federal agency"
+            agency = html.unescape(
+                hit.get("agencyName") or hit.get("agencyCode") or "U.S. federal agency"
+            )
             found.append({
-                "title": hit.get("title", "Untitled"),
+                "title": title or "Untitled",
                 "funder": agency,
                 "one_liner": f"Grants.gov opportunity from {agency}.",
                 "summary_paragraph": (

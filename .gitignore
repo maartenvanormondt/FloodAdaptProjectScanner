@@ -8,6 +8,7 @@ recipients.yaml
 # local output from the POC
 out.json
 results.json
+data/new.json
 
 # python
 __pycache__/

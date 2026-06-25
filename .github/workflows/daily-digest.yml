@@ -29,6 +29,8 @@ jobs:
           python scout.py --json data/opportunities.json
 
       - name: Update database + website
+        env:
+          VERDICTS_API: ${{ secrets.VERDICTS_API }}
         run: python build_site.py --merge data/opportunities.json
 
       - name: Send digest
@@ -44,8 +46,9 @@ jobs:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           # Recipients kept out of the public repo (one per line: "email | greeting").
           RECIPIENTS: ${{ secrets.RECIPIENTS }}
+        # data/new.json (written by build_site) holds only this run's NEW leads.
         # The script auto-picks Resend if RESEND_API_KEY is set, otherwise SMTP.
-        run: python email_digest.py --opps data/opportunities.json
+        run: python email_digest.py --opps data/new.json
 
       - name: Commit updated database
         run: |
