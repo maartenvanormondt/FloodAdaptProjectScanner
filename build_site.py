@@ -1,5 +1,5 @@
 """
-Grant Seeker — accumulate opportunities and build the website data.
+Maarten's Grant Seeker — accumulate opportunities and build the website data.
 
 Keeps a deduped database at data/opportunities_db.json (the source of truth,
 growing over time) and regenerates docs/opportunities.js, which the website

@@ -1,4 +1,4 @@
-# Grant Seeker
+# Maarten's Grant Seeker
 
 An agent that scours the web for funding opportunities (grants, RFPs, RFIs)
 in coastal & inland flooding, flood resilience, flood risk mapping, and

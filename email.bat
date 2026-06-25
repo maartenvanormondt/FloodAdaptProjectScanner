@@ -1,6 +1,6 @@
 @echo off
 REM ===================================================================
-REM  Grant Seeker - send (or preview) the digest email
+REM  Maarten's Grant Seeker - send (or preview) the digest email
 REM  Usage:  email --opps out.json --dry-run    (preview, no sending)
 REM          email --opps out.json              (send; needs SMTP_* env vars)
 REM  All arguments pass straight through to email_digest.py.

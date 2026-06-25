@@ -1,6 +1,6 @@
 @echo off
 REM ===================================================================
-REM  Grant Seeker - rebuild the website data
+REM  Maarten's Grant Seeker - rebuild the website data
 REM  Usage:  site --merge out.json   (merge a fresh scout run, then rebuild)
 REM          site                     (just rebuild from the existing database)
 REM  Then open docs\index.html in your browser.

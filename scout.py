@@ -1,5 +1,5 @@
 """
-Grant Seeker — find flood-related funding opportunities.
+Maarten's Grant Seeker — find flood-related funding opportunities.
 
 Merges opportunities from two kinds of sources:
   1. Structured APIs (Grants.gov) — deterministic, no LLM needed.

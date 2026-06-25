@@ -1,6 +1,6 @@
 @echo off
 REM ===================================================================
-REM  Grant Seeker - run the scout
+REM  Maarten's Grant Seeker - run the scout
 REM  Usage:   run.bat              (print results)
 REM           run.bat --json out.json   (also save JSON)
 REM  Any arguments are passed straight through to scout.py.
