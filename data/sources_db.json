@@ -1,14 +1,14 @@
 {
   "domains": {
     "fema.gov": {
-      "count": 8,
+      "count": 9,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
+      "last_seen": "2026-06-26"
     },
     "nfwf.org": {
-      "count": 4,
+      "count": 5,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
+      "last_seen": "2026-06-26"
     },
     "epa.gov": {
       "count": 2,
@@ -41,9 +41,9 @@
       "last_seen": "2026-06-25"
     },
     "grants.gov": {
-      "count": 258,
+      "count": 285,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
+      "last_seen": "2026-06-26"
     },
     "floodcoalition.org": {
       "count": 1,
@@ -56,14 +56,14 @@
       "last_seen": "2026-06-25"
     },
     "www2.fundsforngos.org": {
-      "count": 1,
-      "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
-    },
-    "floridadep.gov": {
       "count": 2,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
+      "last_seen": "2026-06-26"
+    },
+    "floridadep.gov": {
+      "count": 3,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-26"
     },
     "dec.ny.gov": {
       "count": 1,
@@ -86,9 +86,9 @@
       "last_seen": "2026-06-25"
     },
     "adb.org": {
-      "count": 2,
+      "count": 4,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
+      "last_seen": "2026-06-26"
     },
     "greenclimate.fund": {
       "count": 2,
@@ -104,6 +104,26 @@
       "count": 1,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
+    },
+    "governor.ny.gov": {
+      "count": 1,
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26"
+    },
+    "twdb.texas.gov": {
+      "count": 1,
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26"
+    },
+    "iuk-business-connect.org.uk": {
+      "count": 1,
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26"
+    },
+    "mission-adaptation-portal.ec.europa.eu": {
+      "count": 1,
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26"
     }
   }
 }
