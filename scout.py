@@ -61,13 +61,25 @@ MAX_GUIDANCE = 30  # keep the most recent N rules so the prompt doesn't grow for
 DIRECTIVE_SCHEMA = {
     "type": "object",
     "properties": {
-        "action": {"type": "string", "enum": ["hide", "unhide", "guidance", "ignore"]},
+        "action": {"type": "string", "enum": ["hide", "unhide", "guidance", "research", "ignore"]},
         "guidance": {"type": "string", "description": "search instruction if action=guidance, else ''"},
         "reply": {"type": "string", "description": "one short sentence to post back"},
     },
     "required": ["action", "guidance", "reply"],
     "additionalProperties": False,
 }
+
+# Who we are — used to assess eligibility in "@claude, tell me more". Edit for accuracy.
+FLOODADAPT_CONTEXT = (
+    "FloodAdapt is a free, open-source flood-adaptation decision-support tool "
+    "developed by Deltares (an independent Dutch research institute). It lets "
+    "local and regional governments, water authorities, and coastal communities "
+    "rapidly assess flood risk and compare adaptation strategies. 'FloodAdapt "
+    "subscribers' are the organisations and practitioners who use it — typically "
+    "US and international municipalities, counties, and water/coastal agencies. "
+    "When judging eligibility, consider both Deltares (a research institute, often "
+    "a partner or sub-awardee) and these end-user organisations."
+)
 
 # Keywords for the structured Grants.gov query.
 GRANTS_GOV_KEYWORDS = ["flood", "flood resilience", "coastal resilience", "stormwater"]
@@ -275,6 +287,9 @@ def interpret_directive(client: anthropic.Anthropic, instruction: str, opp: dict
         "- guidance: steer FUTURE searches. Put a concise, self-contained search "
         "instruction in `guidance` (fold in useful context from this opportunity, "
         "e.g. its topic or region).\n"
+        "- research: the user wants a deeper briefing on THIS opportunity — more "
+        "detail, what's been funded before, and whether we're eligible (e.g. "
+        "'tell me more', 'who else applied', 'are we eligible?').\n"
         "- ignore: not an actionable instruction.\n"
         "Write a short friendly `reply` (one sentence) confirming what you did. "
         "Leave `guidance` empty unless the action is guidance.\n\n"
@@ -297,6 +312,51 @@ def interpret_directive(client: anthropic.Anthropic, instruction: str, opp: dict
         except json.JSONDecodeError:
             return {"action": "ignore", "guidance": "", "reply": ""}
     return {"action": "ignore", "guidance": "", "reply": ""}
+
+
+def research_opportunity(client: anthropic.Anthropic, opp: dict, instruction: str) -> str:
+    """Deep-dive one opportunity via web search; return a plain-text briefing."""
+    title = opp.get("title", "?")
+    funder = opp.get("funder", "?")
+    url = opp.get("source_url", "")
+    extra = ""
+    if instruction and instruction.lower() not in ("tell me more", "more", "details", "detail"):
+        extra = f"\nAlso specifically address: {instruction}\n"
+    prompt = (
+        "Research this flood-related funding opportunity in depth using web "
+        "search, then write a concise briefing as plain text suitable for a "
+        "comment (short labelled lines, no markdown headings).\n\n"
+        f"Opportunity: {title}\nFunder: {funder}\nURL: {url}\n\n"
+        f"Who we are:\n{FLOODADAPT_CONTEXT}\n\n"
+        "Cover, as far as you can verify:\n"
+        "1. Detail — scope, goals, funding amount, timeline, key dates.\n"
+        "2. Track record — examples of previously funded projects or typical awardees.\n"
+        "3. Eligibility for us — could Deltares / FloodAdapt and FloodAdapt "
+        "subscribers be eligible? How to position or partner, and any blockers "
+        "(e.g. nationality/geography limits)?"
+        f"{extra}\n"
+        "Be accurate; if something can't be verified, say so. Start with a "
+        "one-line summary. Keep it under ~400 words."
+    )
+    tools = [{"type": "web_search_20250305", "name": "web_search", "max_uses": 5}]
+    for i, model in enumerate(MODELS):
+        messages = [{"role": "user", "content": prompt}]
+        try:
+            for _ in range(6):
+                resp = client.messages.create(
+                    model=model, max_tokens=2000, tools=tools, messages=messages
+                )
+                if resp.stop_reason == "pause_turn":
+                    messages.append({"role": "assistant", "content": resp.content})
+                    continue
+                break
+        except anthropic.APIStatusError as e:
+            if (e.status_code == 429 or e.status_code >= 500) and i < len(MODELS) - 1:
+                continue
+            raise
+        text = "".join(b.text for b in resp.content if b.type == "text").strip()
+        return text or "I couldn't find additional detail on this one."
+    return "I couldn't research this right now — try again later."
 
 
 def process_directives(client: anthropic.Anthropic) -> None:
@@ -325,6 +385,7 @@ def process_directives(client: anthropic.Anthropic) -> None:
             opp = by_id.get(opp_key)
             action = interpret_directive(client, instruction, opp)
             act = action.get("action", "ignore")
+            reply = action.get("reply", "")
             if act == "hide" and opp is not None:
                 opp["hidden"] = True
                 db_changed = True
@@ -333,7 +394,9 @@ def process_directives(client: anthropic.Anthropic) -> None:
                 db_changed = True
             elif act == "guidance" and action.get("guidance"):
                 add_guidance(action["guidance"], f"comment {cid}")
-            post_reply(opp_key, action.get("reply", ""))
+            elif act == "research" and opp is not None:
+                reply = research_opportunity(client, opp, instruction)  # the briefing IS the reply
+            post_reply(opp_key, reply)
             newly_done.append(cid)
             print(f"  @claude: {act} — {instruction[:60]}", file=sys.stderr)
 

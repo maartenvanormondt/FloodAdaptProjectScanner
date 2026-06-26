@@ -56,7 +56,7 @@ export default {
         const comment = {
           id: crypto.randomUUID(),
           name,
-          text: text.slice(0, 2000),
+          text: text.slice(0, 8000),   // generous, so @claude research briefings fit
           ts: Date.now(),
         };
         (map[oppId] = map[oppId] || []).push(comment);
