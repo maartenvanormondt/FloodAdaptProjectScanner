@@ -1,8 +1,10 @@
 # Maarten's Grant Seeker — project guide
 
 An autonomous agent that scours the web (and structured APIs) for **flood-related
-funding opportunities** — grants, RFPs, RFIs — in coastal & inland flooding, flood
-resilience, and flood risk mapping. It accumulates them in a database, emails a
+funding opportunities** — grants, RFPs, RFIs, loans, and investment — in coastal &
+inland flooding, flood resilience, and flood risk mapping. Each lead is tagged with
+a **track**: *Application* (project funding you apply for) or *Business Development*
+(financing for the company/product). It accumulates them in a database, emails a
 daily digest of **newly found** leads, and publishes a **searchable, filterable
 website** where the team can like/dislike, comment, and steer the agent.
 
@@ -44,9 +46,10 @@ and comments are **shared across all visitors** and the agent can act on them.
 | Path | What it is |
 |---|---|
 | `scout.py` | Finds opportunities (Claude web search + Grants.gov API), learns from verdicts, processes `@claude` directives, manages source memory. Writes the fresh run to `--json`. |
-| `build_site.py` | Accumulating database + dedupe; writes `data/new.json` (new-only) and `docs/opportunities.js` (the site data); classifies region; assigns `opp_id`; drops hidden entries. |
+| `build_site.py` | Accumulating database + dedupe; writes `data/new.json` (new-only) and `docs/opportunities.js` (the site data); classifies region; assigns `opp_id`; backfills missing `track`→`Application`; drops hidden entries. |
 | `email_digest.py` | Composes the HTML digest (joke → intro → site link → new leads) and sends via Resend or SMTP. |
-| `docs/index.html` | The website: search + filters (status / region / topic / funder / sort), 👍/👎 verdicts, and comments. Pure static + vanilla JS. |
+| `docs/index.html` | The website: search + filters (status / **track** / region / topic / funder / sort), 👍/👎 verdicts, and comments. Pure static + vanilla JS; loads `opportunities.js` with a cache-buster so daily updates show without a hard refresh. |
+| `floodadapt.md` | Public, editable **"who we are"** context (what FloodAdapt is, its users, eligibility). Loaded by `load_floodadapt()` into the search + research prompts. Keep sensitive bits out — put those in the `FLOODADAPT_CONTEXT_EXTRA` secret. |
 | `docs/opportunities.js` | **Generated** site data (`window.OPPORTUNITIES = [...]`). Do not hand-edit. |
 | `worker/verdicts-worker.js` | Cloudflare Worker: shared store for verdicts (`/`) and comments (`/comments`). |
 | `worker/wrangler.toml`, `worker/README.md` | Worker config + deploy notes. |
@@ -63,7 +66,7 @@ and comments are **shared across all visitors** and the agent can act on them.
 
 | File | Committed? | Owner | Purpose |
 |---|---|---|---|
-| `opportunities_db.json` | ✅ | CI | **The database.** Accumulated, deduped leads. `hidden: true` marks removed-from-site entries (kept so they don't re-appear). |
+| `opportunities_db.json` | ✅ | CI | **The database.** Accumulated, deduped leads. Each has a `track` (Application / Business Development). `hidden: true` marks removed-from-site entries (kept so they don't re-appear). |
 | `sources_db.json` | ✅ | CI | Learned fruitful **domains** (counts), fed into the prompt. |
 | `guidance.json` | ✅ | CI / you | **Standing search-guidance rules** from `@claude` (`{text, added, from}`, newest 30). Hand-editable. |
 | `processed_comments.json` | ✅ | CI | IDs of `@claude` directives already acted on (so each fires once). |
@@ -78,13 +81,16 @@ and comments are **shared across all visitors** and the agent can act on them.
 - **Models:** `claude-sonnet-4-6` primary (fast/cheap, plenty capable), `claude-opus-4-8` as the overload fallback. `MODELS` at the top.
 - **Search is two-phase** (`_search` → `_extract`): a free-form web search (basic `web_search_20250305` tool) gathers notes, then a second call with structured outputs (`output_config.format`) turns the notes into the fixed schema. *Do not* combine web search + structured output in one call — the model skips searching and returns nothing, and the dynamic-filtering tool (`web_search_20260209`) 400s in CI on multi-turn (`container_id` required).
 - **Grants.gov API** (`fetch_grants_gov`): deterministic US-federal pull, filtered to flood/water-relevant titles (`GRANTS_GOV_TITLE_TERMS`) so it doesn't flood the list with unrelated federal grants. Degrades gracefully (returns `[]`) on error.
-- **Prompt** (`build_prompt`): topics + a geographic mandate (`GEOGRAPHIES`: state/local incl. Florida, Canada, World Bank/ADB/Asian cities — *not* mostly US federal) + standing guidance rules + verdict preferences + known sources.
+- **Prompt** (`build_prompt`): topics + the funding types to hunt (grants/calls/tenders **and** loans/equity/impact investment) + a geographic mandate (`GEOGRAPHIES`: state/local incl. Florida, Canada, World Bank/ADB/Asian cities — *not* mostly US federal) + standing guidance rules + verdict preferences + known sources.
+- **Tracks:** every lead is classified into `track` = **Application** (project funding you apply for) or **Business Development** (financing for the company/product). The schema *requires* `track`; Grants.gov pulls are `Application`. `build_site.py` backfills any legacy lead missing one.
+- **Who we are:** `load_floodadapt()` merges `floodadapt.md` (public) with the `FLOODADAPT_CONTEXT_EXTRA` secret (sensitive bits) and injects it into both the search prompt (relevance) and `@claude` research (eligibility).
 - **`opp_id(o)`** = `sha1(title|funder)[:12]` — the **stable per-opportunity key** used for verdicts and comments (NOT the URL, which is sometimes a generic landing page). `build_site.opp_id` must stay identical.
 
 ### `build_site.py`
 - `merge()` adds leads not already in the DB (dedupe by normalized `source_url`), stamps `first_seen`, returns the new ones.
 - Writes `data/new.json` = new leads minus rejected (verdicts) minus hidden.
 - `write_site()` writes `docs/opportunities.js` from the **visible** DB (drops `hidden`), newest-first, each tagged with `region` (`classify_region`, a heuristic from URL/funder) and `id` (`opp_id`).
+- **Track backfill:** any opportunity without a `track` is set to `Application` (legacy grants/RFPs predate the field) and persisted to the DB — runs on every build, including no-`--merge` rebuilds.
 
 ### `email_digest.py`
 - Recipients from the `RECIPIENTS` env var (CI secret, `email | greeting` per line) or local `recipients.yaml`.
@@ -92,7 +98,7 @@ and comments are **shared across all visitors** and the agent can act on them.
 - Sender: **Resend** if `RESEND_API_KEY` is set, else **SMTP**. `--smtp` forces SMTP. Per-recipient failures are reported but don't stop the others.
 
 ### `docs/index.html` (website)
-- Static, vanilla JS, reads `docs/opportunities.js`. Filters: status (Active hides rejected / Promising / Undecided / Rejected / All), region, topic, funder, sort; full-text search.
+- Static, vanilla JS. Loads `docs/opportunities.js` **dynamically with a `?t=` cache-buster** (skipped for local `file://`, where query strings break the path) so daily updates appear on a normal refresh. Filters: status (Active hides rejected / Promising / Undecided / Rejected / All), **track** (Application / Business Development), region, topic, funder, sort; full-text search.
 - **Verdicts** (👍 Promising / 👎 Reject) and **comments** read/write the Worker (`VERDICTS_API` constant near the bottom of the file). Falls back to `localStorage` for verdicts if the Worker isn't configured.
 - Comment deletes require a confirm prompt. Comments addressed `@claude …` are acted on by the next pipeline run.
 
@@ -118,7 +124,8 @@ next run (`process_directives` in `scout.py`). Claude interprets each into ONE
   **researches** that specific opportunity via web search (`research_opportunity`)
   and posts a briefing back as a comment: scope/funding/dates, previously funded
   projects/awardees, and an eligibility read for Deltares / FloodAdapt and
-  FloodAdapt subscribers (see `FLOODADAPT_CONTEXT` in `scout.py`).
+  FloodAdapt subscribers (context from `floodadapt.md` + the
+  `FLOODADAPT_CONTEXT_EXTRA` secret, via `load_floodadapt()`).
 
 It is a **public, open channel** (anyone can comment), so actions are deliberately
 non-destructive — it never hard-deletes from the DB or does arbitrary things. Each
@@ -163,6 +170,7 @@ scope, or fine-grained Contents: read/write) so the Worker can kick off
 | Email — **Gmail SMTP** (reaches anyone) | email | `SMTP_HOST=smtp.gmail.com`, `SMTP_PORT=587`, `SMTP_USER`, `SMTP_PASS` (Gmail **app password**), `EMAIL_FROM`. **Do not also set `RESEND_API_KEY`** or Resend wins. |
 | Email — **Resend** (your own address only) | email | `RESEND_API_KEY`, `EMAIL_FROM=onboarding@resend.dev`. Only reaches your Resend account address until a domain is verified. |
 | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` | deploy-worker | "Edit Cloudflare Workers" token + account id. |
+| `FLOODADAPT_CONTEXT_EXTRA` | scout | *Optional.* Sensitive "who we are" details (fees, strategy) merged into the `floodadapt.md` context at runtime, kept out of the public repo. |
 
 **Local** (`secret.bat`, git-ignored — copy from `secret.bat.example`): `set "ANTHROPIC_API_KEY=…"`, optional `VERDICTS_API`, optional email vars, optional `PYTHON_EXE`.
 
@@ -193,6 +201,8 @@ Then open `docs/index.html` directly (data is embedded as a script — no server
 - **Web search tool:** use basic `web_search_20250305`, not `_20260209` (the latter runs code execution and 400s in CI on multi-turn).
 - **Model IDs are current** (`claude-sonnet-4-6`, `claude-opus-4-8`); thinking is adaptive-only, no `budget_tokens`, no sampling params.
 - **GitHub Pages** serves from `main` / `/docs`. The repo is public (no secrets live in it; keys are in Actions secrets + git-ignored `secret.bat`).
+- **Rebuilding the site locally: `git pull` first.** The DB is CI-owned and your local copy is usually behind. Running `site` on a stale DB regenerates `docs/opportunities.js` from old data — pull to sync, *then* rebuild + push.
+- **Site cache-busting:** `index.html` loads `opportunities.js` with `?t=<timestamp>` so data updates show on a normal refresh (local `file://` skips the query). When `index.html` *itself* changes, one hard-refresh is needed to pick up the new page; after that it's automatic.
 
 ---
 
@@ -200,6 +210,7 @@ Then open `docs/index.html` directly (data is embedded as a script — no server
 
 - **Who we are (for eligibility + relevance):** `floodadapt.md` (public, committed) — read by `load_floodadapt()` into the search prompt and the `@claude` research. Sensitive bits (fees, strategy) go in the `FLOODADAPT_CONTEXT_EXTRA` secret instead (merged in at runtime, never committed).
 - **Topics:** `TOPICS` in `scout.py`.
+- **Funding types & tracks:** the funding-type list and the Application / Business Development definitions live in `build_prompt` (`scout.py`); the `track` enum is in `OPPORTUNITY_SCHEMA`.
 - **Geographic mandate:** `GEOGRAPHIES` in `scout.py`.
 - **Seed sources:** `sources.yaml`.
 - **Search breadth/speed:** `MAX_SEARCHES` in `scout.py`.
