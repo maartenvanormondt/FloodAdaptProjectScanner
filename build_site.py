@@ -139,6 +139,15 @@ def main() -> None:
     args = ap.parse_args()
 
     db = load_db()
+
+    # Backfill: legacy opportunities saved before tracks existed are Applications
+    # (grants/RFPs you apply to). New scout results already carry their own track.
+    backfilled = 0
+    for o in db["opportunities"]:
+        if not o.get("track"):
+            o["track"] = "Application"
+            backfilled += 1
+
     if args.merge:
         new_records = merge(db, args.merge)
         save_db(db)
@@ -157,6 +166,10 @@ def main() -> None:
             f"({len(emailable)} after removing rejected), "
             f"{len(db['opportunities'])} total. Wrote {NEW_PATH}."
         )
+    elif backfilled:
+        save_db(db)   # persist the track backfill even on a no-merge run
+    if backfilled:
+        print(f"Backfilled track='Application' on {backfilled} legacy opportunities.")
     write_site(db)
     print(f"Wrote {SITE_DATA} ({len(db['opportunities'])} opportunities).")
 
