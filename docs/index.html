@@ -55,6 +55,29 @@
   .vbtn:hover { border-color: var(--muted); }
   .vbtn.on-like { background: var(--like); color: #fff; border-color: var(--like); }
   .vbtn.on-dislike { background: var(--dislike); color: #fff; border-color: var(--dislike); }
+  .comments { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; }
+  .comment {
+    position: relative; background: #f7f9fa; border-radius: 8px;
+    padding: 6px 28px 6px 10px; margin-bottom: 6px; font-size: 13px;
+  }
+  .cwho { color: var(--muted); font-size: 11px; margin-bottom: 2px; }
+  .cbody { white-space: pre-wrap; }
+  .cdel {
+    position: absolute; top: 4px; right: 6px; border: none; background: none;
+    color: var(--muted); cursor: pointer; font-size: 13px; line-height: 1;
+  }
+  .cdel:hover { color: var(--dislike); }
+  .cadd { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+  .cadd input {
+    padding: 6px 9px; border: 1px solid var(--line); border-radius: 8px;
+    font: inherit; font-size: 13px;
+  }
+  .cadd .cname { flex: 0 1 150px; }
+  .cadd .ctext { flex: 1 1 220px; }
+  .cpost {
+    border: 1px solid var(--accent); background: var(--accent); color: #fff;
+    border-radius: 8px; padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer;
+  }
   .empty { color: var(--muted); text-align: center; padding: 60px 0; }
   footer { text-align: center; color: var(--muted); font-size: 12px; padding: 24px; }
 </style>
@@ -122,6 +145,63 @@
         body: JSON.stringify({ url: key, verdict: verdicts[key] || null }),
       }).catch(() => {});
     }
+  }
+
+  // ----- shared comments (per opportunity, via the same Worker) -----
+  let comments = {};   // { oppKey: [ {id, name, text, ts}, ... ] }
+
+  async function loadComments() {
+    if (!VERDICTS_API) return;
+    try {
+      const r = await fetch(VERDICTS_API + "/comments", { cache: "no-store" });
+      if (r.ok) { comments = await r.json(); render(); }
+    } catch (e) { /* offline */ }
+  }
+
+  const fmtDate = ts => { try { return new Date(ts).toISOString().slice(0, 10); } catch { return ""; } };
+
+  function renderComments(key) {
+    return (comments[key] || []).map(c => `
+      <div class="comment">
+        <button class="cdel" title="Delete comment" data-key="${esc(key)}" data-cid="${esc(c.id)}">✕</button>
+        <div class="cwho">${esc(c.name || "Anonymous")} · ${esc(fmtDate(c.ts))}</div>
+        <div class="cbody">${esc(c.text)}</div>
+      </div>`).join("");
+  }
+
+  async function postComment(btn) {
+    if (!VERDICTS_API) { alert("Comments need the shared backend configured."); return; }
+    const card = btn.closest(".card");
+    const key = btn.dataset.key;
+    const name = card.querySelector(".cname").value.trim();
+    const text = card.querySelector(".ctext").value.trim();
+    if (!text) return;
+    try {
+      const r = await fetch(VERDICTS_API + "/comments", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ oppId: key, name, text }),
+      });
+      const data = await r.json();
+      if (data.comment) {
+        (comments[key] = comments[key] || []).push(data.comment);
+        card.querySelector(".clist").innerHTML = renderComments(key);
+        card.querySelector(".ctext").value = "";
+      }
+    } catch (e) { alert("Could not post comment."); }
+  }
+
+  async function deleteComment(btn) {
+    if (!confirm("Delete this comment?")) return;   // prompt before deleting
+    const card = btn.closest(".card");
+    const key = btn.dataset.key, cid = btn.dataset.cid;
+    try {
+      await fetch(VERDICTS_API + "/comments/delete", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ oppId: key, commentId: cid }),
+      });
+      comments[key] = (comments[key] || []).filter(c => c.id !== cid);
+      card.querySelector(".clist").innerHTML = renderComments(key);
+    } catch (e) { alert("Could not delete comment."); }
   }
 
   const DATA = (window.OPPORTUNITIES || []).map(o => ({
@@ -205,20 +285,40 @@
           <button class="vbtn${v === "like" ? " on-like" : ""}" data-key="${esc(o.key)}" data-v="like">👍 Promising</button>
           <button class="vbtn${v === "dislike" ? " on-dislike" : ""}" data-key="${esc(o.key)}" data-v="dislike">👎 Reject</button>
         </div>
+        <div class="comments">
+          <div class="clist">${renderComments(o.key)}</div>
+          <div class="cadd">
+            <input class="cname" type="text" placeholder="Your name (optional)" autocomplete="off" />
+            <input class="ctext" type="text" placeholder="Add a comment…" autocomplete="off" />
+            <button class="cpost" data-key="${esc(o.key)}">Post</button>
+          </div>
+        </div>
       </div>`;
     }).join("")
       : `<div class="empty">No opportunities match your filters.</div>`;
   }
 
   resultsEl.addEventListener("click", e => {
-    const btn = e.target.closest("button[data-v]");
-    if (!btn) return;
-    setVerdict(btn.dataset.key, btn.dataset.v);
+    const vbtn = e.target.closest("button[data-v]");
+    if (vbtn) { setVerdict(vbtn.dataset.key, vbtn.dataset.v); return; }
+    const post = e.target.closest("button.cpost");
+    if (post) { postComment(post); return; }
+    const del = e.target.closest("button.cdel");
+    if (del) { deleteComment(del); return; }
+  });
+
+  // Enter in a comment box posts it.
+  resultsEl.addEventListener("keydown", e => {
+    if (e.key === "Enter" && e.target.classList.contains("ctext")) {
+      e.preventDefault();
+      postComment(e.target.closest(".card").querySelector(".cpost"));
+    }
   });
 
   [qEl, statusEl, regionEl, topicEl, funderEl, sortEl].forEach(el => el.addEventListener("input", render));
   render();
   loadServerVerdicts();
+  loadComments();
 </script>
 </body>
 </html>
