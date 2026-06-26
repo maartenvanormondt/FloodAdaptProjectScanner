@@ -1,0 +1,50 @@
+name: Answer @claude comments
+
+# Acts on "@claude ..." comments: hide/unhide, add a search-guidance rule, or
+# post a research briefing ("tell me more"). The Cloudflare Worker fires
+# `repository_dispatch` the instant such a comment is posted, so research replies
+# land in ~30-60s (runner startup). The cron is a backup in case a trigger is missed.
+on:
+  repository_dispatch:
+    types: [claude-comment]
+  schedule:
+    - cron: "*/30 * * * *"   # backup poll
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# Don't let overlapping runs fight over the commit.
+concurrency:
+  group: answer-claude
+  cancel-in-progress: false
+
+jobs:
+  answer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Process @claude directives
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          VERDICTS_API: ${{ secrets.VERDICTS_API }}
+        run: |
+          mkdir -p data
+          python scout.py --directives-only
+
+      - name: Commit any state changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.theirs.name "take incoming"
+          git config merge.theirs.driver "cp -f %B %A"
+          git add data/
+          git commit -m "Process @claude directives" || { echo "no changes"; exit 0; }
+          git pull --no-edit || true
+          git push || echo "nothing to push"

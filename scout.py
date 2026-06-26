@@ -682,6 +682,10 @@ def main() -> None:
     ap.add_argument("--json", metavar="PATH", help="also write the merged JSON here")
     ap.add_argument("--debug", action="store_true", help="print the raw search notes")
     ap.add_argument("--no-api", action="store_true", help="skip the Grants.gov pull")
+    ap.add_argument(
+        "--directives-only", action="store_true",
+        help="only act on @claude comments, then exit (no search/email)",
+    )
     args = ap.parse_args()
 
     if not os.environ.get("ANTHROPIC_API_KEY"):
@@ -689,9 +693,11 @@ def main() -> None:
 
     client = anthropic.Anthropic(max_retries=6)
 
-    # Act on any new "@claude ..." comment directives first: hide/unhide entries
-    # and append standing search-guidance rules (data/guidance.json).
+    # Act on any new "@claude ..." comment directives first: hide/unhide entries,
+    # append standing search-guidance rules, and post research briefings.
     process_directives(client)
+    if args.directives_only:
+        return  # quick mode for the frequent "answer @claude" workflow
 
     # Learn from the team's shared verdicts: steer toward promising, away from
     # rejected, and stop promoting sources that mostly get rejected.

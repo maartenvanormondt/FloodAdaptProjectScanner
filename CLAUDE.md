@@ -137,7 +137,16 @@ directive is processed once (`processed_comments.json`).
 ## GitHub Actions
 
 - **`daily-digest.yml`** — cron `23 7 * * *` (07:23 UTC; off-the-hour to dodge GitHub's queue congestion) + manual `workflow_dispatch`. Steps: find → update DB/site → send digest → commit data back. Needs `permissions: contents: write` **and** repo Settings → Actions → Workflow permissions = "Read and write."
+- **`answer-claude.yml`** — runs `scout.py --directives-only` (acts on `@claude`
+  comments, no full search/email). Fired by **`repository_dispatch`** the moment
+  an `@claude` comment is posted (the Worker calls the GitHub API), so research
+  briefings land in ~30-60s. A `*/30` cron is a backup.
 - **`deploy-worker.yml`** — manual; deploys the Worker (creates the KV namespace if needed). No local Node required.
+
+**Worker secrets** (Cloudflare dashboard → Worker → Settings → Variables and Secrets):
+`GH_DISPATCH_TOKEN` (a GitHub token that can trigger dispatches — classic `repo`
+scope, or fine-grained Contents: read/write) so the Worker can kick off
+`answer-claude.yml`; optionally `GH_REPO` (defaults to `maartenvanormondt/FloodAdaptProjectScanner`).
 
 > Scheduled runs are **best-effort** — GitHub can delay them by minutes or skip on-the-hour slots. To test, use **Run workflow** (manual); don't chase the clock.
 

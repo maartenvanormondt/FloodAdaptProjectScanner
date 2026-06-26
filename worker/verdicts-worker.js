@@ -34,8 +34,28 @@ async function readBody(request) {
   }
 }
 
+// Kick off the GitHub Actions "answer @claude" workflow immediately when an
+// @claude comment is posted, so it's answered in ~30-60s instead of waiting for
+// a poll. Needs the GH_DISPATCH_TOKEN secret (and optionally GH_REPO).
+function triggerClaude(env, ctx) {
+  if (!env.GH_DISPATCH_TOKEN) return;
+  const repo = env.GH_REPO || "maartenvanormondt/FloodAdaptProjectScanner";
+  ctx.waitUntil(
+    fetch(`https://api.github.com/repos/${repo}/dispatches`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "User-Agent": "grant-seeker-worker",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ event_type: "claude-comment" }),
+    }).catch(() => {}),
+  );
+}
+
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     if (request.method === "OPTIONS") return new Response(null, { headers: CORS });
     const path = new URL(request.url).pathname.replace(/\/+$/, "") || "/";
 
@@ -61,6 +81,7 @@ export default {
         };
         (map[oppId] = map[oppId] || []).push(comment);
         await env.VERDICTS.put(CKEY, JSON.stringify(map));
+        if (text.toLowerCase().startsWith("@claude")) triggerClaude(env, ctx);
         return json({ ok: true, comment });
       }
     }

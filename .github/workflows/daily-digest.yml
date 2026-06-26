@@ -55,9 +55,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Auto-resolve generated files to the incoming version on pull (the
+          # answer-claude workflow may have pushed in the meantime).
+          git config merge.theirs.name "take incoming"
+          git config merge.theirs.driver "cp -f %B %A"
           # Add whatever exists under data/ (transient files are git-ignored) plus
           # the generated site. Listing files individually breaks when an optional
           # one (e.g. data/guidance.json) doesn't exist yet.
           git add data/ docs/opportunities.js
           git commit -m "Update opportunities $(date -u +%Y-%m-%d)" || echo "no changes to commit"
+          git pull --no-edit || true
           git push || echo "nothing to push"
