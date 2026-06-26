@@ -1,12 +1,12 @@
 {
   "domains": {
     "fema.gov": {
-      "count": 9,
+      "count": 10,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-26"
     },
     "nfwf.org": {
-      "count": 7,
+      "count": 8,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-26"
     },
@@ -31,9 +31,9 @@
       "last_seen": "2026-06-26"
     },
     "rea.ec.europa.eu": {
-      "count": 4,
+      "count": 5,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
+      "last_seen": "2026-06-26"
     },
     "climate-kic.org": {
       "count": 1,
@@ -41,7 +41,7 @@
       "last_seen": "2026-06-25"
     },
     "grants.gov": {
-      "count": 339,
+      "count": 366,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-26"
     },
@@ -51,17 +51,17 @@
       "last_seen": "2026-06-25"
     },
     "simpler.grants.gov": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
+      "last_seen": "2026-06-26"
     },
     "www2.fundsforngos.org": {
-      "count": 5,
+      "count": 6,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-26"
     },
     "floridadep.gov": {
-      "count": 6,
+      "count": 7,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-26"
     },
@@ -101,9 +101,9 @@
       "last_seen": "2026-06-26"
     },
     "cinea.ec.europa.eu": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
+      "last_seen": "2026-06-26"
     },
     "governor.ny.gov": {
       "count": 2,
@@ -131,7 +131,7 @@
       "last_seen": "2026-06-26"
     },
     "nature.org": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-26",
       "last_seen": "2026-06-26"
     },
@@ -151,16 +151,26 @@
       "last_seen": "2026-06-26"
     },
     "scientifyresearch.org": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-26",
       "last_seen": "2026-06-26"
     },
     "errin.eu": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-26",
       "last_seen": "2026-06-26"
     },
     "lao.ca.gov": {
+      "count": 1,
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26"
+    },
+    "westmed-initiative.ec.europa.eu": {
+      "count": 1,
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26"
+    },
+    "texasfloodclearinghouse.org": {
       "count": 1,
       "first_seen": "2026-06-26",
       "last_seen": "2026-06-26"
