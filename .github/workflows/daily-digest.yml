@@ -2,7 +2,7 @@ name: Daily flood-funding digest
 
 on:
   schedule:
-    - cron: "0 7 * * *"     # 07:00 UTC every day (adjust as you like)
+    - cron: "23 7 * * *"    # 07:23 UTC daily (off-the-hour = less GitHub queue delay)
   workflow_dispatch: {}       # lets you run it manually from the Actions tab
 
 permissions:
