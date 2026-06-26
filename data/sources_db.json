@@ -1,12 +1,12 @@
 {
   "domains": {
     "fema.gov": {
-      "count": 6,
+      "count": 8,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
     "nfwf.org": {
-      "count": 3,
+      "count": 4,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
@@ -26,12 +26,12 @@
       "last_seen": "2026-06-25"
     },
     "research-and-innovation.ec.europa.eu": {
-      "count": 3,
+      "count": 4,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
     "rea.ec.europa.eu": {
-      "count": 2,
+      "count": 4,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
@@ -41,7 +41,7 @@
       "last_seen": "2026-06-25"
     },
     "grants.gov": {
-      "count": 231,
+      "count": 258,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
@@ -61,7 +61,7 @@
       "last_seen": "2026-06-25"
     },
     "floridadep.gov": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
@@ -76,7 +76,7 @@
       "last_seen": "2026-06-25"
     },
     "projects.research-and-innovation.ec.europa.eu": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
@@ -91,11 +91,16 @@
       "last_seen": "2026-06-25"
     },
     "greenclimate.fund": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
     },
     "housing-infrastructure.canada.ca": {
+      "count": 2,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-25"
+    },
+    "cinea.ec.europa.eu": {
       "count": 1,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-25"
