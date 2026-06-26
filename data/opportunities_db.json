@@ -1073,6 +1073,91 @@
       ],
       "source_url": "https://www.adb.org/what-we-do/funds/urban-climate-change-resilience-trust-fund",
       "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Horizon Europe — Inland Waterways Climate Resilience (HORIZON-MISS-2026-01-CLIMA-06)",
+      "funder": "European Commission / Horizon Europe",
+      "one_liner": "Research and Innovation Action funding systemic, nature-based approaches to improve climate resilience of inland waterways and related water infrastructure.",
+      "summary_paragraph": "This call targets climate and environmental risks to water infrastructure — including droughts, flooding, slow onset events, ecological degradation, and compound events — to be addressed in a systemic way. Cost-efficient and environmentally friendly measures, especially nature-based solutions, are to be identified with stakeholder involvement, improving climate resilience of inland waterways while supporting integrated co-benefits and avoiding competing water uses. Applications are open for consortia with at least 3 participants from EU Member States and Associated Countries, plus low- and middle-income countries. The funding provides up to €6 million for projects of up to 5 years in duration.",
+      "due_date": "2026-09-23",
+      "eligibility": "Consortia of at least 3 participants from EU Member States/Associated Countries, plus low- and middle-income countries",
+      "budget": "Up to €6 million",
+      "topics": [
+        "Inland/riverine flooding",
+        "Flood resilience & adaptation",
+        "Nature-based solutions",
+        "Flood modelling"
+      ],
+      "source_url": "https://www.scientifyresearch.org/grant/water-infrastructure-climate-resilience-mission-research-grant-horizon-europe-lmic/",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Horizon Europe — Demonstrating Solutions for Coastal Climate Adaptation (HORIZON-MISS-2026 Coastal Hotspots)",
+      "funder": "European Commission / Horizon Europe (EU Mission on Adaptation to Climate Change)",
+      "one_liner": "Demonstration call for innovative, nature-based solutions that increase climate resilience in EU coastal hotspot regions facing sea level rise, coastal flooding, and erosion.",
+      "summary_paragraph": "Proposals should identify and demonstrate innovative solutions to increase climate resilience in coastal areas, addressing pressures including sea level rise, coastal floods, coastal erosion, saltwater intrusion, invasive species, and changing physical and chemical properties of waters. Nature-based solutions and ecosystem-based adaptation are to be explored as a priority; blue-green infrastructures may provide multipurpose, 'no regret' solutions with simultaneous environmental, social, and economic benefits. Southern Europe, low-lying coastal regions, and EU outermost regions are identified as geographical hotspots concentrating climate risks with high severity and demanding urgent action. This topic is part of the broader MISS-2026-01 call package closing 23 September 2026.",
+      "due_date": "2026-09-23",
+      "eligibility": "Research consortia, local authorities, businesses in EU Member States and Associated Countries",
+      "budget": "unknown",
+      "topics": [
+        "Coastal flooding",
+        "Flood resilience & adaptation",
+        "Nature-based solutions",
+        "Flood risk mapping/modelling"
+      ],
+      "source_url": "https://errin.eu/calls/demonstrating-solutions-help-hotspots-coastal-regions-adapt-climate-change",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Florida DEP — Coastal Partnership Initiative (CPI) Grants (FY 2027-28 Cycle)",
+      "funder": "Florida Department of Environmental Protection (DEP) / NOAA Coastal Zone Management Act",
+      "one_liner": "NOAA-backed competitive grants for Florida coastal local governments and nonprofits to improve community resilience to coastal hazards, habitat restoration, and waterfront revitalization.",
+      "summary_paragraph": "The Florida Coastal Management Program makes federal NOAA Coastal Zone Management Act funds available on a competitive basis to eligible local governments — specifically Florida's 35 coastal counties and all municipalities required to include a coastal element in their local comprehensive plan. Florida's public colleges and universities, regional planning councils, national estuary programs, and nonprofit groups may also apply if an eligible local government agrees to participate. Eligible projects include habitat restoration, park planning and improvements, waterfront revitalization, and improving community resiliency to coastal hazards. The FY 2027-28 cycle will open September 1, 2026 and remain open through October 31, 2026.",
+      "due_date": "2026-10-31",
+      "eligibility": "Florida coastal counties, municipalities, universities, regional planning councils, nonprofits (with eligible local government partner)",
+      "budget": "unknown",
+      "topics": [
+        "Coastal flooding",
+        "Flood resilience & adaptation",
+        "Nature-based solutions"
+      ],
+      "source_url": "https://floridadep.gov/rcp/fcmp/content/grants",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Louisiana OCD — Watershed Flood Mitigation Programs (Round 3)",
+      "funder": "Louisiana Office of Community Development (formerly Louisiana Watershed Initiative)",
+      "one_liner": "Louisiana's $1.2 billion CDBG-MIT–funded watershed programs for local and regional flood risk reduction, nature-based solutions, and resilient development.",
+      "summary_paragraph": "The Louisiana Watershed Initiative, backed by $1.2 billion in CDBG-MIT funding, aims to substantially improve the way residents and government agencies understand, address, and respond to flood risk within watersheds and across political boundaries. The program provides funding and support to local and regional agencies to implement flood risk reduction projects with demonstrable outcomes that improve community flood resilience, implemented in three distinct rounds designed to encourage regional collaboration. Round 3 will award flood risk reduction projects justified by completed watershed models and nature-based solutions tools. As of May 31, 2026, program management transitioned to the Louisiana Office of Community Development.",
+      "due_date": "rolling",
+      "eligibility": "Local and regional public entities in Louisiana",
+      "budget": "$570M+ distributed across three rounds (from $1.2B CDBG-MIT grant)",
+      "topics": [
+        "Inland/riverine flooding",
+        "Coastal flooding",
+        "Flood resilience",
+        "Flood risk mapping/modelling",
+        "Nature-based solutions"
+      ],
+      "source_url": "https://watershed.la.gov/",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "California Proposition 4 (2024 Climate Bond) — Flood Control & Sea-Level Rise Streams (via DWR & SCC)",
+      "funder": "California Department of Water Resources (DWR) + State Coastal Conservancy (SCC) / Proposition 4",
+      "one_liner": "California's $10B Climate Bond allocates over $160M across DWR flood control subventions and SCC SF Bay sea-level rise programs, with grant cycles opening through SCC and DWR.",
+      "summary_paragraph": "Proposition 4 authorizes a total of $1.2 billion for coastal resilience activities; the 2025-26 spending plan includes approximately $279 million — about one-quarter of the total. Funding flowing through SCC includes $63 million for coastal resilience projects and programs and $41 million for sea-level rise, flood management, and wetland restoration in the San Francisco Bay Area. An additional $123 million is allocated to DWR's Flood Control Subventions Program. Applicants can access SCC funds through the rolling grants portal at scc.ca.gov/grants and should monitor DWR for separate solicitation announcements.",
+      "due_date": "rolling",
+      "eligibility": "California public agencies, local governments, nonprofits, special districts, tribes",
+      "budget": "$123M (DWR Flood Control Subventions) + $41M (SCC SF Bay) + $63M (SCC coastal)",
+      "topics": [
+        "Coastal flooding",
+        "Inland/riverine flooding",
+        "Flood resilience & adaptation",
+        "Nature-based solutions"
+      ],
+      "source_url": "https://lao.ca.gov/Publications/Report/5076",
+      "first_seen": "2026-06-26"
     }
   ]
 }
