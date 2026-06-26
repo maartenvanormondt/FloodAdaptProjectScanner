@@ -1223,6 +1223,160 @@
       ],
       "source_url": "https://rea.ec.europa.eu/funding-and-grants/horizon-europe-cluster-6-food-bioeconomy-natural-resources-agriculture-and-environment/biodiversity-and-ecosystem-services_en",
       "first_seen": "2026-06-26"
+    },
+    {
+      "title": "EIC Accelerator — Deep Tech for Climate Adaptation Challenge 2026",
+      "funder": "European Innovation Council (EIC)",
+      "one_liner": "EIC equity and grant instrument targeting deep-tech startups and spin-offs commercialising climate adaptation solutions, explicitly including flood and coastal protection tools.",
+      "summary_paragraph": "The EIC Accelerator Deep Tech for Climate Adaptation Challenge explicitly includes flood and coastal protection, covering solutions for new buildings and green infrastructure, and novel predictive or early warning systems to help infrastructure withstand storm waters, coastal, and river flooding. The EIC will connect supported startups and SMEs with the network of regions and local authorities engaged in the Mission on Climate Adaptation through its Business Acceleration Services. The EIC Accelerator typically provides up to €2.5M grant plus up to €15M equity investment per company. The Mission on Climate Adaptation is co-financing this Accelerator challenge together with the European Innovation Council.",
+      "due_date": "rolling",
+      "eligibility": "Startups, SMEs, and spin-offs based in EU/associated countries",
+      "budget": "Up to €2.5M grant + up to €15M equity per company",
+      "topics": [
+        "coastal flooding",
+        "flood risk",
+        "nature-based solutions",
+        "flood decision-support tools",
+        "climate adaptation",
+        "deep tech"
+      ],
+      "source_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator/eic-accelerator-challenges-2026/deep-tech-climate-adaptation_en",
+      "track": "Business Development",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "LIFE 2026 — Standard Action Projects: Climate Change Adaptation (LIFE-2026-SAP-CLIMA)",
+      "funder": "European Commission / CINEA (LIFE Programme)",
+      "one_liner": "EU LIFE's flagship adaptation strand funds practical, scalable resilience projects including flood risk tools and nature-based solutions, with ~€28M available.",
+      "summary_paragraph": "The LIFE Climate Change Adaptation strand funds projects that strengthen resilience, reduce climate vulnerability, and support implementation of EU adaptation policies, with an indicative €28 million budget for 2026. It prioritises risk assessment tools, nature-based solutions, climate-proof infrastructure, and systemic policy integration. The calls are open to companies (including SMEs), public authorities, universities, research organisations, NGOs, and public-private partnerships, with LIFE funding covering 60% of eligible costs and a minimum project size of €1 million. The deadline for Standard Action Projects is 22 September 2026.",
+      "due_date": "2026-09-22",
+      "eligibility": "Public and private organisations from EU Member States and associated countries",
+      "budget": "~€28M (adaptation strand total); individual projects typically €1M–€5M",
+      "topics": [
+        "flood resilience",
+        "coastal flooding",
+        "nature-based solutions",
+        "climate risk assessment",
+        "climate adaptation"
+      ],
+      "source_url": "https://cinea.ec.europa.eu/funding-opportunities/calls-proposals/climate-change-adaptation-0_en",
+      "track": "Application",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Horizon Europe — Cluster 5 / Disaster Risk: HORIZON-CL5-2027-01-D1-07 — Modelling & Prediction of Extreme Events",
+      "funder": "European Commission / Horizon Europe Cluster 5",
+      "one_liner": "Horizon Europe call opening November 2026 to advance scientific understanding, modelling, and prediction of extreme climate events including floods.",
+      "summary_paragraph": "HORIZON-CL5-2027-01-D1-07, opening on 17 November 2026, focuses on advancing scientific understanding, modelling, and prediction of extreme climate-related events to better support decision-making, risk assessment, and adaptation strategies at multiple scales. A key feature of the new work programme is strengthened coordination between EC and ESA across Clusters 5 and 6. Proposals are expected to be due in spring 2027 (two-stage), making this a near-term preparation target. The call connects directly to compound-flood modelling and impact assessment capabilities and positions flood decision-support tools as demonstration platforms.",
+      "due_date": "unknown",
+      "eligibility": "EU Member States and associated countries; research institutes, universities, companies",
+      "budget": "unknown",
+      "topics": [
+        "flood risk modelling",
+        "flood mapping",
+        "climate extreme events",
+        "decision-support",
+        "prediction"
+      ],
+      "source_url": "https://eo4society.esa.int/2026/02/06/get-ready-for-new-coordinated-eu-esa-science-actions-with-recently-launched-horizon-europe-2026-call/",
+      "track": "Application",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Horizon Europe — Cluster 3 Disaster Resilient Society: Climate Resilience & Disaster Risk Management Innovation Action",
+      "funder": "European Commission / Horizon Europe Cluster 3",
+      "one_liner": "Horizon Europe Innovation Action to strengthen Europe's resilience to climate-related disasters, with flood early warning explicitly prioritised, closing November 2026.",
+      "summary_paragraph": "The European Commission is launching a Horizon Europe Innovation Action under Cluster 3 to strengthen Europe's resilience to climate-related disasters, with a deadline of 5 November 2026. This initiative addresses the increasing frequency and severity of climate-related disasters by improving Europe's ability to predict, prepare for, and respond to complex risks, combining satellite data, AI, and cross-sector collaboration to strengthen both immediate crisis response and long-term adaptation strategies. Priority topics include early warning systems for floods, heatwaves, fires, and landslides. The call aligns with flood modelling and early warning capabilities that support disaster risk decision-making.",
+      "due_date": "2026-11-05",
+      "eligibility": "EU/associated country consortia including research institutes and local authorities",
+      "budget": "unknown",
+      "topics": [
+        "flood risk",
+        "disaster risk management",
+        "early warning",
+        "flood resilience",
+        "climate adaptation"
+      ],
+      "source_url": "https://www2.fundsforngos.org/science/call-for-applications-on-climate-resilience-and-disaster-risk-management/amp/",
+      "track": "Application",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "ADB — Climate Resilient Brahmaputra Integrated Flood & Riverbank Erosion Risk Management Project (Additional Financing, Assam, India)",
+      "funder": "Asian Development Bank (ADB)",
+      "one_liner": "ADB's $182M additional financing for Assam flood resilience opens procurement opportunities for technical specialists in flood risk mapping, forecasting, and nature-based erosion management.",
+      "summary_paragraph": "The Asian Development Bank has approved $182 million in additional financing to expand support for strengthening Assam's resilience to chronic flooding and severe riverbank erosion along the Brahmaputra River. The funding will extend integrated flood and riverbank erosion risk management measures into four additional high-priority reaches of the Brahmaputra River, expected to directly benefit about 600,000 rural residents. Nature-based solutions such as reed propagation and wetland restoration will be implemented alongside enhanced flood risk mapping, erosion prediction models, and flood forecasting and early warning systems. The project was approved in February 2026 and procurement for technical consulting components is ongoing.",
+      "due_date": "rolling",
+      "eligibility": "International consultants and firms with ADB procurement standing",
+      "budget": "$182M total project (consulting components vary)",
+      "topics": [
+        "inland flooding",
+        "riverine flooding",
+        "flood risk mapping",
+        "nature-based solutions",
+        "flood forecasting",
+        "early warning"
+      ],
+      "source_url": "https://www.adb.org/news/adb-approves-182-million-loan-scale-flood-and-erosion-management-along-brahmaputra-assam",
+      "track": "Application",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Interreg Danube Region Programme — 3rd Call for Proposals (2026)",
+      "funder": "Interreg / EU ERDF",
+      "one_liner": "Interreg Danube Region's third call invites cross-border projects tackling shared flood and climate challenges across 14 Danube basin countries.",
+      "summary_paragraph": "Projects funded under the Interreg Danube Region Programme 3rd Call are planned to start July 1, 2026, with a maximum project duration of 30 months. Interreg funding for 2021–2027 totals €8 billion across 86 programmes, typically covering up to 80% of eligible costs. The Danube Region Programme specifically targets transboundary flood and water management challenges, making it well suited for consortia including flood modelling and decision-support technology partners. Calls for proposals have been open and are currently under assessment.",
+      "due_date": "unknown",
+      "eligibility": "Public and private organisations from the 14 Danube Region countries; EU-based consortium lead required",
+      "budget": "Typical Interreg project: €1M–€5M, 80% EU co-financing",
+      "topics": [
+        "flood resilience",
+        "inland flooding",
+        "riverine flooding",
+        "climate adaptation",
+        "transboundary water management"
+      ],
+      "source_url": "https://interreg-danube.eu/calls-for-proposals/third-call-for-proposals",
+      "track": "Application",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "UK Environment Agency — FCERM Natural Flood Management Investment Programme (2026–)",
+      "funder": "UK Government / Environment Agency",
+      "one_liner": "England's new FCERM investment programme, open from April 2026, commits at least £300M to natural flood management over 10 years with submissions expected from July 2026.",
+      "summary_paragraph": "The next FCERM investment programme opened on 1 April 2026, with the Environment Agency expecting projects to be submitted from July 2026 on a rolling basis. The guidance has a strong focus on natural flood management (NFM), with a minimum of 3% of FCERM investment going towards NFM over the first three years and at least £300 million committed to NFM over 10 years. Standalone NFM projects include interventions that protect, restore, or mimic the natural functions of catchments, floodplains, rivers, and the coast. Non-Risk Management Authorities (non-RMAs) are now also eligible alongside traditional Risk Management Authorities such as local authorities, water companies, and internal drainage boards.",
+      "due_date": "rolling",
+      "eligibility": "Risk Management Authorities (local authorities, water companies, internal drainage boards) and non-RMA delivery partners in England",
+      "budget": "£300M+ committed to NFM over 10 years; individual project sizes vary",
+      "topics": [
+        "nature-based solutions",
+        "inland flooding",
+        "coastal flooding",
+        "flood risk reduction",
+        "natural flood management"
+      ],
+      "source_url": "https://www.gov.uk/government/consultations/flood-and-coastal-erosion-funding-reform/outcome/flood-and-coastal-erosion-risk-management-funding-policy",
+      "track": "Application",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "ADB — Community Resilience Financing Partnership Facility (CRFPF) & Asia Pacific Disaster Response Fund (APDRF)",
+      "funder": "Asian Development Bank (ADB)",
+      "one_liner": "ADB's rolling disaster resilience trust funds provide grants and technical assistance for community-level flood resilience across Asia and the Pacific, with procurement open to international specialists.",
+      "summary_paragraph": "The Asia Pacific Disaster Response Fund (APDRF) is a special fund established in 2009 to provide fast-tracked grants to ADB developing member countries for life-saving purposes in the immediate aftermath of major disasters triggered by natural hazards, with grants of up to $5M per emergency event. All ADB developing member countries are eligible, with recipients being central governments that may allocate funds to local governments, agencies, and suitable national or international entities including NGOs. ADB operates numerous related thematic trust funds including the Community Resilience Financing Partnership Facility, Climate Change Fund, Climate Innovation and Development Fund, and the ASEAN Catalytic Green Finance Facility. Recent emergency grants have been approved for Sri Lanka, Thailand, and Vietnam following major floods, with technical assistance calls under these facilities representing ongoing entry points for international flood modelling specialists.",
+      "due_date": "rolling",
+      "eligibility": "ADB developing member country governments; international consultants via ADB procurement",
+      "budget": "Up to $5M per emergency event (APDRF); larger TA components vary",
+      "topics": [
+        "flood resilience",
+        "coastal flooding",
+        "disaster risk reduction",
+        "community-based adaptation",
+        "early warning"
+      ],
+      "source_url": "https://www.adb.org/what-we-do/funds/asia-pacific-disaster-response-fund-apdrf",
+      "track": "Application",
+      "first_seen": "2026-06-26"
     }
   ]
 }
