@@ -6,7 +6,7 @@
       "last_seen": "2026-06-26"
     },
     "nfwf.org": {
-      "count": 5,
+      "count": 6,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-26"
     },
@@ -41,7 +41,7 @@
       "last_seen": "2026-06-25"
     },
     "grants.gov": {
-      "count": 285,
+      "count": 312,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-26"
     },
@@ -56,19 +56,19 @@
       "last_seen": "2026-06-25"
     },
     "www2.fundsforngos.org": {
-      "count": 2,
-      "first_seen": "2026-06-25",
-      "last_seen": "2026-06-26"
-    },
-    "floridadep.gov": {
       "count": 3,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-26"
     },
-    "dec.ny.gov": {
-      "count": 1,
+    "floridadep.gov": {
+      "count": 4,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
+      "last_seen": "2026-06-26"
+    },
+    "dec.ny.gov": {
+      "count": 2,
+      "first_seen": "2026-06-25",
+      "last_seen": "2026-06-26"
     },
     "nfuonline.com": {
       "count": 1,
@@ -86,19 +86,19 @@
       "last_seen": "2026-06-25"
     },
     "adb.org": {
-      "count": 4,
+      "count": 5,
       "first_seen": "2026-06-25",
       "last_seen": "2026-06-26"
     },
     "greenclimate.fund": {
-      "count": 2,
+      "count": 3,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
+      "last_seen": "2026-06-26"
     },
     "housing-infrastructure.canada.ca": {
-      "count": 2,
+      "count": 3,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-25"
+      "last_seen": "2026-06-26"
     },
     "cinea.ec.europa.eu": {
       "count": 1,
@@ -106,7 +106,7 @@
       "last_seen": "2026-06-25"
     },
     "governor.ny.gov": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-26",
       "last_seen": "2026-06-26"
     },
@@ -121,6 +121,31 @@
       "last_seen": "2026-06-26"
     },
     "mission-adaptation-portal.ec.europa.eu": {
+      "count": 1,
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26"
+    },
+    "scc.ca.gov": {
+      "count": 1,
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26"
+    },
+    "nature.org": {
+      "count": 1,
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26"
+    },
+    "watershed.la.gov": {
+      "count": 1,
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26"
+    },
+    "water.ca.gov": {
+      "count": 1,
+      "first_seen": "2026-06-26",
+      "last_seen": "2026-06-26"
+    },
+    "recovery.texas.gov": {
       "count": 1,
       "first_seen": "2026-06-26",
       "last_seen": "2026-06-26"

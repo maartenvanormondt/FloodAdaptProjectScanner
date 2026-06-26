@@ -921,6 +921,158 @@
       ],
       "source_url": "https://www.adb.org/what-we-do/funds/asia-pacific-climate-finance-fund",
       "first_seen": "2026-06-26"
+    },
+    {
+      "title": "California State Coastal Conservancy Climate Ready & Regional Grants (Proposition 4)",
+      "funder": "California State Coastal Conservancy (SCC)",
+      "one_liner": "California's rolling coastal grant program backed by a Prop 4 Climate Bond funding sea-level rise planning, coastal flood management, wetland restoration, and community resilience projects.",
+      "summary_paragraph": "Most Conservancy grants are awarded through a rolling pre-application solicitation, including Proposition 4 (2024 Climate Bond) funding, Climate Ready, Wildfire Resilience, and all regional grant programs. The Conservancy funds a wide variety of projects along the California coast, San Francisco Bay, and in coastal watersheds to increase community resilience to the impacts of climate change. Funded project stages include pre-project feasibility studies, property acquisition, planning, design, environmental review, permitting, construction, and monitoring. The Governor proposed $33 million for coastal and flood management and $20 million for local sea-level rise planning from Proposition 4 in the 2025-26 budget, with most grants anticipated between $200,000 and $5,000,000.",
+      "due_date": "rolling",
+      "eligibility": "Government agencies (federal, state, local, and special districts), federally-recognized tribes, and 501(c)(3) nonprofit organizations with purposes consistent with Division 21 of the Public Resources Code.",
+      "budget": "Most grants $200,000–$5,000,000; $33 million proposed for coastal and flood management from Prop 4 (2025-26).",
+      "topics": [
+        "Coastal flooding",
+        "Flood resilience & adaptation",
+        "Nature-based solutions",
+        "Flood risk mapping & modelling"
+      ],
+      "source_url": "https://scc.ca.gov/grants/",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Infrastructure Canada Disaster Mitigation and Adaptation Fund (DMAF)",
+      "funder": "Housing, Infrastructure and Communities Canada (HICC)",
+      "one_liner": "Canada's largest national disaster resilience infrastructure program covering floods, wildfires, and extreme weather, currently between intake cycles with a new call forthcoming.",
+      "summary_paragraph": "The DMAF is a national, competitive, and merit-based contribution program supporting public infrastructure projects designed to mitigate current and future climate-related risks and disasters triggered by climate change, including floods, wildland fires, droughts, and seismic events. The program supports both new construction and the reinforcement or modification of existing public infrastructure, including natural infrastructure solutions. First launched in 2018 with $2 billion in funding, the program has since been expanded to a total envelope of more than CAD $3.8 billion. The current budget is fully allocated with projects under construction expected to be completed by March 2035; the next call for proposals date is to be determined.",
+      "due_date": "unknown",
+      "eligibility": "Provinces, territories, municipalities, Indigenous governing bodies, and public institutions in Canada.",
+      "budget": "Total envelope over CAD $3.8 billion; minimum $1 million eligible project costs; federal contribution up to 40% for municipalities, higher for Indigenous recipients.",
+      "topics": [
+        "Coastal flooding",
+        "Inland/riverine flooding",
+        "Flood resilience & adaptation",
+        "Nature-based solutions"
+      ],
+      "source_url": "https://housing-infrastructure.canada.ca/dmaf-faac/index-eng.html",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "The Nature Conservancy Climate Resilience Grant Program 2026 (New York)",
+      "funder": "The Nature Conservancy in New York",
+      "one_liner": "TNC New York's sixth-round grant program supporting land protection, floodplain restoration, and climate adaptation by conservation organizations and municipalities across New York State.",
+      "summary_paragraph": "The Nature Conservancy in New York announced the sixth round of the Climate Resilience Grant Program (CRGP), with the goal of supporting New York's conservation community in protecting the lands and waters that contribute to resilience to climate change for the benefit of people and nature. The 2026 CRGP funding cycle offers grants up to $50,000 to support fee and easement acquisitions as well as planning and capacity initiatives in two different funding categories. Eligible applicants include land trusts, conservation organizations, academic institutions, Tribal Nations, municipalities, and local agencies. The program is accessible to smaller NGOs and local governments and supports flood-adjacent nature-based adaptation work including floodplain protection.",
+      "due_date": "unknown",
+      "eligibility": "Land trusts and other conservation organizations, academic institutions, Tribal Nations, municipalities, and local agencies in New York State.",
+      "budget": "Grants up to $50,000.",
+      "topics": [
+        "Flood resilience & adaptation",
+        "Nature-based solutions",
+        "Coastal flooding"
+      ],
+      "source_url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/new-york/stories-in-new-york/funding-grant-program-climate-resilience/",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Horizon Europe Climate Resilience & Disaster Risk Management (Cluster 3, 2026)",
+      "funder": "European Commission / Horizon Europe",
+      "one_liner": "European Commission call inviting proposals for advanced climate security tools, disaster forecasting systems, and risk-management solutions for climate-related disasters including flooding.",
+      "summary_paragraph": "The European Commission is inviting applications under Horizon Europe to strengthen Europe's resilience to climate-related disasters through advanced climate security tools, forecasting systems, and risk-management solutions. The programme supports innovative projects focused on climate adaptation, crisis management, early warning systems, and disaster preparedness aligned with Horizon Europe Cluster 3. A related call under the same umbrella targets advanced disaster response and search-and-rescue technologies, also with a deadline of November 5, 2026. Consortia combining research institutions with operational flood management agencies are well positioned to compete for these multi-million euro awards.",
+      "due_date": "2026-11-05",
+      "eligibility": "Research consortia, universities, SMEs, and public bodies in EU member states and Horizon Europe-associated countries.",
+      "budget": "Multi-million euro awards typical for Horizon Europe calls.",
+      "topics": [
+        "Flood risk mapping & modelling",
+        "Flood resilience & adaptation",
+        "Coastal flooding",
+        "Inland/riverine flooding"
+      ],
+      "source_url": "https://www2.fundsforngos.org/listing/comprehensive-list-of-humanitarian-and-disaster-relief-funding-opportunities/amp/",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Louisiana Watershed Initiative — Office of Community Development (Round 3/Ongoing)",
+      "funder": "Louisiana Office of Community Development – Disaster Recovery (LOCD-DR), via HUD CDBG-MIT",
+      "one_liner": "Louisiana's watershed-based flood mitigation program continues to fund capital projects and nature-based solutions, with Round 3 linking awards to completed watershed models.",
+      "summary_paragraph": "This program provides funding and support to local and regional agencies to implement flood risk reduction projects and programs with demonstrable outcomes that improve community flood resilience, implemented in three distinct rounds designed to encourage regional collaboration and prioritization of projects. Round 3 will award flood risk reduction projects justified by completed watershed models and nature-based solutions tools. The Louisiana Watershed Initiative allocated $995 million of a $1.2 billion CDBG-MIT grant to flood mitigation projects, with $899 million awarded to 129 projects throughout the state. As of May 31, 2026, the Louisiana Watershed Initiative website was deactivated and program information transitioned to the Louisiana Office of Community Development's website.",
+      "due_date": "rolling",
+      "eligibility": "Local and regional public entities in Louisiana.",
+      "budget": "$995 million total allocation; $899 million already awarded; Round 3 funds remaining to be disbursed.",
+      "topics": [
+        "Inland/riverine flooding",
+        "Flood resilience & adaptation",
+        "Flood risk mapping & modelling",
+        "Nature-based solutions"
+      ],
+      "source_url": "https://watershed.la.gov/local-regional-projects-programs",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "California Proposition 4 Dam Safety & Climate Resilience Local Assistance Program (DWR)",
+      "funder": "California Department of Water Resources (DWR)",
+      "one_liner": "California's Prop 4-backed programme providing hundreds of millions of dollars for flood control subventions and dam safety improvements to reduce inland flood risk statewide.",
+      "summary_paragraph": "In July 2024, the Legislature approved Proposition 4, a $10 billion bond measure designed to increase the state's resilience to the impacts of climate change. The Dam Safety and Climate Resilience Local Assistance Program (DSCR) provides state funding for repairs, rehabilitation, enhancements, and other dam safety projects at existing state jurisdictional dams and associated facilities. The 2025-26 spending plan includes $232 million for the DSCR program and $123 million (83% of the total) for DWR's Flood Control Subventions Program, making DWR a major delivery vehicle for California's new climate bond investments in flood risk. A new application cycle is expected in 2026; applicants should check the DWR website for updated deadlines.",
+      "due_date": "unknown",
+      "eligibility": "Any California public agency, nonprofit organization, public utility agency, mutual water company, or private entity that owns a state jurisdictional dam and associated facilities.",
+      "budget": "$232 million for Dam Safety and Climate Resilience Local Assistance Program; $123 million for Flood Control Subventions Program (2025-26 spending plan).",
+      "topics": [
+        "Inland/riverine flooding",
+        "Flood resilience & adaptation",
+        "Flood risk mapping & modelling"
+      ],
+      "source_url": "https://water.ca.gov/Work-With-Us/Grants-And-Loans/Dam-Safety-and-Enhancements",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Texas General Land Office Community Development Block Grant – Mitigation (CDBG-MIT) Programs",
+      "funder": "Texas General Land Office (GLO), via HUD CDBG-MIT",
+      "one_liner": "Texas GLO channels billions in federal CDBG-MIT flood mitigation dollars to local governments across the state through ongoing competitive and formula grant sub-programmes.",
+      "summary_paragraph": "The Texas GLO administers several ongoing CDBG-MIT funded programmes targeting flood mitigation following Hurricanes Harvey, Imelda, and other disasters. Eligible activities include flood infrastructure construction, buyouts, floodplain management improvements, and resilience planning. Local governments and councils of governments (COGs) in designated disaster-impacted areas of Texas can apply through the GLO's Community Development and Revitalization (CDR) portal. The programme aligns closely with the Louisiana Watershed Initiative model and targets similar inland and coastal flood hazard types across HUD-identified most impacted and distressed counties.",
+      "due_date": "rolling",
+      "eligibility": "Texas local governments and councils of governments in HUD-identified most impacted and distressed counties.",
+      "budget": "Multi-billion dollar programme overall; individual project grants range widely.",
+      "topics": [
+        "Coastal flooding",
+        "Inland/riverine flooding",
+        "Flood resilience & adaptation"
+      ],
+      "source_url": "https://recovery.texas.gov/local-governments/programs/index.html",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Green Climate Fund (GCF) Accredited Entity Project Concept Submissions",
+      "funder": "Green Climate Fund (GCF)",
+      "one_liner": "The world's largest dedicated climate fund accepts rolling project concept submissions from accredited entities for adaptation investments including coastal and riverine flood resilience in developing nations.",
+      "summary_paragraph": "GCF investments are aimed at achieving maximum impact in the developing world, supporting paradigm shifts in both mitigation and adaptation, with a 50:50 balance targeted between the two over time. The Fund aims for a floor of 50 percent of the adaptation allocation for particularly vulnerable countries, including Least Developed Countries (LDCs), Small Island Developing States (SIDS), and African States. Flood resilience, early warning systems, coastal protection, and nature-based solutions for climate adaptation are core eligible investment areas. Access is through GCF-accredited entities, including multilateral development banks, national development banks, and UN agencies, with concept notes submitted to the GCF Secretariat on a rolling basis.",
+      "due_date": "rolling",
+      "eligibility": "Projects must be submitted through a GCF-accredited entity (national, regional, or international); developing country governments and national implementing entities are eligible.",
+      "budget": "Projects range from small-scale (under $10 million) to transformational (over $250 million).",
+      "topics": [
+        "Coastal flooding",
+        "Inland/riverine flooding",
+        "Flood resilience & adaptation",
+        "Nature-based solutions",
+        "Flood risk mapping & modelling"
+      ],
+      "source_url": "https://www.greenclimate.fund/projects",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Asian Development Bank Urban Climate Change Resilience Trust Fund (UCCRTF) & Climate Change Fund (CCF)",
+      "funder": "Asian Development Bank (ADB)",
+      "one_liner": "ADB's dedicated climate resilience trust funds channel grants and technical assistance to Asian cities and governments for flood risk reduction, urban drainage, coastal protection, and nature-based solutions.",
+      "summary_paragraph": "The ADB Urban Climate Change Resilience Trust Fund (UCCRTF) and Climate Change Fund (CCF) support projects addressing urban flooding, riverine flood management, coastal resilience, and early warning systems across Asia and the Pacific, with priority geographies including South and Southeast Asian cities facing extreme flood exposure. Projects are typically co-developed with ADB's resident missions in country and submitted through the ADB project pipeline. Technical assistance grants can support feasibility studies, flood risk modelling, and institutional capacity building, making them accessible as pre-investment entry points for flood resilience work. TA grants typically range from $500,000 to $3 million, while investment projects can reach $50 million or more in co-financing.",
+      "due_date": "rolling",
+      "eligibility": "ADB developing member country governments, municipalities, and implementing agencies; civil society partners via technical assistance grants.",
+      "budget": "TA grants typically $500,000–$3 million; investment projects up to $50 million or more in co-financing.",
+      "topics": [
+        "Coastal flooding",
+        "Inland/riverine flooding",
+        "Flood resilience & adaptation",
+        "Flood risk mapping & modelling",
+        "Nature-based solutions"
+      ],
+      "source_url": "https://www.adb.org/what-we-do/funds/urban-climate-change-resilience-trust-fund",
+      "first_seen": "2026-06-26"
     }
   ]
 }
