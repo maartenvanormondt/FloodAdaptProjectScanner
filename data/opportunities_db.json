@@ -805,6 +805,122 @@
       ],
       "source_url": "https://rea.ec.europa.eu/funding-and-grants/horizon-europe-cluster-6-food-bioeconomy-natural-resources-agriculture-and-environment/land-oceans-and-water-climate-action_en",
       "first_seen": "2026-06-25"
+    },
+    {
+      "title": "New York State Environmental Bond Act — Community Resilience & Flood Risk Reduction Grant Program",
+      "funder": "New York State Department of State (DOS) / NY Environmental Bond Act",
+      "one_liner": "New York's $4.2B Environmental Bond Act is funding $40 million in flood risk reduction and coastal resilience projects for municipalities across the state, due June 26, 2026.",
+      "summary_paragraph": "Governor Hochul announced nearly $100 million in new grant funding to support nature-based and green infrastructure projects designed to reduce flood risk and enhance community resilience to extreme weather. The Community Resilience and Flood Risk Reduction Grant Program makes $40 million available through two categories: $20 million for Coastal Rehabilitation and Resilience and $20 million for Inland Flooding and Local Waterfront Revitalization Program Implementation. Applications can be submitted through the Consolidated Funding Application (CFA) portal and are due by 4 p.m. on Friday, June 26, 2026. Eligible applicants are NY coastal and inland municipalities participating in the Local Waterfront Revitalization Program.",
+      "due_date": "2026-06-26",
+      "eligibility": "NY coastal and inland municipalities participating in the Local Waterfront Revitalization Program (LWRP)",
+      "budget": "$40 million total ($20M coastal; $20M inland/waterfront)",
+      "topics": [
+        "coastal flooding",
+        "inland/riverine flooding",
+        "flood resilience & adaptation",
+        "nature-based solutions"
+      ],
+      "source_url": "https://www.governor.ny.gov/news/governor-hochul-announces-availability-100-million-climate-resiliency-projects-through-42",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Texas Water Development Board — Flood Infrastructure Fund (FIF) SFY 2026–27",
+      "funder": "Texas Water Development Board (TWDB)",
+      "one_liner": "Texas's Flood Infrastructure Fund provides zero-interest loans and grants to local political subdivisions for flood planning, mitigation, and control projects recommended in the state flood plan.",
+      "summary_paragraph": "Authorized by the Texas Legislature and approved by Texas voters through a constitutional amendment, the FIF program provides zero-interest loans and grants for flood control, flood mitigation, and drainage projects. Only Flood Management Evaluations, Flood Mitigation Projects, and Flood Management Strategies recommended in the approved state flood plan are eligible for financial assistance. The public comment period for the SFY 2026–27 FIF Intended Use Plan is currently open and will close on June 12, 2026; following the close of the public comment period, the TWDB will post the abridged application and begin the solicitation period. Funding can support planning, design, construction, and rehabilitation of flood projects, whether structural or non-structural including nature-based.",
+      "due_date": "2026-06-12",
+      "eligibility": "Texas political subdivisions: cities, counties, and designated districts/authorities",
+      "budget": "Mix of zero-interest loans and grants (up to 100% grant for low-income disaster-affected communities)",
+      "topics": [
+        "inland/riverine flooding",
+        "flood risk mapping & modelling",
+        "flood resilience & adaptation",
+        "nature-based solutions"
+      ],
+      "source_url": "https://www.twdb.texas.gov/financial/programs/fif/index.asp",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Horizon Europe — EU Mission on Adaptation to Climate Change (HORIZON-MISS-2026-01-CLIMA-06): Inland Waterways Climate Resilience",
+      "funder": "European Commission / Horizon Europe — EU Missions",
+      "one_liner": "This Horizon Europe Mission call funds research and innovation consortia improving the climate resilience of inland waterways and related water infrastructure, with emphasis on nature-based solutions.",
+      "summary_paragraph": "The funding call addresses climate and environmental risks to water infrastructure including droughts, flooding, slow onset events, ecological degradation, and cascading and compound events in a systemic way. Cost-efficient and environmentally friendly measures — especially nature-based solutions — are identified with stakeholder involvement to improve climate resilience of inland waterways while supporting integrated co-benefits and avoiding competing water uses across countries and regions. Applications are open for consortia with at least 3 participants established in different countries, based in EU Member States and Associated Countries, plus low- and middle-income countries. This is a Research and Innovation Action providing up to €6 million for up to 5 years, with applications closing September 23, 2026.",
+      "due_date": "2026-09-23",
+      "eligibility": "Consortia of ≥3 participants from different countries (EU/Associated Countries); minimum one partner from an EU Member State; low- and middle-income countries also eligible",
+      "budget": "~€6 million per project; 2 projects funded",
+      "topics": [
+        "inland/riverine flooding",
+        "flood resilience & adaptation",
+        "nature-based solutions",
+        "flood risk modelling"
+      ],
+      "source_url": "https://iuk-business-connect.org.uk/opportunities/horizon-europe-2026-27-eu-missions-adaptation-to-climate-change/",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Horizon Europe — EU Mission on Adaptation (HORIZON-MISS-2026-01-CLIMA-04): Bridging Disaster Risk Management and Climate Adaptation",
+      "funder": "European Commission / Horizon Europe — EU Missions",
+      "one_liner": "This Horizon Europe call specifically funds projects bridging the gap between disaster risk management practices and climate adaptation planning across European regions and communities.",
+      "summary_paragraph": "HORIZON-MISS-2026-01-CLIMA-04 focuses on bridging the gap between disaster risk management and climate adaptation, with approximately €5 million available for a single project. The full suite of CLIMA Mission calls opened on 4 February 2026 and close on 23 September 2026. The EU Mission on Adaptation to Climate Change aims to support at least 150 European regions and communities towards climate resilience by 2030, helping regions and local authorities understand climate risks, develop adaptation pathways, and implement innovative solutions on the ground. This call is particularly relevant to teams working at the interface of early-warning systems, flood forecasting, and operational emergency management.",
+      "due_date": "2026-09-23",
+      "eligibility": "Research institutions, local authorities, businesses, NGOs in EU/Associated Countries (consortium required)",
+      "budget": "~€5 million (single project)",
+      "topics": [
+        "flood resilience & adaptation",
+        "coastal flooding",
+        "flood risk mapping & modelling"
+      ],
+      "source_url": "https://mission-adaptation-portal.ec.europa.eu/funding-financing/calls-and-opportunities_en",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Horizon Europe Cluster 3 (Civil Security) — Climate-Related Disaster Resilience Innovation Action",
+      "funder": "European Commission / Horizon Europe Cluster 3 (Disaster-Resilient Societies)",
+      "one_liner": "A Horizon Europe Cluster 3 Innovation Action building Europe's capacity to predict, prepare for, and respond to climate-related disasters including floods, using satellite data, AI, and cross-sector collaboration.",
+      "summary_paragraph": "The European Commission is launching a Horizon Europe Innovation Action under Cluster 3 to strengthen Europe's resilience to climate-related disasters, with a deadline of November 5, 2026. This initiative addresses the increasing frequency and severity of climate-related disasters by improving Europe's ability to predict, prepare for, and respond to complex risks. By combining satellite data, AI, and cross-sector collaboration, it strengthens both immediate crisis response and long-term adaptation strategies. Eligible activities include early warning systems for floods, heatwaves, fires, and landslides, and the programme ensures that climate security solutions are inclusive and socially responsive.",
+      "due_date": "2026-11-05",
+      "eligibility": "Research consortia, civil protection agencies, local authorities, technology companies in EU/Associated Countries",
+      "budget": "unknown",
+      "topics": [
+        "coastal flooding",
+        "inland flooding",
+        "flood risk mapping & modelling",
+        "flood resilience & adaptation"
+      ],
+      "source_url": "https://www2.fundsforngos.org/science/call-for-applications-on-climate-resilience-and-disaster-risk-management/",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "ADB — Ocean Resilience and Coastal Adaptation Trust Fund (ORCATF)",
+      "funder": "Asian Development Bank (ADB) — Ocean Resilience and Climate Adaptation Financing Partnership Facility",
+      "one_liner": "ADB's ORCATF provides grant co-financing specifically for nature-based solutions for coastal flood mitigation and protection in Asia-Pacific ADB member countries.",
+      "summary_paragraph": "A $1 million grant from the Ocean Resilience and Coastal Adaptation Trust Fund was recently deployed to finance nature-based solutions for flood mitigation and coastal protection in the Maldives. In 2024, ADB committed to climate finance reaching 50% of total annual committed financing by 2030, enabling over $100 billion in cumulative climate finance from its own resources across 2019 to 2030. ADB is promoting disaster risk reduction and climate change adaptation in the region by investing in flood control, transport, and energy infrastructure that withstands and builds resilience to disasters. Country governments and project developers in ADB developing member countries should engage ADB country operations departments to access ORCATF co-financing for eligible flood and coastal resilience projects.",
+      "due_date": "rolling",
+      "eligibility": "ADB developing member country governments; accessed via ADB country operations departments",
+      "budget": "Grant tranches typically $1M–$3M per project component",
+      "topics": [
+        "coastal flooding",
+        "nature-based solutions",
+        "flood resilience & adaptation"
+      ],
+      "source_url": "https://www.adb.org/news/adb-help-maldives-strengthen-climate-resilience-food-security",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "ADB — Asia-Pacific Climate Finance Fund (ACliFF)",
+      "funder": "Asian Development Bank (ADB) / Government of Germany (founding donor)",
+      "one_liner": "ACliFF is an ADB-managed multi-donor trust fund developing financial risk management products — including disaster insurance for city governments — to unlock climate resilience investment across Asia and the Pacific.",
+      "summary_paragraph": "The Asia-Pacific Climate Finance Fund is a multi-donor trust fund established in April 2017 with the objective of supporting the development and implementation of financial risk management products that can help unlock capital for climate investments and improve resilience to climate change impacts. The fund responds to the need to accelerate investment in climate change adaptation, addresses extreme weather events, and improves resilience to climate-related disasters — particularly for vulnerable and low-income populations — such as through disaster insurance for city governments to improve financial preparedness for disaster response. ACliFF is managed by ADB and was established with the Government of Germany as its first financing partner. Financial risk management products supported by the fund can be implemented alongside both ADB and third-party climate and development projects.",
+      "due_date": "rolling",
+      "eligibility": "ADB member country governments and private sector entities via ADB nonsovereign operations",
+      "budget": "unknown",
+      "topics": [
+        "coastal flooding",
+        "flood resilience & adaptation",
+        "flood risk modelling"
+      ],
+      "source_url": "https://www.adb.org/what-we-do/funds/asia-pacific-climate-finance-fund",
+      "first_seen": "2026-06-26"
     }
   ]
 }
