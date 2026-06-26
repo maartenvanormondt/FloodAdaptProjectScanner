@@ -1158,6 +1158,71 @@
       ],
       "source_url": "https://lao.ca.gov/Publications/Report/5076",
       "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Horizon Europe — Mission 'Restore Our Ocean and Waters' 2026 Calls (HORIZON-MISS-2026-03-OCEAN)",
+      "funder": "European Commission / Horizon Europe",
+      "one_liner": "Five open Horizon Europe topics with €115M+ to restore ocean, coastal, and inland water ecosystems, including nature-positive and digital-twin solutions relevant to flood management.",
+      "summary_paragraph": "The European Commission has launched five new Horizon Europe topics for 2026 under the EU Mission 'Restore our Ocean and Waters,' with an indicative budget of over €115 million to accelerate large-scale deployment and upscaling of solutions that protect and regenerate marine and freshwater ecosystems. Opening on 4 February 2026 and closing on 23 September 2026, these calls invite proposals that strengthen marine habitat restoration, pollution reduction, sustainable fisheries management, ocean technology development, and expansion of the EU Digital Twin Ocean. Relevant topics include nature-positive solutions to address aquatic pollution and biodiversity loss from source to sea (OCEAN-02) and digital twin ocean modelling (OCEAN-05). Stakeholders across sectors — research, industry, public authorities, NGOs, and coastal communities — are eligible to co-create impactful solutions.",
+      "due_date": "2026-09-23",
+      "eligibility": "Consortia from EU Member States, associated countries, and LMIC partners",
+      "budget": ">€115 million total across 5 topics",
+      "topics": [
+        "Coastal flooding",
+        "Nature-based solutions",
+        "Flood risk modelling"
+      ],
+      "source_url": "https://westmed-initiative.ec.europa.eu/horizon-europe-2026-calls-mission-restore-our-ocean-and-waters-deadline-23-september-2026/",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Texas GLO — Resilient Communities Program (CDBG-MIT)",
+      "funder": "Texas General Land Office (GLO), funded via CDBG-Mitigation",
+      "one_liner": "Texas GLO grants for local governments to adopt resilient building codes, flood damage prevention ordinances, and long-range land use plans incorporating flood resiliency measures.",
+      "summary_paragraph": "Administered by the Texas General Land Office, the Resilient Communities Program funds the development, adoption, and implementation of modern and resilient building codes, flood damage prevention ordinances, and long-range planning such as comprehensive and land use plans incorporating resiliency measures to ensure structures can withstand future natural disasters. Public service and disaster recovery plan developments are also eligible activities. The maximum grant award is $300,000 per applicant, and application intake is processed on a first-come, first-served basis. Prospective applicants should confirm with GLO whether additional funds remain available or a new cycle has opened.",
+      "due_date": "rolling",
+      "eligibility": "Local governments in Texas",
+      "budget": "Up to $300,000 per applicant",
+      "topics": [
+        "Flood resilience & adaptation",
+        "Flood risk modelling",
+        "Inland flooding"
+      ],
+      "source_url": "https://texasfloodclearinghouse.org/funding/index.html",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "EU LIFE Programme — Nature-Based Solutions for Flood and Coastal Resilience Strand 2026",
+      "funder": "European Commission (CINEA), EU LIFE Programme",
+      "one_liner": "LIFE Programme's active nature-based solutions strand funding projects deploying coastal marshes, floodplain restoration, living shorelines, and dunes to reduce flood and storm surge risk across Europe.",
+      "summary_paragraph": "All over Europe, LIFE projects use nature-based solutions to tackle some of the worst impacts of climate change, with NbS proven highly effective for reducing risks from floods, storms, sea level rise, droughts, and wildfires by acting as natural barriers and shock-absorbers. A new brochure from the EU LIFE Programme, launched in March 2026, highlights LIFE projects deploying NbS, featuring success stories from across the EU such as Dutch dune revival (expanding nearly 190 ha of sand dunes) and LIFE Baie de l'Aiguillon (reviving 1,100 ha of salt marshes as flood defences). New 2026 calls are active under CINEA's LIFE Climate Change Adaptation strand and form part of the ~€28 million envelope for that strand. Eligible applicants include public and private organisations from EU Member States and associated countries.",
+      "due_date": "unknown",
+      "eligibility": "Public and private organisations in EU Member States and associated countries",
+      "budget": "Part of the ~€28M LIFE Climate Change Adaptation envelope for 2026",
+      "topics": [
+        "Nature-based solutions",
+        "Coastal flooding",
+        "Flood resilience & adaptation"
+      ],
+      "source_url": "https://cinea.ec.europa.eu/news-events/news/nature-based-solutions-life-2026-03-24_en",
+      "first_seen": "2026-06-26"
+    },
+    {
+      "title": "Horizon Europe — Cluster 6 / Nature-Based Solutions for Ecosystem Restoration 2026",
+      "funder": "European Commission / Horizon Europe (REA — Research Executive Agency)",
+      "one_liner": "Horizon Europe Cluster 6 biodiversity call featuring nature-based solutions for ecosystem restoration, including freshwater and coastal systems with flood-relevant applications, closing September 2026.",
+      "summary_paragraph": "The Horizon Europe 2026 call for proposals under Cluster 6 covers seven topics including tackling insect decline, groundwater ecosystems assessment, deep sea ecosystems conservation, nature-positive economy, and agrobiodiversity, with three additional topics focused on co-creating solutions for restoration ecosystems living labs and nature-based solutions. Projects addressing floodplain restoration, freshwater ecosystem resilience, and coastal NbS are directly eligible under this call. The submission deadline is 17 September 2026, and the call is open to research and innovation consortia in EU Member States and associated countries. The overall Horizon Europe Cluster 6 envelope across multiple calls totals hundreds of millions of euros.",
+      "due_date": "2026-09-17",
+      "eligibility": "Research and innovation consortia in EU Member States and associated countries",
+      "budget": "unknown",
+      "topics": [
+        "Nature-based solutions",
+        "Inland/riverine flooding",
+        "Flood resilience & adaptation",
+        "Coastal flooding"
+      ],
+      "source_url": "https://rea.ec.europa.eu/funding-and-grants/horizon-europe-cluster-6-food-bioeconomy-natural-resources-agriculture-and-environment/biodiversity-and-ecosystem-services_en",
+      "first_seen": "2026-06-26"
     }
   ]
 }
