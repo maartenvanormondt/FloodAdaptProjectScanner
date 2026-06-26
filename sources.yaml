@@ -24,6 +24,10 @@ sources:
     url: https://www.ukri.org/opportunity
   - name: Netherlands Enterprise Agency (RVO)
     url: https://www.rvo.nl/subsidies-financiering
+  - name: NWO — Dutch Research Council (technology & research grants)
+    url: https://www.nwo.nl/en/calls
+  - name: European Innovation Council (EIC — grants + equity for deep-tech)
+    url: https://eic.ec.europa.eu/eic-funding-opportunities_en
   - name: World Bank / GFDRR (disaster risk)
     url: https://www.gfdrr.org
   - name: Green Climate Fund

@@ -47,6 +47,7 @@
   .topics { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
   .chip { background: var(--chip); color: var(--accent); border-radius: 999px; padding: 3px 10px; font-size: 12px; }
   .chip.region { background: #eef0f2; color: var(--muted); }
+  .chip.track { background: #fceee1; color: #9c5a17; font-weight: 600; }
   .verdict { margin-top: 12px; display: flex; gap: 8px; }
   .vbtn {
     border: 1px solid var(--line); background: #fff; color: var(--muted);
@@ -98,6 +99,7 @@
       <option value="dislike">👎 Rejected</option>
       <option value="all">All (incl. rejected)</option>
     </select>
+    <select id="track"><option value="">All tracks</option></select>
     <select id="region"><option value="">All regions</option></select>
     <select id="topic"><option value="">All topics</option></select>
     <select id="funder"><option value="">All funders</option></select>
@@ -210,13 +212,14 @@
     eligibility: o.eligibility || "", budget: o.budget || "",
     topics: Array.isArray(o.topics) ? o.topics : [],
     source_url: o.source_url || "", first_seen: o.first_seen || "",
-    region: o.region || "", id: o.id || "",
+    region: o.region || "", track: o.track || "", id: o.id || "",
     key: o.id || o.source_url || "",   // verdict key: per-opportunity id (URL fallback)
   }));
 
   const qEl = document.getElementById("q");
   const statusEl = document.getElementById("status");
   const regionEl = document.getElementById("region");
+  const trackEl = document.getElementById("track");
   const topicEl = document.getElementById("topic");
   const funderEl = document.getElementById("funder");
   const sortEl = document.getElementById("sort");
@@ -225,6 +228,8 @@
 
   [...new Set(DATA.map(o => o.region))].filter(Boolean).sort()
     .forEach(r => regionEl.add(new Option(r, r)));
+  [...new Set(DATA.map(o => o.track))].filter(Boolean).sort()
+    .forEach(t => trackEl.add(new Option(t, t)));
   [...new Set(DATA.flatMap(o => o.topics))].filter(Boolean).sort()
     .forEach(t => topicEl.add(new Option(t, t)));
   [...new Set(DATA.map(o => o.funder))].filter(Boolean).sort()
@@ -234,7 +239,7 @@
 
   function render() {
     const q = qEl.value.trim().toLowerCase();
-    const status = statusEl.value, region = regionEl.value;
+    const status = statusEl.value, region = regionEl.value, track = trackEl.value;
     const topic = topicEl.value, funder = funderEl.value, sort = sortEl.value;
 
     let rows = DATA.filter(o => {
@@ -245,6 +250,7 @@
       if (status === "undecided" && v) return false;
       // status === "all" → show everything, including rejected
       if (region && o.region !== region) return false;
+      if (track && o.track !== track) return false;
       if (topic && !o.topics.includes(topic)) return false;
       if (funder && o.funder !== funder) return false;
       if (q) {
@@ -278,6 +284,7 @@
           <span><b>Eligibility:</b> ${esc(o.eligibility || "unknown")}</span>
         </div>
         <div class="topics">
+          ${o.track ? `<span class="chip track">${esc(o.track)}</span>` : ""}
           ${o.region ? `<span class="chip region">${esc(o.region)}</span>` : ""}
           ${o.topics.map(t => `<span class="chip">${esc(t)}</span>`).join("")}
         </div>
@@ -315,7 +322,7 @@
     }
   });
 
-  [qEl, statusEl, regionEl, topicEl, funderEl, sortEl].forEach(el => el.addEventListener("input", render));
+  [qEl, statusEl, regionEl, trackEl, topicEl, funderEl, sortEl].forEach(el => el.addEventListener("input", render));
   render();
   loadServerVerdicts();
   loadComments();

@@ -69,17 +69,26 @@ DIRECTIVE_SCHEMA = {
     "additionalProperties": False,
 }
 
-# Who we are — used to assess eligibility in "@claude, tell me more". Edit for accuracy.
-FLOODADAPT_CONTEXT = (
-    "FloodAdapt is a free, open-source flood-adaptation decision-support tool "
-    "developed by Deltares (an independent Dutch research institute). It lets "
-    "local and regional governments, water authorities, and coastal communities "
-    "rapidly assess flood risk and compare adaptation strategies. 'FloodAdapt "
-    "subscribers' are the organisations and practitioners who use it — typically "
-    "US and international municipalities, counties, and water/coastal agencies. "
-    "When judging eligibility, consider both Deltares (a research institute, often "
-    "a partner or sub-awardee) and these end-user organisations."
+# Who we are — used for eligibility reads and search relevance. Edit floodadapt.md
+# (public) for the description; put sensitive bits in the FLOODADAPT_CONTEXT_EXTRA
+# secret (merged in, never committed).
+FLOODADAPT_FILE = "floodadapt.md"
+_DEFAULT_FLOODADAPT = (
+    "FloodAdapt is a flood-adaptation decision-support tool developed by Deltares; "
+    "its users are typically local/regional governments, water authorities, and "
+    "coastal communities."
 )
+
+
+def load_floodadapt() -> str:
+    parts = []
+    if os.path.exists(FLOODADAPT_FILE):
+        with open(FLOODADAPT_FILE, encoding="utf-8") as f:
+            parts.append(f.read().strip())
+    extra = os.environ.get("FLOODADAPT_CONTEXT_EXTRA", "").strip()
+    if extra:
+        parts.append(extra)
+    return "\n\n".join(parts) if parts else _DEFAULT_FLOODADAPT
 
 # Keywords for the structured Grants.gov query.
 GRANTS_GOV_KEYWORDS = ["flood", "flood resilience", "coastal resilience", "stormwater"]
@@ -110,10 +119,20 @@ OPPORTUNITY_SCHEMA = {
                     "budget": {"type": "string", "description": "Award size; 'unknown' if unstated."},
                     "topics": {"type": "array", "items": {"type": "string"}},
                     "source_url": {"type": "string", "description": "Direct URL to the opportunity."},
+                    "track": {
+                        "type": "string",
+                        "enum": ["Application", "Business Development"],
+                        "description": (
+                            "Application = competitive funding you apply to for a project "
+                            "(grants, calls, tenders, project loans). Business Development = "
+                            "financing for the company/product itself (investors, venture / "
+                            "impact / corporate capital, equity, accelerators)."
+                        ),
+                    },
                 },
                 "required": [
                     "title", "funder", "one_liner", "summary_paragraph",
-                    "due_date", "eligibility", "budget", "topics", "source_url",
+                    "due_date", "eligibility", "budget", "topics", "source_url", "track",
                 ],
                 "additionalProperties": False,
             },
@@ -327,7 +346,7 @@ def research_opportunity(client: anthropic.Anthropic, opp: dict, instruction: st
         "search, then write a concise briefing as plain text suitable for a "
         "comment (short labelled lines, no markdown headings).\n\n"
         f"Opportunity: {title}\nFunder: {funder}\nURL: {url}\n\n"
-        f"Who we are:\n{FLOODADAPT_CONTEXT}\n\n"
+        f"Who we are:\n{load_floodadapt()}\n\n"
         "Cover, as far as you can verify:\n"
         "1. Detail — scope, goals, funding amount, timeline, key dates.\n"
         "2. Track record — examples of previously funded projects or typical awardees.\n"
@@ -462,6 +481,7 @@ GEOGRAPHIES = [
 def build_prompt(known_sources: list, liked=None, rejected=None, demote=None) -> str:
     topics = "\n".join(f"  - {t}" for t in TOPICS)
     geo = "\n".join(f"  - {g}" for g in GEOGRAPHIES)
+    who = load_floodadapt()
 
     # Preference feedback learned from the team's likes/dislikes + @claude rules.
     pref = ""
@@ -499,23 +519,32 @@ def build_prompt(known_sources: list, liked=None, rejected=None, demote=None) ->
             f"not in this list:\n{src}\n\n"
         )
     return (
-        "You are a research assistant that finds OPEN funding opportunities "
-        "(grants, RFPs, RFIs, calls for proposals) in these areas:\n\n"
+        "You are a research assistant that finds OPEN funding opportunities — "
+        "grants, RFPs, RFIs, calls, tenders, LOANS, and equity / venture / impact "
+        "INVESTMENT — in these areas:\n\n"
         f"{topics}\n\n"
+        "WHO WE ARE (favour opportunities that fit us or our users, but still "
+        f"report strong leads even if eligibility is unclear):\n{who}\n\n"
+        "Cover BOTH of these tracks and classify each opportunity into one:\n"
+        "  - Application: competitive funding you apply to for a specific project "
+        "(research/innovation grants and calls — e.g. NWO, EU Horizon Europe / "
+        "EIC, NSF — government programs, foundations, tenders, project loans).\n"
+        "  - Business Development: financing for the company or product itself "
+        "(climate / water / flood-tech investors — venture, impact, corporate — "
+        "innovation loans, equity funds, and accelerators).\n\n"
         "Cast a WIDE geographic net — do NOT focus mainly on US federal grants "
-        "(US federal opportunities are already covered by a separate source, so "
-        "spend your searches on everything else). Actively look for:\n"
+        "(US federal grants are already covered by a separate source, so spend "
+        "your searches on everything else). Actively look for:\n"
         f"{geo}\n\n"
         f"{pref}"
         f"{sources_block}"
         "Use the web_search tool to find currently-open opportunities across "
-        "national, state/provincial, and local government programs, international "
-        "development banks, foundations, NGOs, and research funders. Prefer "
-        "opportunities whose deadline is in the future or that accept rolling "
-        "submissions.\n\n"
+        "national, state/provincial, and local government programs, research "
+        "councils, international development banks, foundations, NGOs, AND "
+        "investors / lenders / accelerators. Prefer ones whose deadline is in the "
+        "future or that accept rolling submissions.\n\n"
         "Return 10-20 distinct, REAL opportunities with a good MIX of geographies "
-        "(not all from one country or level of government). For each, fill in "
-        "every field. Rules:\n"
+        "and a mix of BOTH tracks. For each, fill in every field. Rules:\n"
         "  - Only include opportunities you actually found and can cite with a "
         "real source_url. Do NOT invent opportunities.\n"
         "  - source_url must link to the SPECIFIC opportunity / call page, not a "
@@ -523,7 +552,8 @@ def build_prompt(known_sources: list, liked=None, rejected=None, demote=None) ->
         "  - If a field (budget, due_date, eligibility) is not stated, use "
         '"unknown" rather than guessing.\n'
         "  - one_liner: one short sentence. summary_paragraph: 3-5 sentences.\n"
-        "  - topics: which of the focus areas above each opportunity matches."
+        "  - topics: which focus areas it matches. track: Application or "
+        "Business Development."
     )
 
 
@@ -644,6 +674,7 @@ def fetch_grants_gov() -> list:
                 "budget": "unknown",
                 "topics": [f"matched '{keyword}'"],
                 "source_url": f"https://www.grants.gov/search-results-detail/{oid}",
+                "track": "Application",
             })
     if found:
         print(f"  Grants.gov: {len(found)} opportunities.", file=sys.stderr)

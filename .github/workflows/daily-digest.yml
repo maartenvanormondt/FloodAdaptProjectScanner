@@ -25,6 +25,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           VERDICTS_API: ${{ secrets.VERDICTS_API }}
+          FLOODADAPT_CONTEXT_EXTRA: ${{ secrets.FLOODADAPT_CONTEXT_EXTRA }}
         run: |
           mkdir -p data
           python scout.py --json data/opportunities.json

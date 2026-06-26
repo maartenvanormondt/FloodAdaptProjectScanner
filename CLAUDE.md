@@ -198,6 +198,7 @@ Then open `docs/index.html` directly (data is embedded as a script — no server
 
 ## Editing the agent's focus
 
+- **Who we are (for eligibility + relevance):** `floodadapt.md` (public, committed) — read by `load_floodadapt()` into the search prompt and the `@claude` research. Sensitive bits (fees, strategy) go in the `FLOODADAPT_CONTEXT_EXTRA` secret instead (merged in at runtime, never committed).
 - **Topics:** `TOPICS` in `scout.py`.
 - **Geographic mandate:** `GEOGRAPHIES` in `scout.py`.
 - **Seed sources:** `sources.yaml`.
