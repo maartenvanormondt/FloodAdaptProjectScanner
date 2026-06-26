@@ -53,6 +53,21 @@ DB_PATH = os.path.join("data", "opportunities_db.json")  # accumulated leads (fo
 # Shared verdicts store (Cloudflare Worker URL). When set, the agent learns from
 # what the team marked promising / rejected and steers future searches.
 VERDICTS_API = os.environ.get("VERDICTS_API", "")
+PROCESSED_FILE = os.path.join("data", "processed_comments.json")  # @claude directives already handled
+GUIDANCE_FILE = os.path.join("data", "guidance.json")  # standing search-guidance rules from @claude
+MAX_GUIDANCE = 30  # keep the most recent N rules so the prompt doesn't grow forever
+
+# Safe action set for "@claude ..." comment directives.
+DIRECTIVE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "action": {"type": "string", "enum": ["hide", "unhide", "guidance", "ignore"]},
+        "guidance": {"type": "string", "description": "search instruction if action=guidance, else ''"},
+        "reply": {"type": "string", "description": "one short sentence to post back"},
+    },
+    "required": ["action", "guidance", "reply"],
+    "additionalProperties": False,
+}
 
 # Keywords for the structured Grants.gov query.
 GRANTS_GOV_KEYWORDS = ["flood", "flood resilience", "coastal resilience", "stormwater"]
@@ -175,11 +190,160 @@ def fetch_verdicts() -> dict:
         return {}
 
 
+def load_db() -> dict:
+    if os.path.exists(DB_PATH):
+        with open(DB_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    return {"opportunities": []}
+
+
+def save_db(db: dict) -> None:
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
+    with open(DB_PATH, "w", encoding="utf-8") as f:
+        json.dump(db, f, indent=2, ensure_ascii=False)
+
+
 def load_db_opps() -> list:
-    if not os.path.exists(DB_PATH):
+    return load_db().get("opportunities", [])
+
+
+# ------------------------------------------- standing search-guidance "rules"
+
+def load_guidance() -> list:
+    """Return the list of standing search-guidance rule texts."""
+    if not os.path.exists(GUIDANCE_FILE):
         return []
-    with open(DB_PATH, encoding="utf-8") as f:
-        return json.load(f).get("opportunities", [])
+    with open(GUIDANCE_FILE, encoding="utf-8") as f:
+        return [r.get("text", "") for r in json.load(f).get("rules", []) if r.get("text")]
+
+
+def add_guidance(text: str, source: str) -> None:
+    """Append a standing guidance rule (kept to the most recent MAX_GUIDANCE)."""
+    rules = []
+    if os.path.exists(GUIDANCE_FILE):
+        with open(GUIDANCE_FILE, encoding="utf-8") as f:
+            rules = json.load(f).get("rules", [])
+    rules.append({"text": text, "added": date.today().isoformat(), "from": source})
+    rules = rules[-MAX_GUIDANCE:]
+    os.makedirs(os.path.dirname(GUIDANCE_FILE), exist_ok=True)
+    with open(GUIDANCE_FILE, "w", encoding="utf-8") as f:
+        json.dump({"rules": rules}, f, indent=2, ensure_ascii=False)
+
+
+# -------------------------------------------------- @claude comment directives
+
+def fetch_comments() -> dict:
+    """Fetch the shared {oppId: [comment, ...]} map from the Worker."""
+    if not VERDICTS_API:
+        return {}
+    try:
+        req = urllib.request.Request(
+            VERDICTS_API + "/comments", headers={"User-Agent": "GrantSeeker/1.0"}
+        )
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return json.load(r)
+    except Exception as e:  # noqa: BLE001
+        print(f"  comments fetch failed: {e}", file=sys.stderr)
+        return {}
+
+
+def post_reply(opp_key: str, text: str) -> None:
+    """Post a confirmation reply comment as Claude."""
+    if not VERDICTS_API or not text:
+        return
+    try:
+        body = json.dumps({"oppId": opp_key, "name": "Claude 🤖", "text": text}).encode("utf-8")
+        req = urllib.request.Request(
+            VERDICTS_API + "/comments", data=body, method="POST",
+            headers={"Content-Type": "application/json", "User-Agent": "GrantSeeker/1.0"},
+        )
+        urllib.request.urlopen(req, timeout=20).read()
+    except Exception as e:  # noqa: BLE001
+        print(f"  reply post failed: {e}", file=sys.stderr)
+
+
+def interpret_directive(client: anthropic.Anthropic, instruction: str, opp: dict | None) -> dict:
+    """Map one '@claude ...' instruction to a safe structured action."""
+    title = (opp or {}).get("title", "(unknown opportunity)")
+    funder = (opp or {}).get("funder", "")
+    prompt = (
+        "You are the agent behind a flood-funding scanner. A user left this "
+        f"instruction addressed to you on the opportunity \"{title}\" ({funder}). "
+        "Choose exactly ONE action:\n"
+        "- hide: remove/hide THIS entry from the website.\n"
+        "- unhide: show a previously hidden entry again.\n"
+        "- guidance: steer FUTURE searches. Put a concise, self-contained search "
+        "instruction in `guidance` (fold in useful context from this opportunity, "
+        "e.g. its topic or region).\n"
+        "- ignore: not an actionable instruction.\n"
+        "Write a short friendly `reply` (one sentence) confirming what you did. "
+        "Leave `guidance` empty unless the action is guidance.\n\n"
+        f"Instruction: {instruction}"
+    )
+    for i, model in enumerate(MODELS):
+        try:
+            resp = client.messages.create(
+                model=model, max_tokens=500,
+                extra_body={"output_config": {"format": {"type": "json_schema", "schema": DIRECTIVE_SCHEMA}}},
+                messages=[{"role": "user", "content": prompt}],
+            )
+        except anthropic.APIStatusError as e:
+            if (e.status_code == 429 or e.status_code >= 500) and i < len(MODELS) - 1:
+                continue
+            raise
+        txt = next((b.text for b in resp.content if b.type == "text"), "")
+        try:
+            return json.loads(txt)
+        except json.JSONDecodeError:
+            return {"action": "ignore", "guidance": "", "reply": ""}
+    return {"action": "ignore", "guidance": "", "reply": ""}
+
+
+def process_directives(client: anthropic.Anthropic) -> None:
+    """Read new '@claude ...' comments, act on them, and reply. Updates the DB
+    (hide/unhide) and the standing guidance file; marks each directive done."""
+    comments = fetch_comments()
+    if not comments:
+        return
+    processed = set()
+    if os.path.exists(PROCESSED_FILE):
+        with open(PROCESSED_FILE, encoding="utf-8") as f:
+            processed = set(json.load(f))
+
+    db = load_db()
+    by_id = {opp_id(o): o for o in db["opportunities"]}
+    db_changed = False
+    newly_done = []
+
+    for opp_key, clist in comments.items():
+        for c in clist:
+            cid, text = c.get("id"), (c.get("text") or "")
+            stripped = text.lstrip()
+            if not cid or cid in processed or stripped[:7].lower() != "@claude":
+                continue
+            instruction = stripped[7:].lstrip(" ,:") or stripped
+            opp = by_id.get(opp_key)
+            action = interpret_directive(client, instruction, opp)
+            act = action.get("action", "ignore")
+            if act == "hide" and opp is not None:
+                opp["hidden"] = True
+                db_changed = True
+            elif act == "unhide" and opp is not None:
+                opp["hidden"] = False
+                db_changed = True
+            elif act == "guidance" and action.get("guidance"):
+                add_guidance(action["guidance"], f"comment {cid}")
+            post_reply(opp_key, action.get("reply", ""))
+            newly_done.append(cid)
+            print(f"  @claude: {act} — {instruction[:60]}", file=sys.stderr)
+
+    if db_changed:
+        save_db(db)
+    if newly_done:
+        processed |= set(newly_done)
+        os.makedirs(os.path.dirname(PROCESSED_FILE), exist_ok=True)
+        with open(PROCESSED_FILE, "w", encoding="utf-8") as f:
+            json.dump(sorted(processed), f, indent=2)
 
 
 def build_preferences(verdicts: dict, db_opps: list, limit: int = 15):
@@ -236,8 +400,14 @@ def build_prompt(known_sources: list, liked=None, rejected=None, demote=None) ->
     topics = "\n".join(f"  - {t}" for t in TOPICS)
     geo = "\n".join(f"  - {g}" for g in GEOGRAPHIES)
 
-    # Preference feedback learned from the team's likes/dislikes.
+    # Preference feedback learned from the team's likes/dislikes + @claude rules.
     pref = ""
+    rules = load_guidance()
+    if rules:
+        pref += (
+            "STANDING INSTRUCTIONS from the team (follow these every run):\n"
+            + "\n".join(f"  * {r}" for r in rules) + "\n\n"
+        )
     if liked:
         pref += (
             "The team marked these PROMISING — prioritise opportunities similar in "
@@ -454,6 +624,12 @@ def main() -> None:
     if not os.environ.get("ANTHROPIC_API_KEY"):
         raise SystemExit("Set ANTHROPIC_API_KEY first (see the header of this file).")
 
+    client = anthropic.Anthropic(max_retries=6)
+
+    # Act on any new "@claude ..." comment directives first: hide/unhide entries
+    # and append standing search-guidance rules (data/guidance.json).
+    process_directives(client)
+
     # Learn from the team's shared verdicts: steer toward promising, away from
     # rejected, and stop promoting sources that mostly get rejected.
     verdicts = fetch_verdicts()
@@ -466,7 +642,6 @@ def main() -> None:
     known_sources, learned = load_known_sources(demote=demote)
     prompt = build_prompt(known_sources, liked=liked, rejected=rejected, demote=demote)
 
-    client = anthropic.Anthropic(max_retries=6)
     web_data, model_used, notes = fetch_opportunities(client, prompt)
     print(f"(answered by {model_used})")
     if args.debug:

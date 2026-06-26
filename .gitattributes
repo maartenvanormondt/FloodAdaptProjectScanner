@@ -7,6 +7,8 @@
 # the message below):
 #   git config merge.theirs.name "take incoming version"
 #   git config merge.theirs.driver "cp -f %B %A"
-data/opportunities_db.json merge=theirs
-data/sources_db.json        merge=theirs
-docs/opportunities.js       merge=theirs
+data/opportunities_db.json   merge=theirs
+data/sources_db.json         merge=theirs
+data/guidance.json           merge=theirs
+data/processed_comments.json merge=theirs
+docs/opportunities.js        merge=theirs

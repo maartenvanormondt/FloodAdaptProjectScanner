@@ -122,10 +122,9 @@ def merge(db: dict, fresh_path: str) -> list:
 
 def write_site(db: dict) -> None:
     os.makedirs(os.path.dirname(SITE_DATA), exist_ok=True)
-    # Newest-first by the date we first saw each lead; tag each with a region.
-    opps = sorted(
-        db["opportunities"], key=lambda o: o.get("first_seen", ""), reverse=True
-    )
+    # Drop entries hidden via "@claude, remove this"; newest-first; tag region+id.
+    visible = [o for o in db["opportunities"] if not o.get("hidden")]
+    opps = sorted(visible, key=lambda o: o.get("first_seen", ""), reverse=True)
     enriched = [{**o, "region": classify_region(o), "id": opp_id(o)} for o in opps]
     # Embedded as a JS global so the page works from file:// without a server.
     with open(SITE_DATA, "w", encoding="utf-8") as f:
@@ -146,7 +145,10 @@ def main() -> None:
         # Write only the new-this-run leads (minus any already rejected) for the
         # email digest to send.
         rejected = {k for k, v in fetch_verdicts().items() if v == "dislike"}
-        emailable = [o for o in new_records if opp_id(o) not in rejected]
+        emailable = [
+            o for o in new_records
+            if opp_id(o) not in rejected and not o.get("hidden")
+        ]
         os.makedirs(os.path.dirname(NEW_PATH), exist_ok=True)
         with open(NEW_PATH, "w", encoding="utf-8") as f:
             json.dump({"opportunities": emailable}, f, indent=2, ensure_ascii=False)
