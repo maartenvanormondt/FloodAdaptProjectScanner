@@ -1455,6 +1455,142 @@
       "source_url": "https://www.adb.org/what-we-do/funds/asia-pacific-disaster-response-fund-apdrf",
       "track": "Application",
       "first_seen": "2026-06-26"
+    },
+    {
+      "title": "HORIZON-CL3-2026-01-DRS-05: Climate Security & Civil Preparedness",
+      "funder": "European Commission — Horizon Europe Cluster 3 (Civil Security for Society)",
+      "one_liner": "Develops advanced pre- and post-crisis climate-change scenarios and tools for a more resilient Europe, including flood forecasting and early warning.",
+      "summary_paragraph": "HORIZON-CL3-2026-01-DRS-05 focuses on climate security and civil preparedness — developing new ways to create pre- and post-crisis climate-change related scenarios for a more resilient Europe. The programme supports operational risk-management tools and technologies with emphasis on local and regional adaptation, and enhancement of pre-crisis analysis and post-crisis situational awareness for climate-related disasters such as floods, fires, landslides, and heatwaves. The deadline is 5 November 2026. FloodAdapt's 'what-if' scenario engine and SFINCS compound-flood model map directly onto the scenario-development requirements, and Deltares is a natural technical partner in a Cluster 3 consortium.",
+      "due_date": "2026-11-05",
+      "eligibility": "EU/associated-country consortia; research institutes, local authorities, civil protection agencies",
+      "budget": "~€4.5 m (single project, Innovation Action)",
+      "topics": [
+        "Flood risk mapping & modelling",
+        "Flood resilience & adaptation",
+        "Coastal flooding"
+      ],
+      "source_url": "https://fundsforcompanies.fundsforngos.org/grant/call-for-applications-on-climate-resilience-and-disaster-risk-management/",
+      "track": "Application",
+      "first_seen": "2026-06-27"
+    },
+    {
+      "title": "HORIZON-CL3-2026-01-DRS-04: Driving Innovation Uptake of Disaster Risk Solutions",
+      "funder": "European Commission — Horizon Europe Cluster 3 (Civil Security for Society)",
+      "one_liner": "€6 m Innovation Action to accelerate real-world deployment and scaling of proven high-TRL disaster risk technologies across Europe.",
+      "summary_paragraph": "The European Commission has launched a Horizon Europe Innovation Action to accelerate the adoption and scaling of high-TRL disaster risk solutions across Europe. The programme supports real-world deployment of technologies that improve disaster prevention, preparedness, response, and recovery across multiple hazard types, including climate-related risks, with a total budget of €6 million and a focus on large-scale validation, interoperability with EU civil protection systems, and overcoming barriers to deployment. The deadline is 5 November 2026. Because FloodAdapt is already at high TRL and deployed in US communities, this call's emphasis on technology uptake rather than new research is an excellent match.",
+      "due_date": "2026-11-05",
+      "eligibility": "EU/associated-country consortia with demonstrated high-TRL solutions",
+      "budget": "€6 m total",
+      "topics": [
+        "Flood resilience & adaptation",
+        "Flood risk mapping & modelling",
+        "Nature-based solutions"
+      ],
+      "source_url": "https://www2.fundsforngos.org/innovation/open-call-driving-innovation-uptake-of-disaster-risk-solutions-program/",
+      "track": "Application",
+      "first_seen": "2026-06-27"
+    },
+    {
+      "title": "Eureka Network — Disaster Resilience, Response & Recovery (Multi-Country R&D Call)",
+      "funder": "Eureka Network (Austria/FFG, Belgium/VLAIO, Lithuania, Spain/CDTI, Chile/Corfo, South Africa, Turkey, Ukraine, and others)",
+      "one_liner": "Collaborative international R&D call for innovative disaster-resilience products and services, with country-specific grants up to €3 m/yr (Austria) and funding from eight or more participating nations.",
+      "summary_paragraph": "This call supports collaborative research, development, and innovation projects in the field of disaster resilience, response, and recovery; the objective is to support the development, adaptation, validation, and scaling of innovative technologies, products, services, or processes that strengthen disaster preparedness, emergency response, and post-disaster recovery outcomes. Eligible projects must demonstrate international cooperation through a consortium of at least two independent legal entities from at least two participating countries, and must focus on civilian-use products, processes, or services intended for commercialisation. In Austria, the Austrian Research Promotion Agency funds R&D costs with grants of up to €3 million per year, while other national funders offer €220 k–€900 k. Deltares (NL) could form a consortium with, e.g., a Belgian, Spanish, or other national partner.",
+      "due_date": "unknown",
+      "eligibility": "International consortia of ≥2 entities from ≥2 participating Eureka countries",
+      "budget": "Varies by country (up to €3 m/yr in Austria; others €220 k–€900 k)",
+      "topics": [
+        "Flood resilience & adaptation",
+        "Flood risk mapping & modelling"
+      ],
+      "source_url": "https://fundsforcompanies.fundsforngos.org/grant/call-for-disaster-resilience-response-and-recovery-projects-2026/",
+      "track": "Application",
+      "first_seen": "2026-06-27"
+    },
+    {
+      "title": "ADB — Ocean Resilience and Coastal Adaptation Trust Fund (ORCATF)",
+      "funder": "Asian Development Bank (ADB)",
+      "one_liner": "ADB trust fund providing grant finance for ocean/coastal adaptation project origination and preparation, with a Pacific window and an Asia window focused on nature-based solutions and ecosystem management.",
+      "summary_paragraph": "The Ocean Resilience and Coastal Adaptation Trust Fund (ORCATF) was established in March 2023 to increase the quantity and quality of investments in ocean health (including resilience and the blue economy) and coastal adaptation; it contributes to climate-resilient and nature-positive sustainable development in Asia and the Pacific. The ORCATF provides grant finance for ocean-positive project origination and preparation, focusing on nature-based solutions, ecosystem management, and restoration integrated with national plans and nationally determined contributions. The fund has a Pacific window and an Asia window supporting regional approaches such as the Blue Pacific Finance Hub and the Blue Southeast Asia Finance Hub. Deltares could contribute decision-support and modelling tools for coastal adaptation project preparation in SE Asia and the Pacific via ADB project partnerships.",
+      "due_date": "rolling",
+      "eligibility": "ADB developing member countries; Deltares would engage via ADB project partnerships",
+      "budget": "Unknown (rolling project-by-project; trust fund basis)",
+      "topics": [
+        "Coastal flooding",
+        "Nature-based solutions",
+        "Flood resilience & adaptation"
+      ],
+      "source_url": "https://www.adb.org/what-we-do/funds/orcatf",
+      "track": "Application",
+      "first_seen": "2026-06-27"
+    },
+    {
+      "title": "ADB / GCF — Community Resilience Partnership Program Investment Fund (CRPPIF)",
+      "funder": "Asian Development Bank + Green Climate Fund (GCF)",
+      "one_liner": "$120 m GCF-backed ADB regional programme scaling up local community-level climate adaptation in seven vulnerable Asia-Pacific countries, including nature-based coastal protection.",
+      "summary_paragraph": "The Green Climate Fund has approved $120 million in climate adaptation financing to support ADB's Community Resilience Partnership Program, which aims to strengthen climate resilience in poor and vulnerable communities by scaling up climate adaptation investments at the local level. The CRPPIF is cofinanced by ADB and GCF and focuses on the efficient rollout of local adaptation measures, providing support to Cambodia, Indonesia, the Lao PDR, Pakistan, Papua New Guinea, Timor-Leste, and Vanuatu. Launched in 2021, the CRPP mobilises large-scale public investments supporting community-level adaptation and develops national and local policies that promote financing for community-led adaptation through downstream investment programmes. Deltares could engage as a technical assistance provider for flood modelling and decision-support at the local/national government level in participating countries.",
+      "due_date": "rolling",
+      "eligibility": "ADB developing member governments; Deltares via ADB technical assistance mechanism",
+      "budget": "$120 m (GCF tranche); individual country sub-project financing varies",
+      "topics": [
+        "Coastal flooding",
+        "Flood resilience & adaptation",
+        "Nature-based solutions",
+        "Inland/riverine flooding"
+      ],
+      "source_url": "https://www.adb.org/what-we-do/funds/community-resilience-partnership-program-investment-fund",
+      "track": "Application",
+      "first_seen": "2026-06-27"
+    },
+    {
+      "title": "ADB — Enhancing Climate Resilience of Coastal Communities Sector Project (Fiji)",
+      "funder": "Asian Development Bank (ADB Special Funds — Asian Development Fund)",
+      "one_liner": "$17.9 m ADB project (up to $15 m grant) to pilot hybrid and nature-based coastal protection in ~15 vulnerable Fiji communities, with design work and institutional capacity building.",
+      "summary_paragraph": "The project aims to enhance climate resilience and promote sustainable development in about 15 vulnerable coastal communities in Fiji; it will pilot and implement climate adaptation measures such as hybrid and nature-based coastal protection solutions, increase community engagement, and strengthen local and institutional capacities to address coastal flooding and erosion caused by sea-level rise and extreme weather. The project is estimated to cost $17.89 million, with a grant not exceeding $15 million from ADB's Special Funds resources (Asian Development Fund). This project promotes innovation by introducing hybrid coastal protection solutions that combine engineering with nature-based approaches scalable to larger areas and transferable to other Pacific Island countries. Deltares' nature-based solutions and SFINCS modelling expertise maps closely onto project design and technical assistance components.",
+      "due_date": "unknown",
+      "eligibility": "Fiji government as borrower; Deltares via ADB technical assistance procurement",
+      "budget": "$17.9 m total ($15 m ADB grant)",
+      "topics": [
+        "Coastal flooding",
+        "Nature-based solutions",
+        "Flood resilience & adaptation"
+      ],
+      "source_url": "https://www.adb.org/projects/58056-001/main",
+      "track": "Application",
+      "first_seen": "2026-06-27"
+    },
+    {
+      "title": "EIC Accelerator Open 2026 (Any Deep-Tech Sector)",
+      "funder": "European Innovation Council (EIC) — European Commission",
+      "one_liner": "€414 m open EIC Accelerator call for any deep-tech SME/startup creating or disrupting markets — an alternative route for FloodAdapt's spin-off if positioning outside the Climate Adaptation challenge.",
+      "summary_paragraph": "The EIC Accelerator Open is open to proposals in any field of technology with an overall budget of €414 million for 2026. Through a combination of grants, equity, and blended finance, the EIC Accelerator helps innovative companies progress from prototype to market scale; grants cover up to €2.5 million for innovation activities (TRL 6–8), while equity support of up to €10 million is delivered via the EIC Fund for market expansion, manufacturing scale-up, and commercialisation. The 2026 programme features more annual cut-off dates, a more technical and individualised evaluation process, and an increased budget of €414 million. The FloodAdapt spin-off could apply here if its positioning emphasises decision-intelligence software more broadly rather than solely climate adaptation.",
+      "due_date": "2026-11-04",
+      "eligibility": "EU/associated-country SMEs and startups",
+      "budget": "€414 m total; up to €2.5 m grant + up to €10 m equity per company",
+      "topics": [
+        "Flood risk mapping & modelling",
+        "Flood resilience & adaptation",
+        "Decision-support tools"
+      ],
+      "source_url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+      "track": "Business Development",
+      "first_seen": "2026-06-27"
+    },
+    {
+      "title": "ADB — Climate Innovation and Development Fund (CIDF) — SE Asia Private Sector",
+      "funder": "Asian Development Bank (CIDF) — funded by Bloomberg Philanthropies & Goldman Sachs",
+      "one_liner": "$25 m concessional ADB-managed fund providing grant de-risking for private-sector climate adaptation projects in South and Southeast Asia, targeting up to $500 m in additional leveraged financing.",
+      "summary_paragraph": "The Climate Innovation and Development Fund (CIDF) is a $25 million ADB-managed concessional financing fund established with grant commitments from Bloomberg Philanthropies and Goldman Sachs, designed to support climate mitigation and adaptation projects in India and Viet Nam. Climate adaptation-eligible activities include water supply and management, agriculture, forestry, land use and natural resource management, resilient infrastructure and coastal protection, and disaster risk management. ADB deploys funds as grants into its non-sovereign operations to support innovative and high-impact climate projects, aiming to leverage up to $500 million in additional private sector financing through concessional de-risking. If FloodAdapt's spin-off establishes a SE Asia commercial presence (e.g., for Vietnam or India), this fund is a strong de-risking route via a local partner.",
+      "due_date": "rolling",
+      "eligibility": "Private sector entities (non-sovereign) in India and Viet Nam; Deltares spin-off would need a local partner",
+      "budget": "$25 m total fund; individual project sizing unknown",
+      "topics": [
+        "Coastal flooding",
+        "Flood resilience & adaptation",
+        "Nature-based solutions"
+      ],
+      "source_url": "https://www.adb.org/what-we-do/funds/climate-innovation-development-fund",
+      "track": "Business Development",
+      "first_seen": "2026-06-27"
     }
   ]
 }

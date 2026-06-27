@@ -1,9 +1,9 @@
 {
   "domains": {
     "fema.gov": {
-      "count": 10,
+      "count": 11,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-26"
+      "last_seen": "2026-06-27"
     },
     "nfwf.org": {
       "count": 9,
@@ -26,9 +26,9 @@
       "last_seen": "2026-06-25"
     },
     "research-and-innovation.ec.europa.eu": {
-      "count": 6,
+      "count": 7,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-26"
+      "last_seen": "2026-06-27"
     },
     "rea.ec.europa.eu": {
       "count": 5,
@@ -41,9 +41,9 @@
       "last_seen": "2026-06-25"
     },
     "grants.gov": {
-      "count": 393,
+      "count": 420,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-26"
+      "last_seen": "2026-06-27"
     },
     "floodcoalition.org": {
       "count": 1,
@@ -56,14 +56,14 @@
       "last_seen": "2026-06-26"
     },
     "www2.fundsforngos.org": {
-      "count": 7,
+      "count": 8,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-26"
+      "last_seen": "2026-06-27"
     },
     "floridadep.gov": {
-      "count": 9,
+      "count": 10,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-26"
+      "last_seen": "2026-06-27"
     },
     "dec.ny.gov": {
       "count": 2,
@@ -86,9 +86,9 @@
       "last_seen": "2026-06-25"
     },
     "adb.org": {
-      "count": 9,
+      "count": 13,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-26"
+      "last_seen": "2026-06-27"
     },
     "greenclimate.fund": {
       "count": 3,
@@ -101,9 +101,9 @@
       "last_seen": "2026-06-26"
     },
     "cinea.ec.europa.eu": {
-      "count": 3,
+      "count": 4,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-26"
+      "last_seen": "2026-06-27"
     },
     "governor.ny.gov": {
       "count": 2,
@@ -121,9 +121,9 @@
       "last_seen": "2026-06-26"
     },
     "mission-adaptation-portal.ec.europa.eu": {
-      "count": 2,
+      "count": 3,
       "first_seen": "2026-06-26",
-      "last_seen": "2026-06-26"
+      "last_seen": "2026-06-27"
     },
     "scc.ca.gov": {
       "count": 2,
@@ -176,14 +176,14 @@
       "last_seen": "2026-06-26"
     },
     "eic.ec.europa.eu": {
-      "count": 1,
+      "count": 3,
       "first_seen": "2026-06-26",
-      "last_seen": "2026-06-26"
+      "last_seen": "2026-06-27"
     },
     "eo4society.esa.int": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-26",
-      "last_seen": "2026-06-26"
+      "last_seen": "2026-06-27"
     },
     "interreg-danube.eu": {
       "count": 1,
@@ -194,6 +194,11 @@
       "count": 1,
       "first_seen": "2026-06-26",
       "last_seen": "2026-06-26"
+    },
+    "fundsforcompanies.fundsforngos.org": {
+      "count": 2,
+      "first_seen": "2026-06-27",
+      "last_seen": "2026-06-27"
     }
   }
 }
