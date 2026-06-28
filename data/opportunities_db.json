@@ -1591,6 +1591,149 @@
       "source_url": "https://www.adb.org/what-we-do/funds/climate-innovation-development-fund",
       "track": "Business Development",
       "first_seen": "2026-06-27"
+    },
+    {
+      "title": "Horizon Europe — EU Mission on Adaptation (HORIZON-MISS-2027-03-OCEAN-01): Increasing Riparian and Coastal Areas Resilience to Climate Change",
+      "funder": "European Commission / Horizon Europe EU Missions",
+      "one_liner": "A 2027 two-stage Horizon Europe call specifically targeting resilience of coastal and riparian areas, including waterfront cities and islands — plan ahead now.",
+      "summary_paragraph": "The call HORIZON-MISS-2027-03-OCEAN-01 on increasing riparian and coastal areas resilience to climate change, including in waterfront cities and islands, opens 4 February 2027, with a first-stage deadline of 8 April 2027 and a second-stage deadline of 14 September 2027. Although slightly beyond the immediate horizon, the two-stage structure means consortium-building should begin now. This call is a near-perfect topical match for FloodAdapt's coastal compound-flooding capabilities and community-scale adaptation planning. The EU Missions brokerage events were held on 28 and 29 January, and brokerage signup will remain open until 30 September 2026 to help build consortia for upcoming Missions Work Programme calls.",
+      "due_date": "2027-09-14",
+      "eligibility": "Research institutes, coastal authorities, municipalities, companies in EU/associated countries",
+      "budget": "unknown",
+      "topics": [
+        "Coastal flooding",
+        "flood resilience & adaptation",
+        "nature-based solutions",
+        "flood risk modelling"
+      ],
+      "source_url": "https://horizoneuropencpportal.eu/news/eu-missions-2026-27-work-programme-published",
+      "track": "Application",
+      "first_seen": "2026-06-28"
+    },
+    {
+      "title": "FCM Green Municipal Fund — Local Leadership for Climate Adaptation: Implementation Projects (Adaptation in Action)",
+      "funder": "Federation of Canadian Municipalities (FCM) / Green Municipal Fund",
+      "one_liner": "Canada's leading municipal climate adaptation grant funds on-the-ground flood-risk reduction and resilience projects, with a rolling annual cycle — ideal for FloodAdapt-enabled Canadian municipal clients.",
+      "summary_paragraph": "The FCM Funding Portal is open for Implementation Projects (Adaptation in Action), with funding available April 14 – June 16, 2026 and October 6 – November 24, 2026; Quebec municipal applicants have a distinct application period from May 27 – November 24, 2026. The programme is designed to move municipalities from planning to action, with support to get projects in the ground — whether it's reducing flood risks or improving natural defences, Implementation Projects funding helps bring adaptation projects to life. GMF funding can cover between 50 and 80 percent of eligible project costs, with certain communities eligible for up to 100 percent. Canadian municipalities already using or interested in FloodAdapt could apply with Deltares as the technical delivery partner.",
+      "due_date": "2026-11-24",
+      "eligibility": "Canadian municipalities, municipally-owned corporations, regional/provincial organisations",
+      "budget": "Grants covering 50–80% of eligible project costs (up to 100% for small/northern/Indigenous communities); typically $100K–$500K+",
+      "topics": [
+        "Flood resilience & adaptation",
+        "coastal flooding",
+        "inland/pluvial flooding",
+        "nature-based solutions"
+      ],
+      "source_url": "https://greenmunicipalfund.ca/funding/implementation-project-adaptation-action",
+      "track": "Application",
+      "first_seen": "2026-06-28"
+    },
+    {
+      "title": "FCM Green Municipal Fund — Local Leadership for Climate Adaptation: Climate-Ready Plans and Processes",
+      "funder": "Federation of Canadian Municipalities (FCM) / Green Municipal Fund",
+      "one_liner": "Canadian municipal grant specifically for creating or updating community-level climate adaptation plans — including flood risk assessments — with an autumn 2026 window.",
+      "summary_paragraph": "Climate-Ready Plans and Processes funding is available from October 6 – December 8, 2026, and helps municipalities create or update a climate adaptation plan tailored to their community's specific needs, priorities and realities. The Local Leadership for Climate Adaptation (LLCA) programme provides tailored funding to help municipalities plan, test and implement local climate adaptation solutions, with some opportunities open now and others launching soon. This is a strong pathway for Canadian coastal and inland cities to engage FloodAdapt as a planning tool, with Deltares providing technical support on flood risk assessment and scenario modelling. GMF funding can cover up to 80 percent of eligible project costs, with up to 100 percent for smaller communities.",
+      "due_date": "2026-12-08",
+      "eligibility": "Canadian municipalities and eligible partners",
+      "budget": "Grants up to 80% of eligible costs (up to 100% for small communities); planning grants typically $100K–$300K",
+      "topics": [
+        "Flood resilience & adaptation",
+        "flood risk mapping & modelling",
+        "coastal and inland flooding"
+      ],
+      "source_url": "https://greenmunicipalfund.ca/local-leadership-climate-adaptation",
+      "track": "Application",
+      "first_seen": "2026-06-28"
+    },
+    {
+      "title": "ADB Community Resilience Partnership Program (CRPP) — GCF Co-financed, Asia-Pacific",
+      "funder": "Asian Development Bank (ADB) / Green Climate Fund (GCF)",
+      "one_liner": "ADB's flagship community resilience programme, backed by $120M GCF co-financing, scales up local-level climate adaptation investments across vulnerable Asian and Pacific communities.",
+      "summary_paragraph": "The Green Climate Fund approved $120 million in climate adaptation financing to support ADB's Community Resilience Partnership Program (CRPP), which aims to strengthen climate resilience in poor and vulnerable communities by scaling up climate adaptation investments at the local level. ADB is promoting climate and disaster resilience in the region by investing in water supply, sanitation, flood control, transport and energy infrastructure. ADB's focus on nature-based solutions is increasing, recognising that NBS can help reduce the impact of climate-related disasters and contribute to building resilience through rehabilitating and expanding natural ecosystems. Deltares could engage through ADB country pipelines (e.g., Vietnam, Philippines, Bangladesh) as a knowledge partner or technical assistance provider on flood modelling.",
+      "due_date": "rolling",
+      "eligibility": "ADB developing member country governments and their partners; Deltares/FloodAdapt could engage as a technology/knowledge partner on specific country sub-projects",
+      "budget": "$120M GCF-approved tranche; total CRPP is a multi-year regional programme",
+      "topics": [
+        "Coastal flooding",
+        "inland/riverine flooding",
+        "flood resilience & adaptation",
+        "nature-based solutions",
+        "flood risk mapping & modelling"
+      ],
+      "source_url": "https://www.adb.org/news/120-million-green-climate-fund-support-adbs-community-resilience-partnership-program-asia-pacific",
+      "track": "Application",
+      "first_seen": "2026-06-28"
+    },
+    {
+      "title": "NFWF National Coastal Resilience Fund (NCRF) — USA",
+      "funder": "National Fish and Wildlife Foundation (NFWF)",
+      "one_liner": "NFWF's premier fund for nature-based coastal resilience in the US invests in planning, design, and implementation of NbS that protect coastal communities from floods and storms.",
+      "summary_paragraph": "The National Coastal Resilience Fund, established in 2018, invests in nature-based solutions that protect coastal communities while enhancing habitats for fish and wildlife, focusing on restoring or strengthening natural infrastructure such as coastal marshes, wetlands, dunes, reefs, rivers, floodplains, and barrier islands. The fund supports building capacity and plans for coastal resilience, the design of nature-based solutions, and implementation of coastal resilience projects. This is a strong match for Florida-based partners using FloodAdapt to model NbS scenarios, with Deltares serving as a technical sub-awardee to a US-based non-profit or municipal applicant. The next RFP is typically released late 2026 / early 2027.",
+      "due_date": "unknown",
+      "eligibility": "US non-profits, state/local governments, universities; Deltares/FloodAdapt USA or a US partner as applicant with Deltares as technical sub-awardee",
+      "budget": "Individual grants typically $500K–$5M; total fund disbursed >$100M since 2018",
+      "topics": [
+        "Coastal flooding",
+        "nature-based solutions",
+        "flood resilience & adaptation",
+        "flood risk mapping & modelling"
+      ],
+      "source_url": "https://www.nfwf.org/programs/national-coastal-resilience-fund",
+      "track": "Application",
+      "first_seen": "2026-06-28"
+    },
+    {
+      "title": "NWO Open Mind 2026 — Dutch Research Council",
+      "funder": "NWO (Dutch Research Council) — Applied and Engineering Sciences domain",
+      "one_liner": "NWO's high-risk, high-reward €100K seed grant for breakthrough technology research ideas tackling global societal challenges — relevant for early-stage FloodAdapt-related research concepts.",
+      "summary_paragraph": "The Open Mind call aims to support out-of-the-box research ideas that offer sustainable solutions to global societal challenges through technology, funding innovative proposals that break through conventional thinking including ideas that tackle climate issues. Researchers with exciting, high-risk, high-gain ideas are encouraged to submit outside-the-box proposals and compete for a chance to receive €100,000 to explore their research ideas over one year. Up to 20 proposals will be selected for a pitch-interview session evaluated at the annual NWO innovation festival TEKNOWLOGY, and up to ten Open Mind 2026 winners will be awarded funding during its closing session. Note: the March 2026 deadline for the current cycle has passed; flag this for the 2027 cycle.",
+      "due_date": "2026-03-10",
+      "eligibility": "Researchers at Dutch universities and research institutions (Deltares researchers may be eligible as affiliated researchers)",
+      "budget": "Up to €100,000 per award; 10 awards per cycle; total €1M",
+      "topics": [
+        "Flood risk modelling",
+        "flood resilience & adaptation",
+        "nature-based solutions"
+      ],
+      "source_url": "https://www.nwo.nl/en/calls/open-mind-2026",
+      "track": "Application",
+      "first_seen": "2026-06-28"
+    },
+    {
+      "title": "GCF — Readiness and Preparatory Support Programme",
+      "funder": "Green Climate Fund (GCF)",
+      "one_liner": "GCF's rolling readiness grants help developing nations build capacity to plan and implement climate adaptation — including flood risk assessments and modelling — creating a pathway for FloodAdapt deployment in the Global South.",
+      "summary_paragraph": "The Green Climate Fund is the largest dedicated multilateral climate fund, mobilizing and deploying capital at scale to support developing countries in pursuing low-emission and climate-resilient development pathways, investing in mitigation and adaptation initiatives and strengthening national institutions. In 2025, GCF supported several ADB projects through large-scale programmatic platforms — including the ASEAN Catalytic Green Finance Facility and the Community Resilience Partnership Program — to strengthen climate resilience and promote sustainable and inclusive growth across Asia and the Pacific. To date, GCF has approved $1.5 billion in funding for 16 ADB projects, comprising $473.2 million in grants and $964.2 million in loans, leveraging a total project financing volume of approximately $10 billion. Countries in the Pacific and Southeast Asia working on flood risk assessments are an excellent entry point for FloodAdapt, via partnerships with accredited GCF entities.",
+      "due_date": "rolling",
+      "eligibility": "National Designated Authorities (NDAs) of developing countries; accredited implementing entities such as ADB and UNDP act as delivery partners; Deltares can engage via an accredited entity as a technical partner",
+      "budget": "Up to $3M per readiness grant (standard); larger programmatic grants available",
+      "topics": [
+        "Flood resilience & adaptation",
+        "flood risk mapping & modelling",
+        "coastal and inland flooding",
+        "nature-based solutions"
+      ],
+      "source_url": "https://www.greenclimate.fund/ae/adb",
+      "track": "Application",
+      "first_seen": "2026-06-28"
+    },
+    {
+      "title": "ESA Space Solutions — Coastal Resilience to Climate Change (Non-Competitive Call)",
+      "funder": "European Space Agency (ESA) — Space Solutions / InCubed programme",
+      "one_liner": "ESA co-funds commercial EO-based coastal resilience services — including flood monitoring, early warning, and nature-based solution assessment — making it a strong match for FloodAdapt's data integration layer.",
+      "summary_paragraph": "Coastal regions are particularly vulnerable to climate change impacts including rising sea levels, severe storms, flooding, and coastal erosion; in Europe alone, over 200 million people reside within 50 kilometres of the coastline, placing them at increased risk of climate-related hazards. The ESA call specifically targets nature-based solutions such as mangrove restoration to enhance coastal resilience, as well as port and infrastructure adaptation systems. Satellite Earth Observation provides vital data for monitoring environmental changes and supporting climate adaptation strategies, tracking coastal erosion, sea-level rise, and alterations in ecosystems, and facilitating development of early warning systems for extreme weather events. Integrating ESA EO data with FloodAdapt's compound flood model creates a compelling commercial coastal monitoring and decision-support service proposition.",
+      "due_date": "rolling",
+      "eligibility": "ESA-member-state companies developing commercial Earth Observation services; Deltares/spin-off as a co-developer or technology partner",
+      "budget": "Typically co-funded up to 50% of project costs (€500K–€5M range)",
+      "topics": [
+        "Coastal flooding",
+        "flood risk mapping & modelling",
+        "nature-based solutions",
+        "flood resilience & adaptation"
+      ],
+      "source_url": "https://business.esa.int/funding/call-for-proposals-non-competitive/coastal-resilience-to-climate-change",
+      "track": "Business Development",
+      "first_seen": "2026-06-28"
     }
   ]
 }
