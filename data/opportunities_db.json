@@ -1734,6 +1734,60 @@
       "source_url": "https://business.esa.int/funding/call-for-proposals-non-competitive/coastal-resilience-to-climate-change",
       "track": "Business Development",
       "first_seen": "2026-06-28"
+    },
+    {
+      "title": "Interreg Europe / North Sea Region / 2 Seas — Climate Adaptation and Flood Risk (2021–2027 Programme)",
+      "funder": "European Regional Development Fund (ERDF) / Interreg",
+      "one_liner": "The 2021–2027 Interreg VI transnational programmes actively fund cross-border flood adaptation and risk prevention — a natural home for a Deltares-led consortium.",
+      "summary_paragraph": "Risk prevention and emergency response as part of climate adaptation can be financed by the Interreg A (Cross-Border) programme, while Interreg B (Transnational) enhances cooperation between regions from several countries on issues including environment and urban development, with 14 transnational cooperation programmes continuing through 2027. Deltares has historically participated in Interreg North Sea Region and 2 Seas projects. The North Sea Region programme, covering the Netherlands, UK, Belgium, Germany, and Scandinavia, is especially relevant for coastal and riverine flood adaptation. New calls under the 2021–2027 programme are announced by individual programme secretariats on a rolling basis.",
+      "due_date": "rolling",
+      "eligibility": "Deltares is a natural lead or partner; consortia must span multiple eligible countries; check specific programme websites for current call windows.",
+      "budget": "Typically €1–5 M per project",
+      "topics": [
+        "Coastal flooding",
+        "inland flooding",
+        "flood resilience & adaptation",
+        "flood risk mapping",
+        "nature-based solutions"
+      ],
+      "source_url": "https://climate-adapt.eea.europa.eu/en/knowledge/interreg-projects",
+      "track": "Application",
+      "first_seen": "2026-06-30"
+    },
+    {
+      "title": "Canada — Disaster Mitigation and Adaptation Fund (DMAF)",
+      "funder": "Infrastructure Canada (federal)",
+      "one_liner": "Canada's national flood and disaster-mitigation infrastructure fund actively co-funds local adaptation projects — FloodAdapt's tools could be embedded in DMAF-funded municipal planning.",
+      "summary_paragraph": "The Government of Canada's Disaster Mitigation and Adaptation Fund (DMAF) is a national, competitive, merit-based contribution program intended to support infrastructure projects designed to mitigate current and future climate-related risks and disasters triggered by natural hazards such as floods, wildland fires, droughts, and seismic events. Ottawa's DMAF has increasingly been used to co-fund local adaptation projects such as upgraded drainage systems, flood berms, and other green and gray infrastructure aimed at managing extreme rainfall and riverine flooding. Canadian municipalities, provinces, and Indigenous communities are eligible applicants; Deltares/FloodAdapt would participate as the decision-support technology and modelling partner, potentially via a Canadian subcontractor arrangement. Every dollar invested in climate adaptation can return as much as $13 to $15 in benefits, strongly supporting FloodAdapt's impact-based scenario planning approach.",
+      "due_date": "rolling",
+      "eligibility": "Direct applicants must be Canadian public bodies (municipalities, provinces, Indigenous governments); Deltares would participate as a technical partner or subcontractor, possibly through a Canadian entity.",
+      "budget": "$1 M minimum for small communities; up to $2 B+ for large-scale infrastructure",
+      "topics": [
+        "Inland/riverine flooding",
+        "coastal flooding",
+        "flood resilience & adaptation",
+        "flood risk mapping"
+      ],
+      "source_url": "https://www2.fundsforngos.org/latest-funds-for-ngos/disaster-mitigation-and-adaptation-fund-canada/",
+      "track": "Application",
+      "first_seen": "2026-06-30"
+    },
+    {
+      "title": "Canada–ADB Nature and Climate Fund for Private Sector in Asia (CANPA)",
+      "funder": "Government of Canada + Asian Development Bank",
+      "one_liner": "A brand-new Canada–ADB blended-finance fund for private sector climate and nature-based solutions in Asia — relevant for a FloodAdapt spin-off seeking to scale commercially in Asian markets.",
+      "summary_paragraph": "The Government of Canada and the Asian Development Bank announced a partnership to create a new Can$360 million trust fund — the Canadian Climate and Nature Fund for Private Sector in Asia (CANPA) — to support private-sector projects in Asia and the Pacific focused on climate and nature-based solutions while accelerating gender equity. ADB will administer CANPA on behalf of Canada to help private sector companies lower their greenhouse emissions, transition from carbon-based operations, and improve their climate resilience; the fund will lower risks to bring viable projects to market that would be unlikely to proceed solely on a commercial basis. Asia and the Pacific is susceptible to the most destructive effects of climate change, including damage from extreme weather, prolonged droughts, and flooding. The FloodAdapt spin-off could position itself as a private-sector partner in ADB-financed urban flood resilience projects in the Philippines, Vietnam, or Indonesia.",
+      "due_date": "rolling",
+      "eligibility": "Private sector entities; projects must be in ADB developing member countries in Asia-Pacific; a local joint-venture or subsidiary may be needed.",
+      "budget": "Can$360 M (~US$255 M) total; individual project size unknown",
+      "topics": [
+        "Coastal flooding",
+        "flood resilience & adaptation",
+        "nature-based solutions"
+      ],
+      "source_url": "https://www.adb.org/news/canada-and-adb-launch-new-fund-support-private-sector-climate-action-and-nature-based",
+      "track": "Business Development",
+      "first_seen": "2026-06-30"
     }
   ]
 }

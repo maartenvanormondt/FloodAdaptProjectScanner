@@ -26,9 +26,9 @@
       "last_seen": "2026-06-25"
     },
     "research-and-innovation.ec.europa.eu": {
-      "count": 8,
+      "count": 9,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-28"
+      "last_seen": "2026-06-30"
     },
     "rea.ec.europa.eu": {
       "count": 5,
@@ -41,9 +41,9 @@
       "last_seen": "2026-06-25"
     },
     "grants.gov": {
-      "count": 474,
+      "count": 499,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-29"
+      "last_seen": "2026-06-30"
     },
     "floodcoalition.org": {
       "count": 1,
@@ -56,14 +56,14 @@
       "last_seen": "2026-06-26"
     },
     "www2.fundsforngos.org": {
-      "count": 8,
+      "count": 9,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-27"
+      "last_seen": "2026-06-30"
     },
     "floridadep.gov": {
-      "count": 13,
+      "count": 14,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-29"
+      "last_seen": "2026-06-30"
     },
     "dec.ny.gov": {
       "count": 2,
@@ -86,9 +86,9 @@
       "last_seen": "2026-06-25"
     },
     "adb.org": {
-      "count": 17,
+      "count": 19,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-29"
+      "last_seen": "2026-06-30"
     },
     "greenclimate.fund": {
       "count": 4,
@@ -101,9 +101,9 @@
       "last_seen": "2026-06-26"
     },
     "cinea.ec.europa.eu": {
-      "count": 4,
+      "count": 5,
       "first_seen": "2026-06-25",
-      "last_seen": "2026-06-27"
+      "last_seen": "2026-06-30"
     },
     "governor.ny.gov": {
       "count": 2,
@@ -116,9 +116,9 @@
       "last_seen": "2026-06-26"
     },
     "iuk-business-connect.org.uk": {
-      "count": 3,
+      "count": 4,
       "first_seen": "2026-06-26",
-      "last_seen": "2026-06-29"
+      "last_seen": "2026-06-30"
     },
     "mission-adaptation-portal.ec.europa.eu": {
       "count": 4,
@@ -176,9 +176,9 @@
       "last_seen": "2026-06-26"
     },
     "eic.ec.europa.eu": {
-      "count": 6,
+      "count": 8,
       "first_seen": "2026-06-26",
-      "last_seen": "2026-06-29"
+      "last_seen": "2026-06-30"
     },
     "eo4society.esa.int": {
       "count": 3,
@@ -211,14 +211,19 @@
       "last_seen": "2026-06-28"
     },
     "nwo.nl": {
-      "count": 1,
+      "count": 2,
       "first_seen": "2026-06-28",
-      "last_seen": "2026-06-28"
+      "last_seen": "2026-06-30"
     },
     "business.esa.int": {
       "count": 1,
       "first_seen": "2026-06-28",
       "last_seen": "2026-06-28"
+    },
+    "climate-adapt.eea.europa.eu": {
+      "count": 1,
+      "first_seen": "2026-06-30",
+      "last_seen": "2026-06-30"
     }
   }
 }
